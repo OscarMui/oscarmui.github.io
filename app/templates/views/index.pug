@@ -1,25 +1,10 @@
 extends ../layouts/default
 
 block js
-	script(src="js/eventsData.js")
-	script(src="js/minionsOperation.js")
-	script(src="js/minionsData.js")
-	script(src="js/index.js")
 
 block append variables 
 	- var currentPage = "home";
-	- var numberOfMinions = 51;
 
 block content
 	.container
-		.row
-			.col-12.col-md-4.col-xl-2
-				img(src="images/dude.jpeg")
-				h1.myName Oscar Mui
-			.col-12.col-md-8.col-xl-10
-				p Hello, I am Oscar Mui. I am a form 6 student in St. Joseph's College, Hong Kong.
-
-		br
-
-
-				
+		p Hello, I am Oscar Mui. I am a form 6 student in St. Joseph's College, Hong Kong.
