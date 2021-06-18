@@ -5,7 +5,20 @@ block js
 block append variables 
 	- var currentPage = "code";
 
+mixin timelineElement(number,title,position)
+	.container(class=(position=="left"?"left":"right"))
+		.content.shadow.rounded
+			h2=number + " " + title
+			if block 
+				block
+			else
+				p Empty
+
 block content
 	.container
 		h1 Code
-		
+		#timeline: .timeline
+			+timelineElement("01","Scratch","left")
+				p body
+			+timelineElement("02","Java and C++","right")
+				p body2
