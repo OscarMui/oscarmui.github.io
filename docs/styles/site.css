@@ -18,7 +18,7 @@ body {
 }
 .lightThemeColor {
   color: #555;
-  background-color: #FFF;
+  background-color: #f7f7f7;
 }
 .lightThemeColor h1,
 .lightThemeColor h2,
@@ -63,9 +63,6 @@ body {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-#code {
-  background-color: #f7f7f7;
 }
 #code .modal-content {
   border: none;
@@ -155,7 +152,6 @@ body {
   padding: 20px 30px 20px 30px;
 }
 #code #timeline .bodyContent img {
-  max-width: 400px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -207,7 +203,7 @@ body {
   border-color: transparent transparent transparent #faca82;
 }
 #code #timeline .backgroundColorDark04 {
-  background-color: #EFAA9C;
+  background-color: #DF9A8C;
 }
 #code #timeline .backgroundColor04 {
   background-color: #FFCAAC;
@@ -216,6 +212,17 @@ body {
   border: medium solid #FFCAAC;
   border-width: 10px 10px 10px 0;
   border-color: transparent #FFCAAC transparent transparent;
+}
+#code #timeline .backgroundColorDark05 {
+  background-color: #829DA8;
+}
+#code #timeline .backgroundColor05 {
+  background-color: #B2CDE8;
+}
+#code #timeline .arrowColor05::before {
+  border: medium solid #B2CDE8;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #B2CDE8;
 }
 @media screen and (max-width: 992px) {
   #code #timeline {
@@ -253,5 +260,19 @@ body {
     border: medium solid #faca82;
     border-width: 10px 10px 10px 0;
     border-color: transparent #faca82 transparent transparent;
+  }
+  #code #timeline .arrowColor05::before {
+    border: medium solid #B2CDE8;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #B2CDE8 transparent transparent;
+  }
+}
+#code .grey-color-text {
+  color: #666;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  #code .grey-color-text {
+    text-align: left;
   }
 }

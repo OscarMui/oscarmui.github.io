@@ -3,7 +3,6 @@
 }
 
 #code{
-    background-color: #f7f7f7;
     .modal-content{
         border: none;
     }
@@ -20,7 +19,7 @@
             content: '';
             position: absolute;
             width: 6px;
-            background-color: #E5E5E5;
+            background-color: @timeline-color;
             top: 0;
             bottom: 0;
             left: 50%;
@@ -42,8 +41,8 @@
             width: 25px;
             height: 25px;
             right: -12px;
-            background-color: #E5E5E5;
-            border: 4px solid #f7f7f7;
+            background-color: @timeline-color;
+            border: 4px solid @white-theme-bg-color;
             top: 15px;
             border-radius: 50%;
             z-index: 1;
@@ -99,7 +98,7 @@
         .bodyContent{
             padding: 20px 30px 20px 30px;
             img{
-                max-width: 400px;
+                //max-width: 400px;
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
@@ -173,6 +172,19 @@
             border-color: transparent @code-color-04 transparent transparent;
         }
 
+        //05
+        .backgroundColorDark05{
+            background-color: @code-color-dark-05;
+        }
+        .backgroundColor05{
+            background-color: @code-color-05;
+        }
+        .arrowColor05::before { //left
+            border: medium solid @code-color-05;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent @code-color-05;
+        }
+
 
         
         /* Media queries - Responsive timeline on screens less than 992px (lg or up) wide */
@@ -217,6 +229,19 @@
                 border-width: 10px 10px 10px 0;
                 border-color: transparent @code-color-03 transparent transparent;
             }
+            //05
+            .arrowColor05::before { //left
+                border: medium solid @code-color-05;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent @code-color-05 transparent transparent;
+            }
+        }
+    }
+    .grey-color-text{
+        color: #666;
+        text-align: center;
+        @media screen and (max-width: 992px) {
+            text-align: left;
         }
     }
 }
