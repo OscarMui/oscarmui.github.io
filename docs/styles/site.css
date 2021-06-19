@@ -233,19 +233,19 @@ body {
     /* Make all right containers behave like the left ones */
   }
   #code #timeline .timeline::after {
-    left: 31px;
+    left: 21px;
   }
   #code #timeline .container {
     width: 100%;
-    padding-left: 70px;
+    padding-left: 55px;
     padding-right: 25px;
   }
   #code #timeline .container::before {
-    left: 60px;
+    left: 45px;
   }
   #code #timeline .left::after,
   #code #timeline .right::after {
-    left: 18px;
+    left: 9px;
   }
   #code #timeline .right,
   #code #timeline .left {
