@@ -6,13 +6,17 @@ block append variables
 	- var currentPage = "code";
 
 mixin timelineElement(number,title,position)
-	.container(class=(position=="left"?"left":"right"))
+	.container(class=position+" arrowColor"+number)
 		.content.shadow.rounded
-			h2=number + " " + title
-			if block 
-				block
-			else
-				p Empty
+			.headContent(class="backgroundColor"+number)
+				.numberBox(class="backgroundColorDark"+number)
+					span=number
+				h2=title
+			.bodyContent
+				if block 
+					block
+				else
+					p Empty
 
 block content
 	.container
