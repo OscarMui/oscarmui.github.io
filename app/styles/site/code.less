@@ -4,6 +4,9 @@
 
 #code{
     background-color: #f7f7f7;
+    .modal-content{
+        border: none;
+    }
     #timeline{
         /* The actual timeline (the vertical ruler) */
         .timeline {
@@ -40,7 +43,7 @@
             height: 25px;
             right: -12px;
             background-color: #E5E5E5;
-            border: 4px solid #FF9F55;
+            border: 4px solid #f7f7f7;
             top: 15px;
             border-radius: 50%;
             z-index: 1;
@@ -95,6 +98,12 @@
         }
         .bodyContent{
             padding: 20px 30px 20px 30px;
+            img{
+                max-width: 400px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
 
         .numberBox{
@@ -138,6 +147,32 @@
             border-color: transparent @code-color-02 transparent transparent;
         }
 
+        //03
+        .backgroundColorDark03{
+            background-color: @code-color-dark-03;
+        }
+        .backgroundColor03{
+            background-color: @code-color-03;
+        }
+        .arrowColor03::before { //left
+            border: medium solid @code-color-03;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent @code-color-03;
+        }
+
+        //04
+        .backgroundColorDark04{
+            background-color: @code-color-dark-04;
+        }
+        .backgroundColor04{
+            background-color: @code-color-04;
+        }
+        .arrowColor04::before { //right
+            border: medium solid @code-color-04;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent @code-color-04 transparent transparent;
+        }
+
 
         
         /* Media queries - Responsive timeline on screens less than 992px (lg or up) wide */
@@ -175,6 +210,12 @@
                 border: medium solid @code-color-01;
                 border-width: 10px 10px 10px 0;
                 border-color: transparent @code-color-01 transparent transparent;
+            }
+            //03
+            .arrowColor03::before { //left
+                border: medium solid @code-color-03;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent @code-color-03 transparent transparent;
             }
         }
     }

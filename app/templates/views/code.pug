@@ -18,12 +18,76 @@ mixin timelineElement(number,title,position)
 				else
 					p Empty
 
+mixin modalBox(number,id,type,title)
+	.modal.fade(id=id tabindex="-1" role="dialog" aria-labelledby=id+"Label" aria-hidden="true")
+		.modal-dialog(role="document").modal-lg
+			.modal-content
+				.modal-header(class="backgroundColor"+number)
+					h3.modal-title(id=id+"Label")=title
+					button.close(type="button" data-dismiss="modal" aria-label="Close")
+						span(aria-hidden="true") &times;
+				.modal-body
+					if block 
+						block 
+					else
+						p Empty
+				.modal-footer
+					a(href="" type="button" data-dismiss="modal") Close
+
 block content
 	.container
-		h1 Code
-		br
+		h1 My Coding Journey
+		p (so far)
 		#timeline: .timeline
 			+timelineElement("01","Scratch","left")
-				p body
+				p My programming experience started with Scratch. An online website which allows children to create games and animation they like using blocks and sprites. My favourite projects are ...
+				p: a#codeModalTrigger01(href="" data-toggle="modal" data-target="#codeModal01") Read More
+				img.w-100(src="images/code-scratch-0.png")
+				+modalBox("01","codeModal01","","Scratch")
+					p My programming experience started with Scratch. An online website which allows children to create games and animation they like using blocks and sprites. Below are my two favourite projects I made in Scratch.
+					br
+					h4 Cheesy Puffs Game
+					p A simple game where you have to catch as many cheesy puffs from the sky.
+					p: a(href="https://scratch.mit.edu/projects/65949210/") Play
+					.row
+						.col-12.col-md-6: img.w-100(src="images/code-scratch-1.png")
+						.col-12.col-md-6: img.w-100(src="images/code-scratch-2.png")
+					br
+					h4 GROW Weather
+					p A game based on GROW, a game made by <a href="https://www.eyezmaze.com/">Eyemaze</a>. If you are unfamilar with GROW, you could read my Introduction to GROW PowerPoint below.
+					p How to play GROW?
+					ol
+						li Click the items in sequence
+						li The items will interact with each other
+						li Observe the results
+						li Improve your sequence
+						li Guess the correct sequence after millions of tries, which results in all items at level max.
+					p: a(href="https://1drv.ms/p/s!AnFF5OvoIlvWgZEoYX-qy715giRCew?e=ed2p91") Introduction to GROW PowerPoint
+					p: a(href="https://scratch.mit.edu/projects/147674805/") Play
+					.row
+						.offset-md-3
+						.col-12.col-md-6: img.w-100(src="images/code-scratch-3.png")
 			+timelineElement("02","Java and C++","right")
-				p body2
+				p After having fun with Scratch for around three years, I was eager to learn other programming languages, and I made some classic games with them.
+				p: a#codeModalTrigger02(href="" data-toggle="modal" data-target="#codeModal02") Read More
+				img.w-100(src="images/code-cpp-0.png")
+				+modalBox("02","codeModal02","","Java and C++")
+					p After having fun with Scratch for around three years, I was eager to learn other programming languages, and I made some classic games with them.
+					p: small Note that C++ programs could only run on Windows. JRE needs to be installed in order to run Java programs. For details, click on the links and refer to the documents inside.
+					p: a(href="https://drive.google.com/drive/folders/1kWwFWxx6A9JtngGi_i3UkGucF55LupYU?usp=sharing") C++: Pong Game
+					p: a(href="https://drive.google.com/drive/folders/1-Iq0xLZr2xaKVcvd4IlHjxbqXmz_O2R2?usp=sharing") C++: Snake Game
+					p: a(href="https://drive.google.com/drive/folders/10EtqrYdYdUGyHBmHiPvhcj_1ZVkBofRa?usp=sharing") Java: Guess the Number
+			+timelineElement("03","Chem Quiz","left")
+				p A website I made in form 3 to kind of help my friends in Chemistry revision. It was made using basic html, css, and javascript. :)
+				p: small Note that some of the answers might be wrong because I did not take solubility of chemicals in to account back then.
+				p: a(href="https://chemquiz.netlify.app") https://chemquiz.netlify.app
+				img.w-100(src="images/code-chemquiz-0.png")
+				br
+				img.w-100(src="images/code-chemquiz-1.png")
+			+timelineElement("04","Websites for School","right")
+				p I have made some websites for my secondary school - St. Joseph's College. 
+				p For example, as part of the Chinese Cultural Society, I suggested making a website for an online competition to facilitate Chinese learning during the COVID-19 outbreak in February 2021.
+				//- USE COLLAPSE
+				//- p I chose KeystoneJS as a framework for my website, which is a Node.js framework that allowed me to work with databases and reuse repetitive code. It was more enjoyable to create the websites by writing code than dragging and dropping elements using online website creators, since the former offers increased flexibility. The satisfaction brought by my schoolmates joining the competition and trying out the website I made was irreplaceable.  
+				p: small Very sorry I could not provide the URL here as the website is not my personal project.
+				img.w-100(src="images/code-sjc-0.png")
