@@ -165,7 +165,7 @@ body {
   border-radius: 6px;
 }
 #code #timeline .headContent {
-  padding: 20px 30px 20px 30px;
+  padding: 20px 30px 20px 20px;
 }
 #code #timeline .bodyContent {
   padding: 20px 30px 20px 30px;
@@ -320,6 +320,11 @@ body {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+}
+#hobbies .card-body {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 #hobbies .card {
   border: 2px solid #AAA;
