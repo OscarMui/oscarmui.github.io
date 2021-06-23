@@ -326,6 +326,11 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
+#hobbies .card-iamge-top {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
 #hobbies .card {
   border: 2px solid #AAA;
   background-color: #000;
