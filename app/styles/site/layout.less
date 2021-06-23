@@ -2,32 +2,14 @@ body{
 	font-family: 'Noto Sans TC', sans-serif;
 }
 
-.darkThemeColor{
-    color: #FFF;
-    background-color: #000;
-}
-.lightThemeColor{
-	color: #666;
-    background-color: #FFF;
-	h1,h2,h3,h4,h5,h6{
-		color: #000;
-	}
-}
-
 #body{
 	margin-top: 30px;
 }
 #footer {
-	margin-top: 30px;
-	border-top: 1px solid #eeeeee;
-	padding-top: 30px;
+	margin-top: 15px;
+	padding-top: 15px;
 }
-#footer.darkThemeColor {
-	color: #999;
-}
-#footer.lightThemeColor {
-	color: #666;
-}
+
 #myNav{
 	background-color: @primary-color-green;
 }
@@ -52,4 +34,36 @@ body{
 
 .btn-blue:focus{
 	box-shadow: 0 0 0 0.2rem rgba(82,109,136,.25);
+}
+
+.navbar-toggler:focus{
+	outline: 1px dotted @white-theme-bg-color;
+}
+.darkThemeColor{
+    color: #FFF;
+    background-color: #000;
+	#footer {
+		color: #999;
+		border-top: 1px solid #eee;
+	}
+	.figure-caption{
+		color: #AAA;
+	}
+	.modal-content{
+        background-color: #333;
+    }
+    .close{
+        color: #FFF;
+    }
+}
+.lightThemeColor{
+	color: #555;
+    background-color: @white-theme-bg-color;
+	h1,h2,h3,h4,h5,h6{
+		color: #000;
+	}
+	#footer {
+		color: #666;
+		border-top: 1px solid #bbb;
+	}
 }

@@ -6,7 +6,106 @@ block append variables
 	- var currentPage = "hobbies";
 	- var themeColor = "dark";
 
+mixin modalBox(id,title,param)
+	.modal.fade(id=id tabindex="-1" role="dialog" aria-labelledby=id+"Label" aria-hidden="true")
+		.modal-dialog(role="document").modal-lg
+			.modal-content
+				.modal-header
+					h3.modal-title(id=id+"Label")=title
+					button.close(type="button" data-dismiss="modal" aria-label="Close")
+						span(aria-hidden="true") &times;
+				.modal-body
+					if block 
+						block 
+					else
+						p Empty
+				.modal-footer
+					button.btn.btn-secondary(type="button" data-dismiss="modal") Close
+
 block content
-	.container
+	#hiking-bg: .container
 		h1 Hobbies
-		
+		br
+		p I enjoy hiking, swimming and cycling with friends during holidays. However, I am not a big fan of ball games. I think it is a good idea to show you photos of a few places I have been.
+		p: a#hikingModalTrigger(href="" data-toggle="modal" data-target="#hikingModal") View Photos
+		+modalBox("hikingModal","Hiking Photos","")
+			.row
+			.row
+				.col-12.col-lg-6: +figureWithCaption("images/hobbies/hobbies-hike-1.jpg","香港,西高山 Mount High West, Hong Kong","w-100")
+				.col-12.col-lg-6: +figureWithCaption("images/hobbies/hobbies-hike-2.jpg","香港,西高山 Mount High West, Hong Kong","w-100")
+			.row
+				.col-12.col-lg-6: +figureWithCaption("images/hobbies/hobbies-hike-3.jpg","香港,龍脊 Dragon's Back, Hong Kong","w-100")
+				.col-12.col-lg-6: +figureWithCaption("images/hobbies/hobbies-hike-4.jpg","香港,龍脊 Dragon's Back, Hong Kong","w-100")
+	.container
+		h2.mt-5 My current favourite ...
+		.row.cards-row
+			.col-12.col-md-6.col-xl-4.my-4.cards-col
+				.favourite-red-card.card
+					.card-header: h3 Games
+					img.card-image-top(src="images/hobbies/hobbies-minecraft-0.png")
+					.card-body
+						.card-text
+							span Active games
+							ul
+								li Minecraft
+								li Brawl Stars
+							span Ancient games
+							ul
+								li Bounce On 2
+								li Where's My Water?
+								li Temple Run
+				
+			.col-12.col-md-6.col-xl-4.my-4.cards-col
+				.favourite-red-card.card
+					.card-header: h3 Youtubers (Gaming)
+					img.card-image-top(src="images/hobbies/hobbies-yt1-0.jpg")
+					.card-body
+						ul.card-text
+							li Hermitcraft
+							ul
+								li Grian
+								li Iskall85
+							li KairosTime Gaming
+							li gamerboy80
+
+			.col-12.col-md-6.col-xl-4.my-4.cards-col
+				.favourite-red-card.card
+					.card-header: h3 Youtubers (Learning)
+					img.card-image-top(src="images/hobbies/hobbies-yt2-0.jpg")
+					.card-body
+						ul.card-text
+							li Primer
+							li NileRed
+							li Amoeba Sisters 
+							li thenewboston
+							li mycodeschool
+
+			.col-12.col-md-6.col-xl-4.my-4.cards-col
+				.favourite-green-card.card
+					.card-header: h3 Books
+					img.card-image-top(src="images/hobbies/hobbies-books-0.png")
+					.card-body
+						p.card-text: ul
+							li The Five People You Meet in Heaven
+							li Who Moved My Cheese?
+							li The Legend of the Condor Heroes (射鵰英雄傳)
+
+			.col-12.col-md-6.col-xl-4.my-4.cards-col
+				.favourite-green-card.card
+					.card-header: h3 Movies
+					img.card-image-top(src="images/hobbies/hobbies-movies-0.jpg")
+					.card-body
+						p.card-text: ul
+							li Inside Out 
+							li The Truman Show
+							li Ready Player One
+
+			.col-12.col-md-6.col-xl-4.my-4.cards-col
+				.favourite-green-card.card
+					.card-header: h3 Chess
+					img.card-image-top(src="images/hobbies/hobbies-chess-0.jpg")
+					.card-body
+						p.card-text: ul
+							li The Game of Life
+							li For Sale
+		br
