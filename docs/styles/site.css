@@ -8,30 +8,6 @@
 body {
   font-family: 'Noto Sans TC', sans-serif;
 }
-.darkThemeColor {
-  color: #FFF;
-  background-color: #000;
-}
-.darkThemeColor #footer {
-  color: #999;
-  border-top: 1px solid #eee;
-}
-.lightThemeColor {
-  color: #555;
-  background-color: #f7f7f7;
-}
-.lightThemeColor h1,
-.lightThemeColor h2,
-.lightThemeColor h3,
-.lightThemeColor h4,
-.lightThemeColor h5,
-.lightThemeColor h6 {
-  color: #000;
-}
-.lightThemeColor #footer {
-  color: #666;
-  border-top: 1px solid #bbb;
-}
 #body {
   margin-top: 30px;
 }
@@ -59,6 +35,39 @@ body {
 .btn-blue:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(82, 109, 136, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(82, 109, 136, 0.25);
+}
+.darkThemeColor {
+  color: #FFF;
+  background-color: #000;
+}
+.darkThemeColor #footer {
+  color: #999;
+  border-top: 1px solid #eee;
+}
+.darkThemeColor .figure-caption {
+  color: #AAA;
+}
+.darkThemeColor .modal-content {
+  background-color: #333;
+}
+.darkThemeColor .close {
+  color: #FFF;
+}
+.lightThemeColor {
+  color: #555;
+  background-color: #f7f7f7;
+}
+.lightThemeColor h1,
+.lightThemeColor h2,
+.lightThemeColor h3,
+.lightThemeColor h4,
+.lightThemeColor h5,
+.lightThemeColor h6 {
+  color: #000;
+}
+.lightThemeColor #footer {
+  color: #666;
+  border-top: 1px solid #bbb;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -275,4 +284,34 @@ body {
   #code .grey-color-text {
     text-align: left;
   }
+}
+#hobbies #body {
+  margin-top: 0;
+}
+#hobbies #hiking-bg {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* The image used */
+  background-image: url("../images/hobbies-hike-0.jpg");
+  /* Min height */
+  min-height: 300px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#hobbies .card {
+  border: 2px solid #AAA;
+  background-color: #000;
+  margin-top: 2rem;
+  height: 100%;
+}
+#hobbies .card-header:first-child {
+  border-radius: 0;
+}
+#hobbies .favourite-green-card .card-header {
+  background-color: #254117;
+}
+#hobbies .favourite-red-card .card-header {
+  background-color: #600;
 }

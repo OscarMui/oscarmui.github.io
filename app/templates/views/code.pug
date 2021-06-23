@@ -5,8 +5,8 @@ block js
 block append variables 
 	- var currentPage = "code";
 
-mixin timelineElement(number,title,position)
-	.container(class=position+" arrowColor"+number)
+mixin timelineElement(number,title,param)
+	.container(class=param+" arrowColor"+number)
 		.content.shadow.rounded
 			.headContent(class="backgroundColor"+number)
 				.numberBox(class="backgroundColorDark"+number)
@@ -18,7 +18,7 @@ mixin timelineElement(number,title,position)
 				else
 					p Empty
 
-mixin modalBox(number,id,type,title)
+mixin modalBox(number,id,title,param)
 	.modal.fade(id=id tabindex="-1" role="dialog" aria-labelledby=id+"Label" aria-hidden="true")
 		.modal-dialog(role="document").modal-lg
 			.modal-content
@@ -40,18 +40,18 @@ block content
 		p (so far)
 		#timeline: .timeline
 			+timelineElement("01","Scratch","left")
-				p My programming experience started with Scratch. An online website which allows children to create games and animation they like using blocks and sprites. My favourite projects are ...
+				p My programming experience started with Scratch. I really enjoy creating games and animation using blocks and sprites when I was small. My favourite projects are ...
 				p: a#codeModalTrigger01(href="" data-toggle="modal" data-target="#codeModal01") Read More
-				img.w-100(src="images/code-scratch-0.png")
-				+modalBox("01","codeModal01","","Scratch")
-					p My programming experience started with Scratch. An online website which allows children to create games and animation they like using blocks and sprites. Below are my two favourite projects I made in Scratch.
+				+figureWithCaption("images/code-scratch-0.png","Cover page of my Scratch game","w-100")
+				+modalBox("01","codeModal01","Scratch","")
+					p My programming experience started with Scratch. I really enjoy creating games and animation using blocks and sprites when I was small. Below are my two favourite projects I made in Scratch.
 					br
 					h4 Cheesy Puffs Game
 					p A simple game where you have to catch as many cheesy puffs from the sky.
 					p: a(href="https://scratch.mit.edu/projects/65949210/") Play
 					.row
-						.col-12.col-md-6: img.w-100(src="images/code-scratch-1.png")
-						.col-12.col-md-6: img.w-100(src="images/code-scratch-2.png")
+						.col-12.col-lg-6: +figureWithCaption("images/code-scratch-1.png","Gameplay","w-100")
+						.col-12.col-lg-6: +figureWithCaption("images/code-scratch-2.png","A portion of the Scratch code","w-100")
 					br
 					h4 GROW Weather
 					p A game based on GROW, a game made by <a href="https://www.eyezmaze.com/">Eyemaze</a>. If you are unfamilar with GROW, you could read my Introduction to GROW PowerPoint below.
@@ -65,34 +65,38 @@ block content
 					p: a(href="https://1drv.ms/p/s!AnFF5OvoIlvWgZEoYX-qy715giRCew?e=ed2p91") Introduction to GROW PowerPoint
 					p: a(href="https://scratch.mit.edu/projects/147674805/") Play
 					.row
-						.offset-md-3
-						.col-12.col-md-6: img.w-100(src="images/code-scratch-3.png")
+						.offset-lg-3
+						.col-12.col-lg-6: +figureWithCaption("images/code-scratch-3.png","Gameplay","w-100")
+			
 			+timelineElement("02","Java and C++","right")
 				p After having fun with Scratch for around three years, I was eager to learn other programming languages, and I made some classic games with them.
 				p: a#codeModalTrigger02(href="" data-toggle="modal" data-target="#codeModal02") Read More
-				img.w-100(src="images/code-cpp-0.png")
-				+modalBox("02","codeModal02","","Java and C++")
+				+figureWithCaption("images/code-cpp-0.png","Snake Game","w-100")
+				+modalBox("02","codeModal02","Java and C++","")
 					p After having fun with Scratch for around three years, I was eager to learn other programming languages, and I made some classic games with them.
 					p: small Note that C++ programs could only run on Windows. JRE needs to be installed in order to run Java programs. For details, click on the links and refer to the documents inside.
 					p: a(href="https://drive.google.com/drive/folders/1kWwFWxx6A9JtngGi_i3UkGucF55LupYU?usp=sharing") C++: Pong Game
 					p: a(href="https://drive.google.com/drive/folders/1-Iq0xLZr2xaKVcvd4IlHjxbqXmz_O2R2?usp=sharing") C++: Snake Game
 					p: a(href="https://drive.google.com/drive/folders/10EtqrYdYdUGyHBmHiPvhcj_1ZVkBofRa?usp=sharing") Java: Guess the Number
+			
 			+timelineElement("03","Chem Quiz","left")
 				p A website I made in form 3 to kind of help my friends in Chemistry revision. It was made using basic html, css, and javascript. :)
 				p: small Note that some of the answers might be wrong because I did not take solubility of chemicals in to account back then.
 				p: a(href="https://chemquiz.netlify.app") chemquiz.netlify.app
-				img.w-100(src="images/code-chemquiz-0.png")
+				+figureWithCaption("images/code-chemquiz-0.png","Chemical formula to name quiz","w-100")
+			
 			+timelineElement("04","Websites for School","right")
 				p I have made some websites for my secondary school - St. Joseph's College. 
 				p For example, as part of the Chinese Cultural Society, I suggested making a website for an online competition to facilitate Chinese learning during the COVID-19 outbreak in February 2020.
 				p: a#codeModalTrigger04(href="" data-toggle="modal" data-target="#codeModal04") Read More
-				+modalBox("04","codeModal04","","Websites for School")
+				+modalBox("04","codeModal04","Websites for School","")
 					p I have made some websites for my secondary school - St. Joseph's College. 
 					p For example, as part of the Chinese Cultural Society, I suggested making a website for an online competition to facilitate Chinese learning during the COVID-19 outbreak in February 2020.
 					p I chose KeystoneJS as a framework for my website, which is a Node.js framework that allowed me to work with databases and reuse repetitive code. It was more enjoyable to create the websites by writing code than dragging and dropping elements using online website creators, since the former offers increased flexibility. The satisfaction brought by my schoolmates joining the competition and trying out the website I made was irreplaceable.
 					p I would like to give special thanks to Anders, an old boy of SJC who taught me how to use Git, WSL, and more web development skills including the mentioned framework.
 					p Very sorry I could not provide the URL here as these website are not my personal projects.
-				img.w-100(src="images/code-sjc-0.png")
+				+figureWithCaption("images/code-sjc-0.png","Homepage of the Chinese online compeition website","w-100")
+			
 			+timelineElement("05","HyMinions","left")
 				p I have been playing a game called Hypixel Skyblock since 2020. I created a website calculating the optimal setup to maximize offline income based on the real-time market price of the game.
 				p I originally made this website just to fulfill my interest in Maths, coding, and the game. However, thanks to the promotion by Youtubers, the website is known to many Hypixel Skyblock players. Currently, it has over 500 daily viewers and it is generating a considerable amount of ad revenue! It is a miracle to me of being able to earn money through a passion project.
@@ -100,13 +104,12 @@ block content
 				a(data-toggle="modal" data-target="#codeModal05"): img.w-100(src="images/code-hyminions-0.png")
 				br
 				p: a#codeModalTrigger05(href="" data-toggle="modal" data-target="#codeModal05") View Photos
-				+modalBox("05","codeModal05","","HyMinions")
-					p Some screenshots of HyMinions (PLACEHOLDERS NOW)
+				+modalBox("05","codeModal05","HyMinions","")
 					.row
-						.col-12.col-md-6: img.w-100(src="images/code-scratch-0.png")
-						.col-12.col-md-6: img.w-100(src="images/code-scratch-1.png")
+						.col-12.col-lg-6: +figureWithCaption("images/code-hyminions-1.png","A portion of the homepage","w-100")
+						.col-12.col-lg-6: +figureWithCaption("images/code-hyminions-2.png","Events timer","w-100")
 					.row
-						.col-12.col-md-6: img.w-100(src="images/code-scratch-2.png")
-						.col-12.col-md-6: img.w-100(src="images/code-scratch-3.png")
+						.col-12.col-lg-6: +figureWithCaption("images/code-hyminions-3.png","Profit calculator","w-100")
+						.col-12.col-lg-6: +figureWithCaption("images/code-hyminions-4.png","Looks good on mobile","w-100")
 		br
 		p.grey-color-text To be continued!
