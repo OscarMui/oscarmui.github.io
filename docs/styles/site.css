@@ -300,11 +300,21 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#hobbies .cards-row {
+  margin-top: -15px;
+}
+#hobbies .cards-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
 #hobbies .card {
   border: 2px solid #AAA;
   background-color: #000;
   margin-top: 2rem;
-  height: 100%;
 }
 #hobbies .card-header:first-child {
   border-radius: 0;

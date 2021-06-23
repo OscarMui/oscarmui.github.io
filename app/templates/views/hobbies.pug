@@ -31,16 +31,15 @@ block content
 		+modalBox("hikingModal","Hiking Photos","")
 			.row
 			.row
-				.col-12.col-lg-6: +figureWithCaption("images/hobbies-hike-1.jpg","A portion of the homepage","w-100")
-				.col-12.col-lg-6: +figureWithCaption("images/hobbies-hike-2.jpg","Events timer","w-100")
+				.col-12.col-lg-6: +figureWithCaption("images/hobbies-hike-1.jpg","香港,西高山 Mount High West, Hong Kong","w-100")
+				.col-12.col-lg-6: +figureWithCaption("images/hobbies-hike-2.jpg","香港,西高山 Mount High West, Hong Kong","w-100")
 			.row
-				.col-12.col-lg-6: +figureWithCaption("images/hobbies-hike-3.jpg","Profit calculator","w-100")
-				.col-12.col-lg-6: +figureWithCaption("images/hobbies-hike-4.jpg","Looks good on mobile","w-100")
+				.col-12.col-lg-6: +figureWithCaption("images/hobbies-hike-3.jpg","香港,龍脊 Dragon's Back, Hong Kong","w-100")
+				.col-12.col-lg-6: +figureWithCaption("images/hobbies-hike-4.jpg","香港,龍脊 Dragon's Back, Hong Kong","w-100")
 	.container
-		br
-		h2 My current favourite ...
-		.row
-			.col-12.col-md-6.col-xl-4.my-4
+		h2.mt-5 My current favourite ...
+		.row.cards-row
+			.col-12.col-md-6.col-xl-4.my-4.cards-col
 				.favourite-red-card.card
 					.card-header: h3 Games
 					img.card-image-top(src="images/hobbies-minecraft-0.png")
@@ -56,7 +55,7 @@ block content
 								li Where's My Water?
 								li Temple Run
 				
-			.col-12.col-md-6.col-xl-4.my-4
+			.col-12.col-md-6.col-xl-4.my-4.cards-col
 				.favourite-red-card.card
 					.card-header: h3 Youtubers (Gaming)
 					img.card-image-top(src="images/hobbies-yt1-0.jpg")
@@ -69,7 +68,7 @@ block content
 							li KairosTime Gaming
 							li gamerboy80
 
-			.col-12.col-md-6.col-xl-4.my-4
+			.col-12.col-md-6.col-xl-4.my-4.cards-col
 				.favourite-red-card.card
 					.card-header: h3 Youtubers (Learning)
 					img.card-image-top(src="images/hobbies-yt2-0.jpg")
@@ -81,7 +80,7 @@ block content
 							li thenewboston
 							li mycodeschool
 
-			.col-12.col-md-6.col-xl-4.my-4
+			.col-12.col-md-6.col-xl-4.my-4.cards-col
 				.favourite-green-card.card
 					.card-header: h3 Books
 					img.card-image-top(src="images/hobbies-books-0.png")
@@ -91,7 +90,7 @@ block content
 							li Who Moved My Cheese?
 							li The Legend of the Condor Heroes (射鵰英雄傳)
 
-			.col-12.col-md-6.col-xl-4.my-4
+			.col-12.col-md-6.col-xl-4.my-4.cards-col
 				.favourite-green-card.card
 					.card-header: h3 Movies
 					img.card-image-top(src="images/hobbies-movies-0.jpg")
@@ -101,7 +100,7 @@ block content
 							li The Truman Show
 							li Ready Player One
 
-			.col-12.col-md-6.col-xl-4.my-4
+			.col-12.col-md-6.col-xl-4.my-4.cards-col
 				.favourite-green-card.card
 					.card-header: h3 Chess
 					img.card-image-top(src="images/hobbies-chess-0.jpg")
