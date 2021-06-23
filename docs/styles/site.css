@@ -313,11 +313,28 @@ body {
 #hobbies .cards-row {
   margin-top: -15px;
 }
+#hobbies .cards-row .cards-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+#hobbies .cards-row .card-body {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+#hobbies .cards-row .card-iamge-top {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
 #hobbies .cards-row .card {
   border: 2px solid #AAA;
   background-color: #000;
   margin-top: 2rem;
-  height: 100%;
 }
 #hobbies .cards-row .card-header:first-child {
   border-radius: 0;
