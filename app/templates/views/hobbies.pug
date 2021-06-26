@@ -26,7 +26,7 @@ block content
 	#hiking-bg: .container
 		h1 Hobbies
 		br
-		p I enjoy hiking, swimming and cycling with friends during holidays. However, I am not a big fan of ball games. I think it is a good idea to show you photos of a few places I have been.
+		p I enjoy hiking, swimming and cycling with friends during holidays. I think it is a good idea to show you photos of a few places I have been.
 		p: a#hikingModalTrigger(href="" data-toggle="modal" data-target="#hikingModal") View Photos
 		+modalBox("hikingModal","Hiking Photos","")
 			.row
@@ -44,16 +44,10 @@ block content
 					.card-header: h3 Video Games
 					img.card-image-top(src="images/hobbies/hobbies-minecraft-0.png").w-100
 					.card-body
-						.card-text
-							span Active games
-							ul
-								li Minecraft
-								li Brawl Stars
-							span Ancient games
-							ul
-								li Bounce On 2
-								li Where's My Water?
-								li Temple Run
+						ul.card-text
+							li Minecraft
+							li Brawl Stars
+							li Bounce On 2
 				
 			.col-12.col-md-6.col-xl-4.my-4.cards-col
 				.favourite-red-card.card
@@ -66,7 +60,6 @@ block content
 								li Grian
 								li Iskall85
 							li KairosTime Gaming
-							li gamerboy80
 
 			.col-12.col-md-6.col-xl-4.my-4.cards-col
 				.favourite-red-card.card
