@@ -11,30 +11,23 @@ body {
 #body {
   margin-top: 30px;
 }
+#body a,
+#body a:hover {
+  text-decoration: none;
+}
+#body .btn-link,
+#body .btn-link:hover {
+  text-decoration: none;
+}
+#body .btn-link {
+  padding-left: 0;
+}
 #footer {
   margin-top: 15px;
   padding-top: 15px;
 }
 #myNav {
   background-color: #2E9E22;
-}
-#body a {
-  text-decoration: none;
-}
-#body a:hover {
-  text-decoration: none;
-}
-.btn-blue {
-  background-color: #627D98;
-  color: #FFF;
-}
-.btn-blue:hover {
-  background-color: #526D88;
-  color: #FFF;
-}
-.btn-blue:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(82, 109, 136, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(82, 109, 136, 0.25);
 }
 .navbar-toggler:focus {
   outline: 1px dotted #f7f7f7;

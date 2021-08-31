@@ -27,7 +27,7 @@ block content
 		h1 Hobbies
 		br
 		p I enjoy hiking, swimming and cycling with friends during holidays. I think it is a good idea to show you photos of a few places I have been.
-		p: a#hikingModalTrigger(href="" data-toggle="modal" data-target="#hikingModal") View Photos
+		p: button#hikingModalTrigger.btn.btn-link(data-toggle="modal" data-target="#hikingModal") View Photos
 		+modalBox("hikingModal","Hiking Photos","")
 			.row
 			.row

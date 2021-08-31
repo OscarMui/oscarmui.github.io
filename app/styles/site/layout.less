@@ -4,6 +4,15 @@ body{
 
 #body{
 	margin-top: 30px;
+	a, a:hover{
+		text-decoration: none; 
+	}
+	.btn-link, .btn-link:hover{
+		text-decoration: none; 
+	}
+	.btn-link{
+		padding-left: 0;
+	}
 }
 #footer {
 	margin-top: 15px;
@@ -12,28 +21,6 @@ body{
 
 #myNav{
 	background-color: @primary-color-green;
-}
-
-#body a{
-	text-decoration: none; 
-}
-
-#body a:hover { 
-	text-decoration: none; 
-} 
-.btn-blue {
-	background-color: @primary-color-blue;
-	color: #FFF;
-
-}
-
-.btn-blue:hover {
-	background-color: @primary-color-blue-hover;
-	color: #FFF;
-}
-
-.btn-blue:focus{
-	box-shadow: 0 0 0 0.2rem rgba(82,109,136,.25);
 }
 
 .navbar-toggler:focus{
