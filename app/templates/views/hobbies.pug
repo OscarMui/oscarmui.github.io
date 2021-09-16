@@ -45,10 +45,61 @@ block content
 					img.card-image-top(src="images/hobbies/hobbies-minecraft-0.png").w-100
 					.card-body
 						ul.card-text
-							li Minecraft
-							li Brawl Stars
-							li Bounce On 2
-				
+							li 
+								span Minecraft &nbsp;
+								i.fas.fa-lg.fa-info-circle(data-toggle="modal" data-target="#minecraftModal")
+								+modalBox("minecraftModal","Minecraft","")
+									p Minecraft has been a successful game developed by Mojang. As it is a sandbox game, different people would find themselves having fun with different modes available, including survival, speedrunning, building, and minigames provided by servers.
+									p I have been playing a server named Hypixel for a few years. In fact, I have created <a href="code.html#code05">HyMinions</a> based on Hypixel Skyblock.
+									a(href="https://www.minecraft.net/") Learn More (Minecraft)
+									a(href="https://www.hypixel.net/") Learn More (Hypixel)
+									.row
+										.col-12.col-lg-6: +figureWithCaption("images/hobbies/hobbies-minecraft-1.png","My survival Minecraft house","w-100")
+										.col-12.col-lg-6: +figureWithCaption("images/hobbies/hobbies-minecraft-2.png","香港,西高山 Mount High West, Hong Kong","w-100")
+									.row
+										.col-12.col-lg-6: +figureWithCaption("images/hobbies/hobbies-minecraft-3.png","香港,龍脊 Dragon's Back, Hong Kong","w-100")
+										.col-12.col-lg-6: +figureWithCaption("images/hobbies/hobbies-minecraft-4.png","香港,龍脊 Dragon's Back, Hong Kong","w-100")
+							li 
+								span Brawl Stars &nbsp;
+								i.fas.fa-lg.fa-info-circle(data-toggle="modal" data-target="#brawlStarsModal")
+								+modalBox("brawlStarsModal","Brawl Stars","")
+									p Fast-paced 3v3 multiplayer battle game created by Supercell. I think what makes Brawl Stars the popular game as it is, is the frequent updates, constantly releasing new brawlers and gamemodes, continuing bringing freshness to the game.
+									p I am also obsessed with the Brawl Stars lore. It is said that Brawl Stars was originally a theme park, but something weird happened to transform the visitors, staff, and even objects of the park to become the brawlers players fight with today.
+									a(href="https://supercell.com/en/games/brawlstars/") Learn More
+									.row
+										.col-12.col-lg-6: +figureWithCaption("images/hobbies/hobbies-brawl-stars-1.png","My survival Minecraft house","w-100")
+										.col-12.col-lg-6: +figureWithCaption("images/hobbies/hobbies-brawl-stars-2.png","香港,西高山 Mount High West, Hong Kong","w-100")
+									.row
+										.col-12.col-lg-6: +figureWithCaption("images/hobbies/hobbies-brawl-stars-3.png","香港,龍脊 Dragon's Back, Hong Kong","w-100")
+										.col-12.col-lg-6: +figureWithCaption("images/hobbies/hobbies-brawl-stars-4.png","香港,龍脊 Dragon's Back, Hong Kong","w-100")
+							li
+								span Bounce On 2 &nbsp;
+									i.fas.fa-lg.fa-info-circle(data-toggle="modal" data-target="#bounceOnModal")
+									+modalBox("bounceOnModal","Bounce On 2","")
+										p This is one of my favourite games back when I was small. A ball rolling game with the aim to defeat the final boss "Dorallo"
+										p Even though the game is already not available on App Store and Google Play, I managed to find the APK of the game and I still replay it occasionally up till today.
+										a(href="https://drive.google.com/file/d/1Ml6ihtDffo5VmmUsuKD1d29DlBih_ckc/view?usp=sharing") Download APK
+										.row
+											.col-12.col-lg-6: +figureWithCaption("images/hobbies/hobbies-bouce-on-1.png","My survival Minecraft house","w-100")
+											.col-12.col-lg-6: +figureWithCaption("images/hobbies/hobbies-bouce-on-2.png","香港,西高山 Mount High West, Hong Kong","w-100")
+										.row
+											.col-12.col-lg-6: +figureWithCaption("images/hobbies/hobbies-bouce-on-3.png","香港,龍脊 Dragon's Back, Hong Kong","w-100")
+											.col-12.col-lg-6: +figureWithCaption("images/hobbies/hobbies-bouce-on-4.png","香港,龍脊 Dragon's Back, Hong Kong","w-100")
+							li
+								span Mini Motorways & Mini Metro
+									p I played Mini Metro a few years ago, and Mini Motorways is just a much more complex version of it! Their easy yet fun game mechanics paired with simplistic User Interfaces successfully catch my eye.
+									p Both games are developed by Dinosaur Polo Club
+									a(href="https://dinopoloclub.com/") Learn More
+									h4 Mini Motorways
+									p Connect the houses to the supermarkets of the corresponding colour, this seemed simple task gets more and more complicated as the map expands. The game ends when there are not enough cars arriving the supermarkets on time.
+									.row
+										.col-12.col-lg-6: +figureWithCaption("images/hobbies/hobbies-mini-motorways-1.png","The game started out simple","w-100")
+										.col-12.col-lg-6: +figureWithCaption("images/hobbies/hobbies-mini-motorways-2.png","Mini metro gameplay - St. Petersburg - 2744 (New record)","w-100")
+									h4 Mini Metro
+									p Similar to Mini Motorways, our aim is to transfer the passengers (labelled in black-coloured shapes) to the corresponding station (laballed in white-coloured shapes). Your goal is to transfer as many passengers as possible without congestion.
+									.row
+										.col-12.col-lg-6: +figureWithCaption("images/hobbies/hobbies-mini-metro-1.jpeg","A high score of 2744 in the St. Petersburg map","w-100")
+										.col-12.col-lg-6: +figureWithCaption("images/hobbies/hobbies-mini-metro-2.jpeg","Tried to minic the MTR system map with the Hong Kong map in-game.","w-100")
 			.col-12.col-md-6.col-xl-4.my-4.cards-col
 				.favourite-red-card.card
 					.card-header: h3 Youtubers (Gaming)
@@ -58,7 +109,8 @@ block content
 							li Hermitcraft
 							ul
 								li Grian
-								li Iskall85
+								li GoodTimesWithScar
+								li XisumaVoid
 							li KairosTime Gaming
 
 			.col-12.col-md-6.col-xl-4.my-4.cards-col
