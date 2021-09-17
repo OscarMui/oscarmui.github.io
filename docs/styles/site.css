@@ -338,3 +338,10 @@ body {
 #hobbies .cards-row .favourite-red-card .card-header {
   background-color: #600;
 }
+#hobbies .insideOutMovieCover {
+  width: 100%;
+  max-width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

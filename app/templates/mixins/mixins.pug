@@ -1,6 +1,6 @@
 mixin figureWithCaption(source,caption,param)
 	figure.figure
-		img(src=source class=(param=="w-100"?"w-100":undefined))
+		img(src=source class=(param=="w-100"||param=="movieCover"?param:undefined))
 		figcaption.figure-caption=caption
 
 mixin flash-messages(messages)
