@@ -1,0 +1,91 @@
+extends ../layouts/default
+
+block js
+
+block append variables 
+	- var currentPage = "oxford";
+
+block content
+	.container
+		h1 Oxford
+		p Facts + my personal experience in Oxford. Sorry I have to blur the faces because the website is public. :(
+
+		h2.mt-5 Contents
+		hr
+		ul
+			li
+				| <a href="#colleges"> College System</a>
+				ul
+					li: a(href="#univ") University College
+					li: a(href="#otherColleges") Other Colleges and University-wide Buildings
+			li: a(href="#terms") Term Dates
+			li: a(href="#course") My Course
+			li: a(href="#bike") Biking in Oxford
+			li: a(href="#images") More Images
+
+		h2#colleges.mt-5 College System
+		hr
+		p Oxford has a college system (similar to CUHK). The accommodation and food differ depending on which college you are in. However, we will have our lectures and practicals in the Computer Science Department regardless which college you are in.
+
+		p Instead of a centralized campus like most universities in Hong Kong, the colleges and departments are scattered around the city, which felt a strange thing to me at first.
+
+		h3#univ University College
+		p My college is called University College (Univ), one of the oldest colleges in Oxford. Here are some pictures of what my college looks like (with captions). It is moderately sized and it looks nice and old. :)
+
+		.row
+			.col-12.col-lg-6: +figureWithCaption("images/oxford/univ-main-quad.jpg","Main Quad of Univ (A quad at Oxford is a green square or rectangular space enclosed by college buildings.)","w-100")
+			.col-12.col-lg-6: +figureWithCaption("images/oxford/univ-hall.jpg","Hall at Univ (Hall is where we have our meals and some social activities, some colleges use their hall for examinations as well)","w-100")
+		.row
+			.col-12.col-lg-6: +figureWithCaption("images/oxford/univ-old-lib-interior.jpg","College Old Library (Interior)","w-100")
+			//-! TODO
+			.col-12.col-lg-6: +figureWithCaption("images/oxford/univ-logic-lane.jpg","Logic Lane - A public lane that is surrounded by the college","w-100")
+		h3#otherColleges Other Colleges and University-wide Buildings
+		.row
+			.col-12.col-lg-6: +figureWithCaption("images/oxford/rad-cam.jpg","Radcliff Camera, an iconic library at Oxford","w-100")
+			.col-12.col-lg-6: +figureWithCaption("images/oxford/christ-church-hall.jpg","Hall of Christ Church College - the one featured in the Harry Potter movies","w-100")
+		.row
+			.col-12.col-lg-6: +figureWithCaption("images/oxford/magdalen.jpg","Magdalen College, which looks like a castle with a tall (in Oxford scale) tower","w-100")
+			.col-12.col-lg-6: +figureWithCaption("images/oxford/christ-church-exterior.jpg","Christ Church College, much larger than Univ indeed","w-100")
+		h2#terms.mt-5 Term Dates
+		hr
+		p There are three terms every academic year in Oxford, with weird names.
+		ul 
+			li Michaelmas Term - early October to early December
+			li Hilary Term - mid January to mid March
+			li Trinity Term - late April to late June
+
+		p Each term is 8 weeks long, which is an extremely short time to squeeze everything in. As a side effect, we will have collections (a mini exam) after each break, so around half of the six-week long holiday between terms is usually used as revision (at least for me). The term breaks are really the time I managed to digest all the content last term and get ready for another hectic eight weeks. 
+
+
+		h2#course.mt-5 My Course
+		p My course is 4-year course with an integrated master's degree. (I could choose to leave after third year with a bachelor's degree, but that's a decision for future me)
+		p The Computer Science courses in Oxford feels a lot more math oriented than I thought. I was quite shocked by the amount of Mathematics I saw at first. But now I understand that good foundation in Math (especially Linear Algebra) is crucial to truly understand Artificial Intelligence and Computer Graphics. Besides, the practical things like making websites and such can be self-taught, which is what I have been doing over the years. 
+		p A typical week for a first year: We will have around 8 hours of lectures per week. We have around 3 tutorials per week, which are small group teaching sessions (usually 1 to 2-3), it is a good learning opportunity to clarify something that I am not too sure, to ask questions, and to learn more about the topic in general. Although each of them is only 1 hour long, what usually takes more time are the problem sheets (worksheets) that we have to complete before each tutorial.  
+		p Things might be more hectic next year, I will see...
+		p There are no common cores (i.e. courses that are not too related to your subject), which is extremely great for somebody who enjoys Computer Science like me.
+
+		h2#bike.mt-5 Biking in Oxford
+		p As I said my college is only moderately sized, meaning that I will have to live offsite in my second and fourth year. Knowing that I might need a bike next year, I bought one in March. Riding a bike on the road is certainly scary, but quite fun as well. :) (More updates on that later)
+
+		h2#images.mt-5 Random Images
+		p More images
+		//- .row
+		//- 	.col-12.col-lg-6: +figureWithCaption("images/oxford/univ-first-year-room.jpg","My first year accomodation. I got a room with a shared study. (The study room is shared with my roommate, while both of us have our own bedroom)","w-100")
+		//- 	.col-12.col-lg-6: +figureWithCaption("images/oxford/univ-hall.jpg","Dining Hall at Univ","w-100")
+		//- .row
+		//- 	.col-12.col-lg-6: +figureWithCaption("images/oxford/univ1.jpg","Arrival day, time to get my room keys!","w-100")
+		//- 	.col-12.col-lg-6: +figureWithCaption("images/oxford/univ2.jpg","My first breakfast at Univ","w-100")
+		//- .row
+		//- 	.col-12.col-lg-6: +figureWithCaption("images/oxford/univ3.jpg","Dining Hall at Univ","w-100")
+		//- 	.col-12.col-lg-6: +figureWithCaption("images/oxford/univ4.jpg","Dessert of my first Formal Dinner","w-100")
+		//- .row
+		//- 	//-! TODO
+		//- 	.col-12.col-lg-6: +figureWithCaption("images/oxford/univ5.jpg","Univ Old Library (Exterior)","w-100")
+		//- 	.col-12.col-lg-6: +figureWithCaption("images/oxford/univ6.jpg","Univ Old Library (Interior)","w-100")
+		//- .row
+		//- 	.col-12.col-lg-6: +figureWithCaption("images/oxford/univ7.jpg","Radcliff Camera, an iconic library at Oxford","w-100")
+		//- 	.col-12.col-lg-6: +figureWithCaption("images/oxford/univ8.jpg","A strange hobbit door at Univ","w-100")
+
+
+		p Feel free to <a href="/contacts">contact me</a> if you think any of the facts above are incorrect.
+		p More to add
