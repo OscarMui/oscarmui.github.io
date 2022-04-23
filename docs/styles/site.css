@@ -79,6 +79,15 @@ body {
 #code .modal-content {
   border: none;
 }
+#code .languagesGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 20px;
+}
 #code #timeline {
   /* The actual timeline (the vertical ruler) */
   /* The actual timeline (the vertical ruler) */
