@@ -190,71 +190,101 @@ body {
   font-family: 'Noto Serif TC', sans-serif;
   color: #FFF;
 }
-#code #timeline .backgroundColorDark01 {
-  background-color: #ccdad5;
-}
-#code #timeline .backgroundColor01 {
+#code #timeline .backgroundColor1 {
   background-color: #ecfaf5;
 }
-#code #timeline .arrowColor01::before {
+#code #timeline .arrowColor1::before {
   border: medium solid #ecfaf5;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #ecfaf5;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #ecfaf5 transparent transparent;
 }
-#code #timeline .backgroundColorDark02 {
-  background-color: #85bea8;
-}
-#code #timeline .backgroundColor02 {
+#code #timeline .backgroundColor2 {
   background-color: #a5dec8;
 }
-#code #timeline .arrowColor02::before {
+#code #timeline .arrowColor2::before {
   border: medium solid #a5dec8;
-  border-width: 10px 10px 10px 0;
+  border-width: 10px 0 10px 10px;
   border-color: transparent #a5dec8 transparent transparent;
 }
-#code #timeline .backgroundColorDark03 {
-  background-color: #daaa62;
-}
-#code #timeline .backgroundColor03 {
+#code #timeline .backgroundColor3 {
   background-color: #faca82;
 }
-#code #timeline .arrowColor03::before {
+#code #timeline .arrowColor3::before {
   border: medium solid #faca82;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #faca82;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #faca82 transparent transparent;
 }
-#code #timeline .backgroundColorDark04 {
-  background-color: #DF9A8C;
-}
-#code #timeline .backgroundColor04 {
+#code #timeline .backgroundColor4 {
   background-color: #FFCAAC;
 }
-#code #timeline .arrowColor04::before {
+#code #timeline .arrowColor4::before {
   border: medium solid #FFCAAC;
-  border-width: 10px 10px 10px 0;
+  border-width: 10px 0 10px 10px;
   border-color: transparent #FFCAAC transparent transparent;
 }
-#code #timeline .backgroundColorDark05 {
-  background-color: #829DA8;
-}
-#code #timeline .backgroundColor05 {
+#code #timeline .backgroundColor5 {
   background-color: #B2CDE8;
 }
-#code #timeline .arrowColor05::before {
+#code #timeline .arrowColor5::before {
   border: medium solid #B2CDE8;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #B2CDE8;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #B2CDE8 transparent transparent;
 }
-#code #timeline .backgroundColorDark06 {
-  background-color: #777;
-}
-#code #timeline .backgroundColor06 {
+#code #timeline .backgroundColor6 {
   background-color: #999;
 }
-#code #timeline .arrowColor06::before {
+#code #timeline .arrowColor6::before {
   border: medium solid #999;
-  border-width: 10px 10px 10px 0;
+  border-width: 10px 0 10px 10px;
   border-color: transparent #999 transparent transparent;
+}
+#code #timeline .backgroundColorDark1 {
+  background-color: #ccdad5;
+}
+#code #timeline .arrowColor1::before {
+  border: medium solid #ccdad5;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #ccdad5 transparent transparent;
+}
+#code #timeline .backgroundColorDark2 {
+  background-color: #85bea8;
+}
+#code #timeline .arrowColor2::before {
+  border: medium solid #85bea8;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent #85bea8 transparent transparent;
+}
+#code #timeline .backgroundColorDark3 {
+  background-color: #daaa62;
+}
+#code #timeline .arrowColor3::before {
+  border: medium solid #daaa62;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #daaa62 transparent transparent;
+}
+#code #timeline .backgroundColorDark4 {
+  background-color: #DF9A8C;
+}
+#code #timeline .arrowColor4::before {
+  border: medium solid #DF9A8C;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent #DF9A8C transparent transparent;
+}
+#code #timeline .backgroundColorDark5 {
+  background-color: #829DA8;
+}
+#code #timeline .arrowColor5::before {
+  border: medium solid #829DA8;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #829DA8 transparent transparent;
+}
+#code #timeline .backgroundColorDark6 {
+  background-color: #777;
+}
+#code #timeline .arrowColor6::before {
+  border: medium solid #777;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent #777 transparent transparent;
 }
 @media screen and (max-width: 992px) {
   #code #timeline {

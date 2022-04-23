@@ -5,13 +5,13 @@ block js
 block append variables 
 	- var currentPage = "code";
 
-mixin timelineElement(number,title,param,link)
-	.container(id="code"+number class=param+" arrowColor"+number)
+mixin timelineElement(number,title,link)
+	.container(id="code"+number class=(number%2==0?"right":"left")+" arrowColor"+number)
 		.content.shadow.rounded
 			a(href=link)
 				.headContent(class="backgroundColor"+number)
 					.numberBox(class="backgroundColorDark"+number)
-						span=number
+						span=number<10?("0"+number):(number)
 					h2=title
 			.bodyContent
 				if block 
@@ -19,7 +19,7 @@ mixin timelineElement(number,title,param,link)
 				else
 					p Empty
 
-mixin modalBox(number,id,title,param)
+mixin modalBox(numberText,id,title,param)
 	.modal.fade(id=id tabindex="-1" role="dialog" aria-labelledby=id+"Label" aria-hidden="true")
 		.modal-dialog(role="document").modal-lg
 			.modal-content
@@ -40,7 +40,7 @@ block content
 		h1 My Coding Journey
 		p (so far)
 		#timeline: .timeline
-			+timelineElement("01","Scratch","left","https://scratch.mit.edu/projects/65949210/")
+			+timelineElement(1,"Scratch","https://scratch.mit.edu/projects/65949210/")
 				p My programming experience started with Scratch. I really enjoy creating games and animation using blocks and sprites when I was small. My favourite projects are ...
 				p: button#codeModalTrigger01.btn.btn-link(data-toggle="modal" data-target="#codeModal01") Read More
 				a(href="https://scratch.mit.edu/projects/65949210/")
@@ -70,7 +70,7 @@ block content
 						.offset-lg-3
 						.col-12.col-lg-6: +figureWithCaption("images/code/code-scratch-3.png","Gameplay","w-100")
 			
-			+timelineElement("02","Java and C++","right")
+			+timelineElement(2,"Java and C++")
 				p After having fun with Scratch for around three years, I was eager to learn other programming languages, and I made some classic games with them.
 				p: button#codeModalTrigger02.btn.btn-link(data-toggle="modal" data-target="#codeModal02") Read More
 				+figureWithCaption("images/code/code-cpp-0.png","Snake Game","w-100")
@@ -81,7 +81,7 @@ block content
 					p: a(href="https://drive.google.com/drive/folders/1-Iq0xLZr2xaKVcvd4IlHjxbqXmz_O2R2?usp=sharing") C++: Snake Game
 					p: a(href="https://drive.google.com/drive/folders/10EtqrYdYdUGyHBmHiPvhcj_1ZVkBofRa?usp=sharing") Java: Guess the Number
 			
-			+timelineElement("03","Chem Quiz","left","https://chemquiz.netlify.app")
+			+timelineElement(3,"Chem Quiz","https://chemquiz.netlify.app")
 				p A website I made in form 3 to kind of help my friends in Chemistry revision.
 				p: small Note that some of the answers might be wrong because I did not take solubility of chemicals in to account back then.
 				p: a(href="https://chemquiz.netlify.app") Link
@@ -93,7 +93,7 @@ block content
 					+figureWithCaption("images/code/languages/css.png","CSS","language")
 					+figureWithCaption("images/code/languages/js.png","Javascript","language")
 
-			+timelineElement("04","Websites for School","right")
+			+timelineElement(4,"Websites for School")
 				p I have made some websites for my secondary school - St. Joseph's College. 
 				p For example, as part of the Chinese Cultural Society, I suggested making a website for an online competition to facilitate Chinese learning during the COVID-19 outbreak in February 2020.
 				p: button#codeModalTrigger04.btn.btn-link(data-toggle="modal" data-target="#codeModal04") Read More
@@ -121,7 +121,7 @@ block content
 					a(href="https://lesscss.org/")
 						+figureWithCaption("images/code/languages/less.png","Less","language")
 
-			+timelineElement("05","HyMinions","left","https://hyminions.herokuapp.com")
+			+timelineElement(5,"HyMinions","https://hyminions.herokuapp.com")
 				p I have been playing a game called Hypixel Skyblock since 2019. I created a website calculating the optimal setup to maximize offline income based on the real-time market price of the game.
 				p I originally made this website just to fulfill my interest in Maths, coding, and the game. However, thanks to the promotion by Youtubers, the website is known to many Hypixel Skyblock players. Currently, it has over 500 daily viewers and it is generating a considerable amount of ad revenue! Being able to earn money through a passion project is a mircale to me.
 				p: a(href="https://hyminions.herokuapp.com") Link
@@ -140,7 +140,7 @@ block content
 						+figureWithCaption("images/code/languages/expressjsplus.png","ExpressJS + tools","language")
 					a(href="https://firebase.google.com/")
 						+figureWithCaption("images/code/languages/firebase.png","Firebase","language")
-			+timelineElement("06","UK Gadgets","right","https://ukgadgets.netlify.app")
+			+timelineElement(6,"UK Gadgets","https://ukgadgets.netlify.app")
 				p Some small tools (timezone converter and currency exchange) for Hongkongers that might be useful when studying or working in the UK.
 				p One feature it has is that it automatically determines if daylight saving time is active in the UK.
 				p This is my first time using React, it certainly feels very different. I do struggle a bit with state management, which is one of the things I aim to learn next summer.
