@@ -245,6 +245,17 @@ body {
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent #B2CDE8;
 }
+#code #timeline .backgroundColorDark06 {
+  background-color: #777;
+}
+#code #timeline .backgroundColor06 {
+  background-color: #999;
+}
+#code #timeline .arrowColor06::before {
+  border: medium solid #999;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #999 transparent transparent;
+}
 @media screen and (max-width: 992px) {
   #code #timeline {
     /* Place the timelime to the left */
