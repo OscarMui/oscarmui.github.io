@@ -40,7 +40,8 @@ block content
 		p (so far)
 		#timeline: .timeline
 			+timelineElement(1,"Scratch","https://scratch.mit.edu/projects/65949210/")
-				p My programming experience started with Scratch. I really enjoy creating games and animation using blocks and sprites when I was small. My favourite projects are ...
+				//- the float-left-fix class should be applied to every first element (a weird error happened after upgrading to bootstrap 5 causing the indent)
+				p.float-left-fix My programming experience started with Scratch. I really enjoy creating games and animation using blocks and sprites when I was small. My favourite projects are ...
 				p: button#codeModalTrigger01.btn.btn-link(data-bs-toggle="modal" data-bs-target="#codeModal01") Read More
 				a(href="https://scratch.mit.edu/projects/65949210/")
 					+figureWithCaption("images/code/code-scratch-0.png","Cover page of my Scratch game","w-100")
@@ -71,7 +72,7 @@ block content
 			
 
 			+timelineElement(2,"Java and C++")
-				p After having fun with Scratch for around three years, I was eager to learn other programming languages, and I made some classic games with them.
+				p.float-left-fix After having fun with Scratch for around three years, I was eager to learn other programming languages, and I made some classic games with them.
 				p: button#codeModalTrigger02.btn.btn-link(data-bs-toggle="modal" data-bs-target="#codeModal02") Read More
 				+figureWithCaption("images/code/code-cpp-0.png","Snake Game","w-100")
 				+modalBox(2,"codeModal02","Java and C++","")
@@ -83,7 +84,7 @@ block content
 			
 
 			+timelineElement(3,"Chem Quiz","https://chemquiz.netlify.app")
-				.languagesGroup 
+				.languagesGroup
 					+figureWithCaption("images/code/languages/html.png","HTML","language")
 					+figureWithCaption("images/code/languages/css.png","CSS","language")
 					+figureWithCaption("images/code/languages/js.png","Javascript","language")
