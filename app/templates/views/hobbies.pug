@@ -12,7 +12,7 @@ mixin modalBox(id,title,param)
 			.modal-content
 				.modal-header
 					h3.modal-title(id=id+"Label")=title
-					button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+					button.btn-close.btn-close-white(type="button" data-bs-dismiss="modal" aria-label="Close")
 				.modal-body
 					if block 
 						block 
