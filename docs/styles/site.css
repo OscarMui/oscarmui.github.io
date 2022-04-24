@@ -101,6 +101,8 @@ body {
   /* Add arrows to the right container (pointing left) */
   /* Fix the circle for containers on the right side */
   /* The actual content */
+  /* Media queries - Responsive timeline on screens less than 576px (sm) wide */
+  /* Media queries - Responsive timeline on screens more than 576px (sm) but less than 992px (lg) wide */
   /* Media queries - Responsive timeline on screens less than 992px (lg or down) wide */
 }
 #code #timeline .timeline {
@@ -170,6 +172,7 @@ body {
 }
 #code #timeline .headContent {
   padding: 20px 15px 20px 15px;
+  height: 85px;
 }
 #code #timeline .bodyContent {
   padding: 20px 25px 20px 25px;
@@ -286,6 +289,18 @@ body {
 }
 #code #timeline .float-left-fix {
   float: left;
+}
+@media screen and (max-width: 576px) {
+  #code #timeline .headContent h2 {
+    position: relative;
+    top: 5px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  #code #timeline .headContent h2 {
+    position: relative;
+    top: 2px;
+  }
 }
 @media screen and (max-width: 992px) {
   #code #timeline {
