@@ -284,6 +284,9 @@ body {
 #code #timeline .backgroundColorDark8 {
   background-color: #daaa62;
 }
+#code #timeline .float-left-fix {
+  float: left;
+}
 @media screen and (max-width: 992px) {
   #code #timeline {
     /* Place the timelime to the left */
