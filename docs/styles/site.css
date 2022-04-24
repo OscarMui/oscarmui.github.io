@@ -167,10 +167,10 @@ body {
   border-radius: 6px;
 }
 #code #timeline .headContent {
-  padding: 20px 30px 20px 20px;
+  padding: 20px 15px 20px 15px;
 }
 #code #timeline .bodyContent {
-  padding: 20px 30px 20px 30px;
+  padding: 20px 25px 20px 25px;
 }
 #code #timeline .bodyContent img {
   display: block;
@@ -291,19 +291,19 @@ body {
     /* Make all right containers behave like the left ones */
   }
   #code #timeline .timeline::after {
-    left: 21px;
+    left: 12px;
   }
   #code #timeline .container {
     width: 100%;
-    padding-left: 55px;
-    padding-right: 25px;
+    padding-left: 35px;
+    padding-right: 15px;
   }
   #code #timeline .container::before {
-    left: 45px;
+    left: 25px;
   }
   #code #timeline .left::after,
   #code #timeline .right::after {
-    left: 9px;
+    left: 0px;
   }
   #code #timeline .right,
   #code #timeline .left {
