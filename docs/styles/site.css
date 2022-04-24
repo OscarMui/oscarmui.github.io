@@ -66,12 +66,13 @@ body {
   color: #666;
   border-top: 1px solid #bbb;
 }
-#home .memoryInsideOut {
-  width: 100%;
-  max-width: 1000px;
+#home .round-img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  border-radius: 50%;
+  border: 2px solid #DDD;
+  -webkit-filter: brightness(0.95);
+          filter: brightness(0.95);
 }
 * {
   -webkit-box-sizing: border-box;

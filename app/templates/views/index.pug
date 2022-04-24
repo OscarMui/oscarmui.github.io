@@ -4,22 +4,23 @@ block js
 
 block append variables 
 	- var currentPage = "home";
-	- var themeColor = "dark";
 
 block content
 	.container
-		h1 Welcome!
-		br
-		p I am Oscar Mui, a year 1 student studying Computer Science at University College, Oxford. I come from Hong Kong, I studied in St. Joseph's College.
+		img.round-img(src="images/index/creeper.jpg" width=200)
+		h2.text-center Oscar Mui
+
+		i.fa-solid.fa-graduation-cap.fa-lg.mt-4
+		span.ms-2.mb-3 Master of Computer Science (MCompSci), University of Oxford, United Kingdom (2021-2025)
+		img(src="images/index/oxford.png" width=30)
 		br
 		
-		h2 New Project: UK Gadgets
-		p Some small tools for Hongkongers that might be useful when studying or working in the UK.
-		p Check out at <a href="https://ukgadgets.netlify.app">ukgadgets.netlify.app</a>
+		i.fa-solid.fa-school.fa-lg.mt-4
+		span.ms-2.mb-3 St. Joseph's College, Hong Kong (2015-2021)
+		img(src="images/index/sjc.png" width=30)
 		br
 
-		h2 New Favourite Game: Mini Motorways
-		p I played Mini Metro a few years ago, and Mini Motorways is just a much more complex version of it! Their easy yet fun game mechanics paired with simplistic User Interfaces successfully catch my eye.
-		.row
-			.col-md-6.col-12.pb-4: img(src="images/hobbies/games-mini-motorways-1.png").w-100
-			.col-md-6.col-12.pb-4: img(src="images/hobbies/games-mini-metro-1.jpg").w-100
+		i.fa-solid.fa-house.fa-lg.mt-4
+		span.ms-2.mb-3 Hong Kong 🇭🇰
+		
+		
