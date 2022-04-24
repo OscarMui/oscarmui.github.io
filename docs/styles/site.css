@@ -190,6 +190,10 @@ body {
   font-family: 'Noto Serif TC', sans-serif;
   color: #FFF;
 }
+#code #timeline .numberBox span {
+  position: relative;
+  bottom: 3px;
+}
 #code #timeline .backgroundColor1 {
   background-color: #ecfaf5;
 }
@@ -246,6 +250,14 @@ body {
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent #5EBE52;
 }
+#code #timeline .backgroundColor8 {
+  background-color: #faca82;
+}
+#code #timeline .arrowColor8::before {
+  border: medium solid #faca82;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #faca82 transparent transparent;
+}
 #code #timeline .backgroundColorDark1 {
   background-color: #ccdad5;
 }
@@ -266,6 +278,9 @@ body {
 }
 #code #timeline .backgroundColorDark7 {
   background-color: #2E9E22;
+}
+#code #timeline .backgroundColorDark8 {
+  background-color: #daaa62;
 }
 @media screen and (max-width: 992px) {
   #code #timeline {
