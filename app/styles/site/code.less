@@ -128,85 +128,6 @@
                 bottom: 3px;
             }
         }
-
-        //display specific color for each box
-        // //01
-        // .backgroundColorDark01{
-        //     background-color: @code-color-dark-01;
-        // }
-        // .backgroundColor01{
-        //     background-color: @code-color-01;
-        // }
-        // .arrowColor01::before { //left
-        //     border: medium solid @code-color-01;
-        //     border-width: 10px 0 10px 10px;
-        //     border-color: transparent transparent transparent @code-color-01;
-        // }
-
-        // //02
-        // .backgroundColorDark02{
-        //     background-color: @code-color-dark-02;
-        // }
-        // .backgroundColor02{
-        //     background-color: @code-color-02;
-        // }
-        // .arrowColor02::before { //right
-        //     border: medium solid @code-color-02;
-        //     border-width: 10px 10px 10px 0;
-        //     border-color: transparent @code-color-02 transparent transparent;
-        // }
-
-        // //03
-        // .backgroundColorDark03{
-        //     background-color: @code-color-dark-03;
-        // }
-        // .backgroundColor03{
-        //     background-color: @code-color-03;
-        // }
-        // .arrowColor03::before { //left
-        //     border: medium solid @code-color-03;
-        //     border-width: 10px 0 10px 10px;
-        //     border-color: transparent transparent transparent @code-color-03;
-        // }
-
-        // //04
-        // .backgroundColorDark04{
-        //     background-color: @code-color-dark-04;
-        // }
-        // .backgroundColor04{
-        //     background-color: @code-color-04;
-        // }
-        // .arrowColor04::before { //right
-        //     border: medium solid @code-color-04;
-        //     border-width: 10px 10px 10px 0;
-        //     border-color: transparent @code-color-04 transparent transparent;
-        // }
-
-        // //05
-        // .backgroundColorDark05{
-        //     background-color: @code-color-dark-05;
-        // }
-        // .backgroundColor05{
-        //     background-color: @code-color-05;
-        // }
-        // .arrowColor05::before { //left
-        //     border: medium solid @code-color-05;
-        //     border-width: 10px 0 10px 10px;
-        //     border-color: transparent transparent transparent @code-color-05;
-        // }
-
-        // //06
-        // .backgroundColorDark06{
-        //     background-color: @code-color-dark-06;
-        // }
-        // .backgroundColor06{
-        //     background-color: @code-color-06;
-        // }
-        // .arrowColor06::before { //right
-        //     border: medium solid @code-color-06;
-        //     border-width: 10px 10px 10px 0;
-        //     border-color: transparent @code-color-06 transparent transparent;
-        // }
         
         each(@code-colors,{
             .backgroundColor@{index}{
@@ -264,26 +185,6 @@
                 border-color: transparent @value transparent transparent;
                 }
             });
-
-            //display specific color for each box
-            //01
-            // .arrowColor01::before { //left
-            //     border: medium solid @code-color-01;
-            //     border-width: 10px 10px 10px 0;
-            //     border-color: transparent @code-color-01 transparent transparent;
-            // }
-            // //03
-            // .arrowColor03::before { //left
-            //     border: medium solid @code-color-03;
-            //     border-width: 10px 10px 10px 0;
-            //     border-color: transparent @code-color-03 transparent transparent;
-            // }
-            // //05
-            // .arrowColor05::before { //left
-            //     border: medium solid @code-color-05;
-            //     border-width: 10px 10px 10px 0;
-            //     border-color: transparent @code-color-05 transparent transparent;
-            // }
         }
     }
     .grey-color-text{
@@ -296,3 +197,103 @@
 }
 
   
+
+//display specific color for each box
+// //01
+// .backgroundColorDark01{
+//     background-color: @code-color-dark-01;
+// }
+// .backgroundColor01{
+//     background-color: @code-color-01;
+// }
+// .arrowColor01::before { //left
+//     border: medium solid @code-color-01;
+//     border-width: 10px 0 10px 10px;
+//     border-color: transparent transparent transparent @code-color-01;
+// }
+
+// //02
+// .backgroundColorDark02{
+//     background-color: @code-color-dark-02;
+// }
+// .backgroundColor02{
+//     background-color: @code-color-02;
+// }
+// .arrowColor02::before { //right
+//     border: medium solid @code-color-02;
+//     border-width: 10px 10px 10px 0;
+//     border-color: transparent @code-color-02 transparent transparent;
+// }
+
+// //03
+// .backgroundColorDark03{
+//     background-color: @code-color-dark-03;
+// }
+// .backgroundColor03{
+//     background-color: @code-color-03;
+// }
+// .arrowColor03::before { //left
+//     border: medium solid @code-color-03;
+//     border-width: 10px 0 10px 10px;
+//     border-color: transparent transparent transparent @code-color-03;
+// }
+
+// //04
+// .backgroundColorDark04{
+//     background-color: @code-color-dark-04;
+// }
+// .backgroundColor04{
+//     background-color: @code-color-04;
+// }
+// .arrowColor04::before { //right
+//     border: medium solid @code-color-04;
+//     border-width: 10px 10px 10px 0;
+//     border-color: transparent @code-color-04 transparent transparent;
+// }
+
+// //05
+// .backgroundColorDark05{
+//     background-color: @code-color-dark-05;
+// }
+// .backgroundColor05{
+//     background-color: @code-color-05;
+// }
+// .arrowColor05::before { //left
+//     border: medium solid @code-color-05;
+//     border-width: 10px 0 10px 10px;
+//     border-color: transparent transparent transparent @code-color-05;
+// }
+
+// //06
+// .backgroundColorDark06{
+//     background-color: @code-color-dark-06;
+// }
+// .backgroundColor06{
+//     background-color: @code-color-06;
+// }
+// .arrowColor06::before { //right
+//     border: medium solid @code-color-06;
+//     border-width: 10px 10px 10px 0;
+//     border-color: transparent @code-color-06 transparent transparent;
+// }
+
+// //in media query
+//display specific color for each box
+//01
+// .arrowColor01::before { //left
+//     border: medium solid @code-color-01;
+//     border-width: 10px 10px 10px 0;
+//     border-color: transparent @code-color-01 transparent transparent;
+// }
+// //03
+// .arrowColor03::before { //left
+//     border: medium solid @code-color-03;
+//     border-width: 10px 10px 10px 0;
+//     border-color: transparent @code-color-03 transparent transparent;
+// }
+// //05
+// .arrowColor05::before { //left
+//     border: medium solid @code-color-05;
+//     border-width: 10px 10px 10px 0;
+//     border-color: transparent @code-color-05 transparent transparent;
+// }
