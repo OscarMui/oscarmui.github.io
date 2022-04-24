@@ -25,15 +25,14 @@ mixin modalBox(number,id,title,param)
 			.modal-content
 				.modal-header(class="backgroundColor"+number)
 					h3.modal-title(id=id+"Label")=title
-					button.close(type="button" data-dismiss="modal" aria-label="Close")
-						span(aria-hidden="true") &times;
+					button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
 				.modal-body
 					if block 
 						block 
 					else
 						p Empty
 				.modal-footer
-					button.btn.btn-link(data-dismiss="modal") Close
+					button.btn.btn-link(data-bs-dismiss="modal") Close
 
 block content
 	.container
@@ -42,7 +41,7 @@ block content
 		#timeline: .timeline
 			+timelineElement(1,"Scratch","https://scratch.mit.edu/projects/65949210/")
 				p My programming experience started with Scratch. I really enjoy creating games and animation using blocks and sprites when I was small. My favourite projects are ...
-				p: button#codeModalTrigger01.btn.btn-link(data-toggle="modal" data-target="#codeModal01") Read More
+				p: button#codeModalTrigger01.btn.btn-link(data-bs-toggle="modal" data-bs-target="#codeModal01") Read More
 				a(href="https://scratch.mit.edu/projects/65949210/")
 					+figureWithCaption("images/code/code-scratch-0.png","Cover page of my Scratch game","w-100")
 				+modalBox(1,"codeModal01","Scratch","")
@@ -73,7 +72,7 @@ block content
 
 			+timelineElement(2,"Java and C++")
 				p After having fun with Scratch for around three years, I was eager to learn other programming languages, and I made some classic games with them.
-				p: button#codeModalTrigger02.btn.btn-link(data-toggle="modal" data-target="#codeModal02") Read More
+				p: button#codeModalTrigger02.btn.btn-link(data-bs-toggle="modal" data-bs-target="#codeModal02") Read More
 				+figureWithCaption("images/code/code-cpp-0.png","Snake Game","w-100")
 				+modalBox(2,"codeModal02","Java and C++","")
 					p After having fun with Scratch for around three years, I was eager to learn other programming languages, and I made some classic games with them.
@@ -110,7 +109,7 @@ block content
 						+figureWithCaption("images/code/languages/less.png","Less","language")
 				p I have made some websites for my secondary school - St. Joseph's College. 
 				p For example, as part of the Chinese Cultural Society, I suggested making a website for an online competition to facilitate Chinese learning during the COVID-19 outbreak in February 2020.
-				p: button#codeModalTrigger04.btn.btn-link(data-toggle="modal" data-target="#codeModal04") Read More
+				p: button#codeModalTrigger04.btn.btn-link(data-bs-toggle="modal" data-bs-target="#codeModal04") Read More
 				+modalBox(4,"codeModal04","Websites for School","")
 					h4 Content
 					p I have made some websites for my secondary school - St. Joseph's College. 
@@ -133,7 +132,7 @@ block content
 				p I have been playing a game called Hypixel Skyblock since 2019. I created a website calculating the optimal setup to maximize offline income based on the real-time market price of the game.
 				p I originally made this website just to fulfill my interest in Maths, coding, and the game. However, thanks to the promotion by Youtubers, the website is known to many Hypixel Skyblock players. Currently, it has over 500 daily viewers and it is generating a considerable amount of ad revenue! Being able to earn money through a passion project is a mircale to me.
 				p: a(href="https://hyminions.herokuapp.com") Link
-				p: button#codeModalTrigger05.btn.btn-link(data-toggle="modal" data-target="#codeModal05") View Screenshots
+				p: button#codeModalTrigger05.btn.btn-link(data-bs-toggle="modal" data-bs-target="#codeModal05") View Screenshots
 				a(href="https://hyminions.herokuapp.com"): img.w-100(src="images/code/code-hyminions-0.png")
 				+modalBox(5,"codeModal05","HyMinions","")
 					.row
@@ -163,7 +162,7 @@ block content
 				p We even managed to win one of the mini challenges "best use of Auth0"
 				
 				p: a(href="https://devpost.com/software/green-me-957hrk") Description on Devpost
-				p: button#codeModalTrigger07.btn.btn-link(data-toggle="modal" data-target="#codeModal07") Read More
+				p: button#codeModalTrigger07.btn.btn-link(data-bs-toggle="modal" data-bs-target="#codeModal07") Read More
 				a(href="https://devpost.com/software/green-me-957hrk"): img.w-100(src="images/code/code-greenme-0.png")
 				+modalBox(7,"codeModal07","Oxford Hack - Green Me","")
 					p Oxford Hack 2022 is my first Hackathon. I made Green Me with two other teammates, Johnathan and Viktor. Johnathan guided us as he is the only one in our team who participated in Hackathons before, and mainly work on the backend. Viktor mainly work on the algorithm on task recommendation and research, while I mainly worked on the frontend of the web app. 
@@ -201,7 +200,7 @@ block content
 				p: a(href="https://ordinaryidle.netlify.app") Demo Website
 				
 				p It is also obviously not finished so expect more features (e.g. prestige, hints) in summer.
-				p: button#codeModalTrigger08.btn.btn-link(data-toggle="modal" data-target="#codeModal08") View Screenshots
+				p: button#codeModalTrigger08.btn.btn-link(data-bs-toggle="modal" data-bs-target="#codeModal08") View Screenshots
 				a(href="https://play.google.com/store/apps/details?id=com.kidprof.ordinaryidle")
 					.row
 						.col-12.col-lg-6: +figureWithCaption("images/code/code-ordinaryidle-0a.jpg","Soft Drinks theme","w-100")

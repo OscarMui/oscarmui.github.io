@@ -12,22 +12,21 @@ mixin modalBox(id,title,param)
 			.modal-content
 				.modal-header
 					h3.modal-title(id=id+"Label")=title
-					button.close(type="button" data-dismiss="modal" aria-label="Close")
-						span(aria-hidden="true") &times;
+					button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
 				.modal-body
 					if block 
 						block 
 					else
 						p Empty
 				.modal-footer
-					button.btn.btn-secondary(type="button" data-dismiss="modal") Close
+					button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Close
 
 block content
 	#hiking-bg: .container
 		h1 Hobbies
 		br
 		p I enjoy hiking, swimming and cycling with friends during holidays. I think it is a good idea to show you photos of a few places I have been.
-		p: button#hikingModalTrigger.btn.btn-link(data-toggle="modal" data-target="#hikingModal") View Photos
+		p: button#hikingModalTrigger.btn.btn-link(data-bs-toggle="modal" data-bs-target="#hikingModal") View Photos
 		+modalBox("hikingModal","Hiking Photos","")
 			.row
 			.row
@@ -47,7 +46,7 @@ block content
 						ul.card-text
 							li 
 								span Minecraft &nbsp;
-								i.fa-solid.fa-lg.fa-circle-info(data-toggle="modal" data-target="#minecraftModal")
+								i.fa-solid.fa-lg.fa-circle-info(data-bs-toggle="modal" data-bs-target="#minecraftModal")
 								+modalBox("minecraftModal","Minecraft","")
 									p Minecraft has been a successful game developed by Mojang. As it is a sandbox game, different people would find themselves having fun with different modes available, including survival, speedrunning, building, and minigames provided by servers.
 									p I have been playing a server named Hypixel for a few years. In fact, I have created <a href="code.html#code05">HyMinions</a> based on Hypixel Skyblock.
@@ -61,7 +60,7 @@ block content
 										.col-12.col-lg-6: +figureWithCaption("images/hobbies/games-minecraft-4.png","My Skyblock island","w-100")
 							li 
 								span Brawl Stars &nbsp;
-								i.fa-solid.fa-lg.fa-circle-info(data-toggle="modal" data-target="#brawlStarsModal")
+								i.fa-solid.fa-lg.fa-circle-info(data-bs-toggle="modal" data-bs-target="#brawlStarsModal")
 								+modalBox("brawlStarsModal","Brawl Stars","")
 									p Fast-paced 3v3 multiplayer battle game created by Supercell. I think what makes Brawl Stars popular is the frequent updates, constantly releasing new brawlers and game modes, continuing bringing freshness to the game.
 									p Its success is also due to their care for free-to-play players like me. We could progress quickly even though we did not pay any money, like being able to get legendary brawlers and get half of the brawl passes for free as long as we are active.
@@ -75,7 +74,7 @@ block content
 										.col-12.col-lg-6: +figureWithCaption("images/hobbies/games-brawl-stars-4.jpg","Play with friends :)","w-100")
 							li
 								span Bounce On 2 &nbsp;
-								i.fa-solid.fa-lg.fa-circle-info(data-toggle="modal" data-target="#bounceOnModal")
+								i.fa-solid.fa-lg.fa-circle-info(data-bs-toggle="modal" data-bs-target="#bounceOnModal")
 								+modalBox("bounceOnModal","Bounce On 2","")
 									p This is one of my favourite games back when I was small. A ball rolling game with the aim to defeat the final boss Dorallo
 									p Even though the game is already not available on App Store and Google Play, I managed to find the APK of the game and I still replay it occasionally up till today.
@@ -91,7 +90,7 @@ block content
 										.col-12.col-lg-6: +figureWithCaption("images/hobbies/games-bounce-on-6.jpg","See the red sphere at the right hand side? That the mystery token in each level where you can collect it through getting into secret passages, I enjoy finding them when I was small.","w-100")
 							li
 								span Mini Motorways & Mini Metro &nbsp;
-								i.fa-solid.fa-lg.fa-circle-info(data-toggle="modal" data-target="#miniMotorwaysModal")
+								i.fa-solid.fa-lg.fa-circle-info(data-bs-toggle="modal" data-bs-target="#miniMotorwaysModal")
 								+modalBox("miniMotorwaysModal","Mini Motorways & Mini Metro","")
 									p I played Mini Metro a few years ago, and Mini Motorways is just a much more complex version of it! Their easy yet fun game mechanics paired with simplistic User Interfaces successfully catch my eye.
 									p Both games are developed by Dinosaur Polo Club
@@ -114,7 +113,7 @@ block content
 						ul.card-text
 							li
 								span Hermitcraft &nbsp;
-								i.fa-solid.fa-lg.fa-circle-info(data-toggle="modal" data-target="#hermitcraftModal")
+								i.fa-solid.fa-lg.fa-circle-info(data-bs-toggle="modal" data-bs-target="#hermitcraftModal")
 								+modalBox("hermitcraftModal","Hermitcraft","")
 									p Hermitcraft is a survival Minecraft server, where professional YouTube Minecraft builders come together and have some fun and create mega builds.
 									p They might not be as skillful in PVP as some other YouTubers, but I am fascinated by the mega builds they have created block by block. I also enjoy watching the interactions between the hermits.
@@ -132,7 +131,7 @@ block content
 								li GoodTimesWithScar
 							li
 								span KairosTime Gaming &nbsp;
-								i.fa-solid.fa-lg.fa-circle-info(data-toggle="modal" data-target="#kairosModal")
+								i.fa-solid.fa-lg.fa-circle-info(data-bs-toggle="modal" data-bs-target="#kairosModal")
 								+modalBox("kairosModal","KairosTime Gaming","")
 									p Brawl Stars Youtuber providing update sneak peeks and strategy videos.
 									p: a(href="https://www.youtube.com/c/KairosTimeGaming") KairosTime Gaming's Channel
@@ -145,31 +144,31 @@ block content
 						ul.card-text
 							li
 								span Primer &nbsp;
-								i.fa-solid.fa-lg.fa-circle-info(data-toggle="modal" data-target="#primerModal")
+								i.fa-solid.fa-lg.fa-circle-info(data-bs-toggle="modal" data-bs-target="#primerModal")
 								+modalBox("primerModal","Primer","")
 									p Uses animations with cute "blobs" to simulate evolution, economics and more.
 									p: a(href="https://www.youtube.com/channel/UCKzJFdi57J53Vr_BkTfN3uQ") Primer's Channel
 							li
 								span NileRed &nbsp;
-								i.fa-solid.fa-lg.fa-circle-info(data-toggle="modal" data-target="#nileRedModal")
+								i.fa-solid.fa-lg.fa-circle-info(data-bs-toggle="modal" data-bs-target="#nileRedModal")
 								+modalBox("nileRedModal","NileRed","")
 									p Videos of interesting, yet sometimes dangerous, chemistry experiments.
 									p: a(href="https://www.youtube.com/c/NileRed") NileRed's Channel
 							li
 								span Amoeba Sisters &nbsp;
-								i.fa-solid.fa-lg.fa-circle-info(data-toggle="modal" data-target="#amoebaSistersModal")
+								i.fa-solid.fa-lg.fa-circle-info(data-bs-toggle="modal" data-bs-target="#amoebaSistersModal")
 								+modalBox("amoebaSistersModal","Amoeba Sisters","")
 									p Provides videos on different topics of Biology.
 									p: a(href="https://www.youtube.com/user/amoebasisters") Amoeba Sisters's Channel
 							li
 								span thenewboston &nbsp;
-								i.fa-solid.fa-lg.fa-circle-info(data-toggle="modal" data-target="#theNewBostonModal")
+								i.fa-solid.fa-lg.fa-circle-info(data-bs-toggle="modal" data-bs-target="#theNewBostonModal")
 								+modalBox("theNewBostonModal","thenewboston","")
 									p I learnt C++ and Java programming here.
 									p: a(href="https://www.youtube.com/user/thenewboston") thenewboston's Channel
 							li
 								span mycodeschool &nbsp;
-								i.fa-solid.fa-lg.fa-circle-info(data-toggle="modal" data-target="#myCodeSchoolModal")
+								i.fa-solid.fa-lg.fa-circle-info(data-bs-toggle="modal" data-bs-target="#myCodeSchoolModal")
 								+modalBox("myCodeSchoolModal","mycodeschool","")
 									p I learnt more about arrays and pointers in C here.
 									p: a(href="https://www.youtube.com/user/mycodeschool") mycodeschools Channel
@@ -182,13 +181,13 @@ block content
 						p.card-text: ul
 							li
 								span The Five People You Meet in Heaven &nbsp;
-								i.fa-solid.fa-lg.fa-circle-info(data-toggle="modal" data-target="#book1Modal")
+								i.fa-solid.fa-lg.fa-circle-info(data-bs-toggle="modal" data-bs-target="#book1Modal")
 								+modalBox("book1Modal","The Five People You Meet in Heaven","")
 									p The Five People You Meet In Heaven is a 2003 novel by Mitch Albom. It follows the life and death of a ride mechanic named Eddie who is killed in an amusement park accident and sent to heaven, where he encounters five people who had a significant impact on him while he was alive. 
 									p My favourite part is that he managed to meet the girl that he saved at the end of the book.
 							li
 								span 射鵰英雄傳 (The Legend of the Condor Heroes) &nbsp;
-								i.fa-solid.fa-lg.fa-circle-info(data-toggle="modal" data-target="#book2Modal")
+								i.fa-solid.fa-lg.fa-circle-info(data-bs-toggle="modal" data-bs-target="#book2Modal")
 								+modalBox("book2Modal","射鵰英雄傳 (The Legend of the Condor Heroes)","")
 									p The Legend of the Condor Heroes is a novel by Chinese writer Jin Yong (Louis Cha). 
 									p I like how the skill level of the protagonists (Guo Zing and Huang Yong) got better as time goes naturally without weird plots.
@@ -200,7 +199,7 @@ block content
 						p.card-text: ul
 							li
 								span Inside Out &nbsp;
-								i.fa-solid.fa-lg.fa-circle-info(data-toggle="modal" data-target="#movies1Modal")
+								i.fa-solid.fa-lg.fa-circle-info(data-bs-toggle="modal" data-bs-target="#movies1Modal")
 								+modalBox("movies1Modal","Inside Out","")
 									.row
 										.col-12.col-lg-8
@@ -210,7 +209,7 @@ block content
 										.col-12.col-lg-4: img.insideOutMovieCover(src="images/hobbies/movies-inside-out-0.jpg")
 							li
 								span The Truman Show &nbsp;
-								i.fa-solid.fa-lg.fa-circle-info(data-toggle="modal" data-target="#movies2Modal")
+								i.fa-solid.fa-lg.fa-circle-info(data-bs-toggle="modal" data-bs-target="#movies2Modal")
 								+modalBox("movies2Modal","The Truman Show","")
 									.row
 										.col-12.col-lg-6.col-xl-7
@@ -227,13 +226,13 @@ block content
 						p.card-text: ul
 							li
 								span The Game of Life &nbsp;
-								i.fa-solid.fa-lg.fa-circle-info(data-toggle="modal" data-target="#boardGames1Modal")
+								i.fa-solid.fa-lg.fa-circle-info(data-bs-toggle="modal" data-bs-target="#boardGames1Modal")
 								+modalBox("boardGames1Modal","The Game of Life","")
 									p The game simulates a person's travels through his or her life, from college to retirement, with jobs, marriage, and possible children along the way.
 									p Whether to gain more life experience or focus on study and work? Maybe both at the same time? That has always been a question in both the game and in real life.
 							li
 								span For Sale &nbsp;
-								i.fa-solid.fa-lg.fa-circle-info(data-toggle="modal" data-target="#boardGames2Modal")
+								i.fa-solid.fa-lg.fa-circle-info(data-bs-toggle="modal" data-bs-target="#boardGames2Modal")
 								+modalBox("boardGames2Modal","For Sale","")
 									p A game where players first bid on the land (represented by land cards) and then sell it for money. The player with the most money wins.
 									p: a(href="https://www.youtube.com/watch?v=OZ0RLgnBp6o") Learn More

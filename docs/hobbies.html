@@ -8,7 +8,7 @@
     <meta name="googlebot" content="noindex">
     <title>Oscar Mui</title>
     <link rel="shortcut icon" href="images/pi-orange.png" type="image/png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&amp;display=swap" rel="stylesheet">
@@ -18,9 +18,9 @@
     <div id="header">
       <nav class="navbar navbar-default navbar-expand-lg navbar-dark" id="myNav">
         <div class="container my-1"><a class="navbar-brand" href="index.html"><img src="images/pi-transparent.png" width="30" height="30" alt=""></a><a class="navbar-brand" href="index.html">Oscar Mui</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#orderNav"><span class="navbar-toggler-icon navbar-light"></span></button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#orderNav"><span class="navbar-toggler-icon navbar-light"></span></button>
           <div class="collapse navbar-collapse" id="orderNav">
-            <ul class="nav navbar-nav mr-auto">
+            <ul class="nav navbar-nav me-auto">
               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="oxford.html">Oxford</a></li>
               <li class="nav-item"><a class="nav-link" href="code.html">Coding</a></li>
@@ -37,14 +37,14 @@
           <h1>Hobbies</h1><br>
           <p>I enjoy hiking, swimming and cycling with friends during holidays. I think it is a good idea to show you photos of a few places I have been.</p>
           <p>
-            <button class="btn btn-link" id="hikingModalTrigger" data-toggle="modal" data-target="#hikingModal">View Photos</button>
+            <button class="btn btn-link" id="hikingModalTrigger" data-bs-toggle="modal" data-bs-target="#hikingModal">View Photos</button>
           </p>
           <div class="modal fade" id="hikingModal" tabindex="-1" role="dialog" aria-labelledby="hikingModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
               <div class="modal-content">
                 <div class="modal-header">
                   <h3 class="modal-title" id="hikingModalLabel">Hiking Photos</h3>
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                   <div class="row"></div>
@@ -74,7 +74,7 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                  <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
@@ -91,13 +91,13 @@
               </div><img class="card-image-top w-100" src="images/hobbies/games-minecraft-0.png">
               <div class="card-body">
                 <ul class="card-text">
-                  <li> <span>Minecraft &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-toggle="modal" data-target="#minecraftModal"></i>
+                  <li> <span>Minecraft &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-bs-toggle="modal" data-bs-target="#minecraftModal"></i>
                     <div class="modal fade" id="minecraftModal" tabindex="-1" role="dialog" aria-labelledby="minecraftModalLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
                             <h3 class="modal-title" id="minecraftModalLabel">Minecraft</h3>
-                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
                             <p>Minecraft has been a successful game developed by Mojang. As it is a sandbox game, different people would find themselves having fun with different modes available, including survival, speedrunning, building, and minigames provided by servers.</p>
@@ -130,19 +130,19 @@
                             </div>
                           </div>
                           <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </li>
-                  <li> <span>Brawl Stars &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-toggle="modal" data-target="#brawlStarsModal"></i>
+                  <li> <span>Brawl Stars &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-bs-toggle="modal" data-bs-target="#brawlStarsModal"></i>
                     <div class="modal fade" id="brawlStarsModal" tabindex="-1" role="dialog" aria-labelledby="brawlStarsModalLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
                             <h3 class="modal-title" id="brawlStarsModalLabel">Brawl Stars</h3>
-                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
                             <p>Fast-paced 3v3 multiplayer battle game created by Supercell. I think what makes Brawl Stars popular is the frequent updates, constantly releasing new brawlers and game modes, continuing bringing freshness to the game.</p>
@@ -175,19 +175,19 @@
                             </div>
                           </div>
                           <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </li>
-                  <li><span>Bounce On 2 &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-toggle="modal" data-target="#bounceOnModal"></i>
+                  <li><span>Bounce On 2 &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-bs-toggle="modal" data-bs-target="#bounceOnModal"></i>
                     <div class="modal fade" id="bounceOnModal" tabindex="-1" role="dialog" aria-labelledby="bounceOnModalLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
                             <h3 class="modal-title" id="bounceOnModalLabel">Bounce On 2</h3>
-                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
                             <p>This is one of my favourite games back when I was small. A ball rolling game with the aim to defeat the final boss Dorallo</p>
@@ -231,19 +231,19 @@
                             </div>
                           </div>
                           <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </li>
-                  <li><span>Mini Motorways & Mini Metro &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-toggle="modal" data-target="#miniMotorwaysModal"></i>
+                  <li><span>Mini Motorways & Mini Metro &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-bs-toggle="modal" data-bs-target="#miniMotorwaysModal"></i>
                     <div class="modal fade" id="miniMotorwaysModal" tabindex="-1" role="dialog" aria-labelledby="miniMotorwaysModalLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
                             <h3 class="modal-title" id="miniMotorwaysModalLabel">Mini Motorways &amp; Mini Metro</h3>
-                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
                             <p>I played Mini Metro a few years ago, and Mini Motorways is just a much more complex version of it! Their easy yet fun game mechanics paired with simplistic User Interfaces successfully catch my eye.</p>
@@ -279,7 +279,7 @@
                             </div>
                           </div>
                           <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
                           </div>
                         </div>
                       </div>
@@ -296,13 +296,13 @@
               </div><img class="card-image-top w-100" src="images/hobbies/hobbies-yt1-0.jpg">
               <div class="card-body">
                 <ul class="card-text">
-                  <li><span>Hermitcraft &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-toggle="modal" data-target="#hermitcraftModal"></i>
+                  <li><span>Hermitcraft &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-bs-toggle="modal" data-bs-target="#hermitcraftModal"></i>
                     <div class="modal fade" id="hermitcraftModal" tabindex="-1" role="dialog" aria-labelledby="hermitcraftModalLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
                             <h3 class="modal-title" id="hermitcraftModalLabel">Hermitcraft</h3>
-                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
                             <p>Hermitcraft is a survival Minecraft server, where professional YouTube Minecraft builders come together and have some fun and create mega builds.</p>
@@ -336,7 +336,7 @@
                             </div>
                           </div>
                           <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
                           </div>
                         </div>
                       </div>
@@ -346,20 +346,20 @@
                     <li>Grian</li>
                     <li>GoodTimesWithScar</li>
                   </ul>
-                  <li><span>KairosTime Gaming &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-toggle="modal" data-target="#kairosModal"></i>
+                  <li><span>KairosTime Gaming &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-bs-toggle="modal" data-bs-target="#kairosModal"></i>
                     <div class="modal fade" id="kairosModal" tabindex="-1" role="dialog" aria-labelledby="kairosModalLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
                             <h3 class="modal-title" id="kairosModalLabel">KairosTime Gaming</h3>
-                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
                             <p>Brawl Stars Youtuber providing update sneak peeks and strategy videos.</p>
                             <p><a href="https://www.youtube.com/c/KairosTimeGaming">KairosTime Gaming's Channel</a></p>
                           </div>
                           <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
                           </div>
                         </div>
                       </div>
@@ -376,96 +376,96 @@
               </div><img class="card-image-top w-100" src="images/hobbies/hobbies-yt2-0.jpg">
               <div class="card-body">
                 <ul class="card-text">
-                  <li><span>Primer &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-toggle="modal" data-target="#primerModal"></i>
+                  <li><span>Primer &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-bs-toggle="modal" data-bs-target="#primerModal"></i>
                     <div class="modal fade" id="primerModal" tabindex="-1" role="dialog" aria-labelledby="primerModalLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
                             <h3 class="modal-title" id="primerModalLabel">Primer</h3>
-                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
                             <p>Uses animations with cute "blobs" to simulate evolution, economics and more.</p>
                             <p><a href="https://www.youtube.com/channel/UCKzJFdi57J53Vr_BkTfN3uQ">Primer's Channel</a></p>
                           </div>
                           <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </li>
-                  <li><span>NileRed &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-toggle="modal" data-target="#nileRedModal"></i>
+                  <li><span>NileRed &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-bs-toggle="modal" data-bs-target="#nileRedModal"></i>
                     <div class="modal fade" id="nileRedModal" tabindex="-1" role="dialog" aria-labelledby="nileRedModalLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
                             <h3 class="modal-title" id="nileRedModalLabel">NileRed</h3>
-                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
                             <p>Videos of interesting, yet sometimes dangerous, chemistry experiments.</p>
                             <p><a href="https://www.youtube.com/c/NileRed">NileRed's Channel</a></p>
                           </div>
                           <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </li>
-                  <li><span>Amoeba Sisters &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-toggle="modal" data-target="#amoebaSistersModal"></i>
+                  <li><span>Amoeba Sisters &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-bs-toggle="modal" data-bs-target="#amoebaSistersModal"></i>
                     <div class="modal fade" id="amoebaSistersModal" tabindex="-1" role="dialog" aria-labelledby="amoebaSistersModalLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
                             <h3 class="modal-title" id="amoebaSistersModalLabel">Amoeba Sisters</h3>
-                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
                             <p>Provides videos on different topics of Biology.</p>
                             <p><a href="https://www.youtube.com/user/amoebasisters">Amoeba Sisters's Channel</a></p>
                           </div>
                           <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </li>
-                  <li><span>thenewboston &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-toggle="modal" data-target="#theNewBostonModal"></i>
+                  <li><span>thenewboston &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-bs-toggle="modal" data-bs-target="#theNewBostonModal"></i>
                     <div class="modal fade" id="theNewBostonModal" tabindex="-1" role="dialog" aria-labelledby="theNewBostonModalLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
                             <h3 class="modal-title" id="theNewBostonModalLabel">thenewboston</h3>
-                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
                             <p>I learnt C++ and Java programming here.</p>
                             <p><a href="https://www.youtube.com/user/thenewboston">thenewboston's Channel</a></p>
                           </div>
                           <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </li>
-                  <li><span>mycodeschool &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-toggle="modal" data-target="#myCodeSchoolModal"></i>
+                  <li><span>mycodeschool &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-bs-toggle="modal" data-bs-target="#myCodeSchoolModal"></i>
                     <div class="modal fade" id="myCodeSchoolModal" tabindex="-1" role="dialog" aria-labelledby="myCodeSchoolModalLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
                             <h3 class="modal-title" id="myCodeSchoolModalLabel">mycodeschool</h3>
-                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
                             <p>I learnt more about arrays and pointers in C here.</p>
                             <p><a href="https://www.youtube.com/user/mycodeschool">mycodeschools Channel</a></p>
                           </div>
                           <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
                           </div>
                         </div>
                       </div>
@@ -483,39 +483,39 @@
               <div class="card-body">
                 <p class="card-text">
                   <ul>
-                    <li><span>The Five People You Meet in Heaven &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-toggle="modal" data-target="#book1Modal"></i>
+                    <li><span>The Five People You Meet in Heaven &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-bs-toggle="modal" data-bs-target="#book1Modal"></i>
                       <div class="modal fade" id="book1Modal" tabindex="-1" role="dialog" aria-labelledby="book1ModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
                               <h3 class="modal-title" id="book1ModalLabel">The Five People You Meet in Heaven</h3>
-                              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                               <p>The Five People You Meet In Heaven is a 2003 novel by Mitch Albom. It follows the life and death of a ride mechanic named Eddie who is killed in an amusement park accident and sent to heaven, where he encounters five people who had a significant impact on him while he was alive. </p>
                               <p>My favourite part is that he managed to meet the girl that he saved at the end of the book.</p>
                             </div>
                             <div class="modal-footer">
-                              <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                              <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
                             </div>
                           </div>
                         </div>
                       </div>
                     </li>
-                    <li><span>射鵰英雄傳 (The Legend of the Condor Heroes) &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-toggle="modal" data-target="#book2Modal"></i>
+                    <li><span>射鵰英雄傳 (The Legend of the Condor Heroes) &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-bs-toggle="modal" data-bs-target="#book2Modal"></i>
                       <div class="modal fade" id="book2Modal" tabindex="-1" role="dialog" aria-labelledby="book2ModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
                               <h3 class="modal-title" id="book2ModalLabel">射鵰英雄傳 (The Legend of the Condor Heroes)</h3>
-                              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                               <p>The Legend of the Condor Heroes is a novel by Chinese writer Jin Yong (Louis Cha). </p>
                               <p>I like how the skill level of the protagonists (Guo Zing and Huang Yong) got better as time goes naturally without weird plots.</p>
                             </div>
                             <div class="modal-footer">
-                              <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                              <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
                             </div>
                           </div>
                         </div>
@@ -534,13 +534,13 @@
               <div class="card-body">
                 <p class="card-text">
                   <ul>
-                    <li><span>Inside Out &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-toggle="modal" data-target="#movies1Modal"></i>
+                    <li><span>Inside Out &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-bs-toggle="modal" data-bs-target="#movies1Modal"></i>
                       <div class="modal fade" id="movies1Modal" tabindex="-1" role="dialog" aria-labelledby="movies1ModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
                               <h3 class="modal-title" id="movies1ModalLabel">Inside Out</h3>
-                              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                               <div class="row">
@@ -555,19 +555,19 @@
                               </div>
                             </div>
                             <div class="modal-footer">
-                              <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                              <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
                             </div>
                           </div>
                         </div>
                       </div>
                     </li>
-                    <li><span>The Truman Show &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-toggle="modal" data-target="#movies2Modal"></i>
+                    <li><span>The Truman Show &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-bs-toggle="modal" data-bs-target="#movies2Modal"></i>
                       <div class="modal fade" id="movies2Modal" tabindex="-1" role="dialog" aria-labelledby="movies2ModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
                               <h3 class="modal-title" id="movies2ModalLabel">The Truman Show</h3>
-                              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                               <div class="row">
@@ -580,7 +580,7 @@
                               </div>
                             </div>
                             <div class="modal-footer">
-                              <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                              <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
                             </div>
                           </div>
                         </div>
@@ -599,39 +599,39 @@
               <div class="card-body">
                 <p class="card-text">
                   <ul>
-                    <li><span>The Game of Life &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-toggle="modal" data-target="#boardGames1Modal"></i>
+                    <li><span>The Game of Life &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-bs-toggle="modal" data-bs-target="#boardGames1Modal"></i>
                       <div class="modal fade" id="boardGames1Modal" tabindex="-1" role="dialog" aria-labelledby="boardGames1ModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
                               <h3 class="modal-title" id="boardGames1ModalLabel">The Game of Life</h3>
-                              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                               <p>The game simulates a person's travels through his or her life, from college to retirement, with jobs, marriage, and possible children along the way.</p>
                               <p>Whether to gain more life experience or focus on study and work? Maybe both at the same time? That has always been a question in both the game and in real life.</p>
                             </div>
                             <div class="modal-footer">
-                              <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                              <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
                             </div>
                           </div>
                         </div>
                       </div>
                     </li>
-                    <li><span>For Sale &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-toggle="modal" data-target="#boardGames2Modal"></i>
+                    <li><span>For Sale &nbsp;</span><i class="fa-solid fa-lg fa-circle-info" data-bs-toggle="modal" data-bs-target="#boardGames2Modal"></i>
                       <div class="modal fade" id="boardGames2Modal" tabindex="-1" role="dialog" aria-labelledby="boardGames2ModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
                               <h3 class="modal-title" id="boardGames2ModalLabel">For Sale</h3>
-                              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                               <p>A game where players first bid on the land (represented by land cards) and then sell it for money. The player with the most money wins.</p>
                               <p><a href="https://www.youtube.com/watch?v=OZ0RLgnBp6o">Learn More</a></p>
                             </div>
                             <div class="modal-footer">
-                              <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                              <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
                             </div>
                           </div>
                         </div>
@@ -650,9 +650,7 @@
         <p><small>Created by Oscar Mui</small></p>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c4e8b064bf.js"></script>
   </body>

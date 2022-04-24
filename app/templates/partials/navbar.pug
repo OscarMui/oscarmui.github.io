@@ -1,10 +1,10 @@
 nav#myNav.navbar.navbar-default.navbar-expand-lg.navbar-dark: .container.my-1
     a.navbar-brand(href='index.html'): img(src="images/pi-transparent.png" width="30" height="30" alt="")
     a.navbar-brand(href='index.html') Oscar Mui
-    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#orderNav')
+    button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#orderNav')
         span.navbar-toggler-icon.navbar-light
     .collapse.navbar-collapse#orderNav
-        ul.nav.navbar-nav.mr-auto
+        ul.nav.navbar-nav.me-auto
             li.nav-item: a.nav-link(href="index.html" class={'active': currentPage === 'home'}) Home
             li.nav-item: a.nav-link(href="oxford.html"  class={'active': currentPage === 'oxford'}) Oxford
             li.nav-item: a.nav-link(href="code.html"  class={'active': currentPage === 'code'}) Coding
