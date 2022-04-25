@@ -35,8 +35,10 @@ mixin meInfo(icon,image,link)
 block content
 	.container
 		h1 Welcome!
-		p.mb-5 I am Oscar Mui. This is a casually made website about me.
+		p I am Oscar Mui. This is a casually made website about me.
 
+		.mb-5
+		
 		.row
 			+meInfo("fa-graduation-cap","images/index/oxford.png")
 				span Master of Computer Science (MCompSci), University of Oxford, United Kingdom (2021-2025)
@@ -55,5 +57,17 @@ block content
 		//- supposed to be a profile pic
 		//- img.round-img(src="images/index/creeper.jpg" width=200)
 		//- h2.text-center Oscar Mui
+		.mb-4
+
+		h2.d-inline-block Recent Project: OrdinaryIdle
+		span.badge.bg-primary.d-inline-block.ms-2 NEW
+		p I spent some time learning app development and practice by building a game named OrdinaryIdle, combining essence of an idle game with puzzle solving elements.
+		p: a(href="code.html#code8") Learn More
+		.row
+			.col-12.col-md-6.col-lg-3: +figureWithCaption("images/code/code-ordinaryidle-0a.jpg","Soft Drinks theme","w-100")
+			.col-12.col-md-6.col-lg-3: +figureWithCaption("images/code/code-ordinaryidle-0b.jpg","Cookie theme","w-100")
+			.col-12.col-md-6.col-lg-3: +figureWithCaption("images/code/code-ordinaryidle-1.jpg","Tap count theme","w-100")
+			.col-12.col-md-6.col-lg-3: +figureWithCaption("images/code/code-ordinaryidle-2.jpg","Upgrades","w-100")
+		
 		
 		
