@@ -66,6 +66,9 @@ body {
   color: #666;
   border-top: 1px solid #bbb;
 }
+a i {
+  color: #FFF;
+}
 #home .round-img {
   display: block;
   margin: auto;
@@ -73,6 +76,13 @@ body {
   border: 2px solid #DDD;
   -webkit-filter: brightness(0.95);
           filter: brightness(0.95);
+}
+#home .center-img {
+  display: block;
+  margin: auto;
+}
+#home .icon-width {
+  width: 40px;
 }
 * {
   -webkit-box-sizing: border-box;

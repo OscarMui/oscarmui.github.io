@@ -4,23 +4,56 @@ block js
 
 block append variables 
 	- var currentPage = "home";
+	- var themeColor = "dark";
+
+mixin meInfo(icon,image,link)
+	.col-2.col-md-1.col-lg-1
+		if link
+			a(href=link): i.text-center.w-100.fa-solid.fa-lg(class=icon)
+		else 
+			i.text-center.w-100.fa-solid.fa-lg(class=icon)
+		.mb-4
+	.col-8.col-md-10.col-lg-4
+		if block
+			if link
+				a(href=link)
+					block
+			else 
+				block
+		else
+			p Empty
+		.mb-4
+	.col-2.col-md-1.col-lg-1
+		if image
+			if link
+				a(href=link): img.center-img(src=image width=30)
+			else 
+				img.center-img(src=image width=30)
+		.mb-4
+	br
 
 block content
 	.container
-		img.round-img(src="images/index/creeper.jpg" width=200)
-		h2.text-center Oscar Mui
+		h1 Welcome!
+		p.mb-5 I am Oscar Mui. This is a casually made website about me.
 
-		i.fa-solid.fa-graduation-cap.fa-lg.mt-4
-		span.ms-2.mb-3 Master of Computer Science (MCompSci), University of Oxford, United Kingdom (2021-2025)
-		img(src="images/index/oxford.png" width=30)
-		br
+		.row
+			+meInfo("fa-graduation-cap","images/index/oxford.png")
+				span Master of Computer Science (MCompSci), University of Oxford, United Kingdom (2021-2025)
+			+meInfo("fa-graduation-cap","images/index/sjc.png")
+				span St. Joseph's College, Hong Kong (2015-2021)
+			+meInfo("fa-house","images/index/hk.png")
+				span Hong Kong
+			+meInfo("fa-cake-candles",null)
+				span 27 November
+			+meInfo("fa-code",null,"code.html")
+				span Checkout my coding projects! 
+			+meInfo("fa-building-columns","images/index/oxford.png","oxford.html")
+				span A brief description of my student life at Oxford &nbsp; &nbsp;
+				span.badge.bg-primary NEW
 		
-		i.fa-solid.fa-school.fa-lg.mt-4
-		span.ms-2.mb-3 St. Joseph's College, Hong Kong (2015-2021)
-		img(src="images/index/sjc.png" width=30)
-		br
-
-		i.fa-solid.fa-house.fa-lg.mt-4
-		span.ms-2.mb-3 Hong Kong 🇭🇰
+		//- supposed to be a profile pic
+		//- img.round-img(src="images/index/creeper.jpg" width=200)
+		//- h2.text-center Oscar Mui
 		
 		
