@@ -420,6 +420,9 @@ a i {
 #hobbies .cards-row .favourite-red-card .card-header {
   background-color: #600;
 }
+#hobbies .cards-row .card-header h3 {
+  line-height: 1.5;
+}
 #hobbies .insideOutMovieCover {
   width: 100%;
   max-width: 250px;
