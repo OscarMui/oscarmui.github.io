@@ -84,6 +84,13 @@ a i {
 #home .icon-width {
   width: 40px;
 }
+#home .memoryInsideOut {
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
