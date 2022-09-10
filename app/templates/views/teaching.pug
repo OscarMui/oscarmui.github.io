@@ -1,0 +1,45 @@
+extends ../layouts/default
+
+block js
+
+block append variables 
+	- var currentPage = "teaching";
+
+mixin resource(icon,title,download,link)
+	.col-2.col-md-1
+		if link
+			a(href=link): i.text-center.w-100.fa-solid.fa-xl(class=icon)
+		else 
+			i.text-center.w-100.fa-solid.fa-xl(class=icon)
+		.mb-4
+	.col-8.col-md-10
+		if block
+			if link
+				a(href=link)
+					span #{title} <br />
+			block
+		else
+			p Empty
+		.mb-4
+	.col-2.col-md-1
+		if download
+			if link
+			a(href=link): i.text-center.w-100.fa-solid.fa-xl(class=download)
+		else 
+			i.text-center.w-100.fa-solid.fa-xl(class=download)
+		.mb-4
+	br
+
+block content
+	.container
+		h1 Teaching
+		h2 Video Series
+		
+		.row
+			+resource("fa-video","Web & Git Tutorial","fa-brands fa-youtube","https://www.youtube.com/playlist?list=PLjGmdnqrOKuYXiu7lgG5HW71jPEUd1XCm")
+				span.italic  A video series that aim to introduce you to command line tools, Git, and techniques to make a clean, pretty, and mobile responsive static website. We use pug instead of html, less instead of css. (still a work in progress)
+
+		h2 Notes
+		.row
+			+resource("fa-file","HKOI Notes","fa-cloud-arrow-down","https://drive.google.com/drive/u/1/folders/1yXzQWlROb8d1X88eyuRIKzfBvb_bWURX")
+				span.italic A piece of notes to introduce senior secondary school students with more advanced programming theories, so as to prepare them for programming competitions like HKOI.

@@ -69,6 +69,12 @@ body {
 a i {
   color: #FFF;
 }
+.fa-youtube {
+  color: red;
+}
+.italic {
+  font-style: italic;
+}
 #home .round-img {
   display: block;
   margin: auto;
@@ -436,4 +442,9 @@ a i {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.fa-cloud-arrow-down,
+.fa-video,
+.fa-file {
+  color: #555;
 }
