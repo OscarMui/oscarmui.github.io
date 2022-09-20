@@ -13,13 +13,11 @@ mixin resource(icon,title,download,link)
 			i.text-center.w-100.fa-solid.fa-xl(class=icon)
 		.mb-4
 	.col-8.col-md-10
+		if link
+			a(href=link)
+				span #{title} <br />
 		if block
-			if link
-				a(href=link)
-					span #{title} <br />
 			block
-		else
-			p Empty
 		.mb-4
 	.col-2.col-md-1
 		if download
@@ -37,9 +35,36 @@ block content
 		
 		.row
 			+resource("fa-video","Web & Git Tutorial","fa-brands fa-youtube","https://www.youtube.com/playlist?list=PLjGmdnqrOKuYXiu7lgG5HW71jPEUd1XCm")
-				span.italic  A video series that aim to introduce you to command line tools, Git, and techniques to make a clean, pretty, and mobile responsive static website. We use pug instead of html, less instead of css. (still a work in progress)
+				span.italic A video series that aim to introduce you to command line tools, Git, and techniques to make a clean, pretty, and mobile responsive static website. We use pug instead of html, less instead of css. (still a work in progress)
 
+		.row
+			.col-2.col-md-1
+				a(href="https://www.youtube.com/playlist?list=PLjGmdnqrOKuZ95Um2Ir2p6ylPVKWvUDK6"): i.text-center.w-100.fa-solid.fa-xl(class="fa-video")
+				br
+				br
+				a(href="https://drive.google.com/drive/u/1/folders/1yXzQWlROb8d1X88eyuRIKzfBvb_bWURX"): i.text-center.w-100.fa-solid.fa-xl(class="fa-file")
+				.mb-4
+			.col-8.col-md-10
+				a(href="https://www.youtube.com/playlist?list=PLjGmdnqrOKuZ95Um2Ir2p6ylPVKWvUDK6")
+					span HKOI Notes <br />
+				span.italic A piece of notes to introduce senior secondary school students with more advanced programming theories, so as to prepare them for programming competitions like HKOI, with live session explaining it.
+				.mb-4
+			.col-2.col-md-1
+				a(href="https://www.youtube.com/playlist?list=PLjGmdnqrOKuZ95Um2Ir2p6ylPVKWvUDK6"): i.text-center.w-100.fa-solid.fa-xl(class="fa-brands fa-youtube")
+				br
+				br
+				a(href="https://drive.google.com/drive/u/1/folders/1yXzQWlROb8d1X88eyuRIKzfBvb_bWURX"): i.text-center.w-100.fa-solid.fa-xl(class="fa-cloud-arrow-down")
+				.mb-4
+			br
 		h2 Notes
 		.row
-			+resource("fa-file","HKOI Notes","fa-cloud-arrow-down","https://drive.google.com/drive/u/1/folders/1yXzQWlROb8d1X88eyuRIKzfBvb_bWURX")
-				span.italic A piece of notes to introduce senior secondary school students with more advanced programming theories, so as to prepare them for programming competitions like HKOI.
+			+resource("fa-file","Setup Cheetsheet for MacOS","fa-cloud-arrow-down","https://drive.google.com/drive/folders/1vZ7hx9Jq3Fsa4URz5gmehhTl4FIE4sjx?usp=sharing")
+		.row
+			+resource("fa-file","Continuous Maths Notes","fa-cloud-arrow-down","https://drive.google.com/drive/folders/1tLVUgpsYzJcq7NCjdn-TYsefmb4UDJV0?usp=sharing")
+				span.italic (discontinued) Summary Notes on the Continuous Maths course at Oxford 
+		.row
+			+resource("fa-file","Functional Programming Notes","fa-cloud-arrow-down","https://drive.google.com/drive/folders/1U4JJg8-EMvrdrLRXvvlwlUXuteQkkDVY?usp=sharing")
+				span.italic (discontinued) Summary Notes on the Funtional Programming course at Oxford. This piece of notes records most predefined functions in the lecture notes, with reordering for easier revision. 
+
+
+		p If you spot any mistakes in my notes feel free to <a href="contact.html">correct me</a>.
