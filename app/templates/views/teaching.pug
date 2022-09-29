@@ -31,11 +31,14 @@ mixin resource(icon,title,download,link)
 block content
 	.container
 		h1 Teaching
+
+		p Resources that I created for teaching or for my own study. They are all in English unless otherwise specified.
+
 		h2 Video Series
 		
 		.row
 			+resource("fa-video","Web & Git Tutorial","fa-brands fa-youtube","https://www.youtube.com/playlist?list=PLjGmdnqrOKuYXiu7lgG5HW71jPEUd1XCm")
-				span.italic A video series that aim to introduce you to command line tools, Git, and techniques to make a clean, pretty, and mobile responsive static website. We use pug instead of html, less instead of css. (still a work in progress)
+				span.italic (work in progress) A video series that aim to introduce you to command line tools, Git, and techniques to make a clean, pretty, and mobile responsive static website. We use pug instead of html, less instead of css. 
 
 		.row
 			.col-2.col-md-1
@@ -47,7 +50,7 @@ block content
 			.col-8.col-md-10
 				a(href="https://www.youtube.com/playlist?list=PLjGmdnqrOKuZ95Um2Ir2p6ylPVKWvUDK6")
 					span HKOI Notes <br />
-				span.italic A piece of notes to introduce senior secondary school students with more advanced programming theories, so as to prepare them for programming competitions like HKOI, with live session explaining it.
+				span.italic A piece of notes to introduce senior secondary school students with more advanced programming theories, so as to prepare them for programming competitions like HKOI, with live session explaining it (in Cantonese).
 				.mb-4
 			.col-2.col-md-1
 				a(href="https://www.youtube.com/playlist?list=PLjGmdnqrOKuZ95Um2Ir2p6ylPVKWvUDK6"): i.text-center.w-100.fa-solid.fa-xl(class="fa-brands fa-youtube")
@@ -56,9 +59,11 @@ block content
 				a(href="https://drive.google.com/drive/u/1/folders/1yXzQWlROb8d1X88eyuRIKzfBvb_bWURX"): i.text-center.w-100.fa-solid.fa-xl(class="fa-cloud-arrow-down")
 				.mb-4
 			br
+
 		h2 Notes
 		.row
-			+resource("fa-file","Setup Cheetsheet for MacOS","fa-cloud-arrow-down","https://drive.google.com/drive/folders/1vZ7hx9Jq3Fsa4URz5gmehhTl4FIE4sjx?usp=sharing")
+			+resource("fa-file","Setup Cheetsheet for MacOS","fa-cloud-arrow-down","https://github.com/OscarMui/setup-cheetsheet-macos")
+				span.italic Setup guide for MacOS users, useful especially if you have multiple GitHub accounts
 		.row
 			+resource("fa-file","Continuous Maths Notes","fa-cloud-arrow-down","https://drive.google.com/drive/folders/1tLVUgpsYzJcq7NCjdn-TYsefmb4UDJV0?usp=sharing")
 				span.italic (discontinued) Summary Notes on the Continuous Maths course at Oxford 
