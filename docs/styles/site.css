@@ -443,8 +443,9 @@ a i {
   margin-left: auto;
   margin-right: auto;
 }
-.fa-cloud-arrow-down,
-.fa-video,
-.fa-file {
+#teaching .fa-cloud-arrow-down,
+#teaching .fa-video,
+#teaching .fa-file,
+#teaching .fa-brands {
   color: #555;
 }

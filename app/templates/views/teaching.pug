@@ -37,8 +37,34 @@ block content
 		h2 Video Series
 		
 		.row
-			+resource("fa-video","Web & Git Tutorial","fa-brands fa-youtube","https://www.youtube.com/playlist?list=PLjGmdnqrOKuYXiu7lgG5HW71jPEUd1XCm")
-				span.italic (work in progress) A video series that aim to introduce you to command line tools, Git, and techniques to make a clean, pretty, and mobile responsive static website. We use pug instead of html, less instead of css. 
+			.col-2.col-md-1
+				a(href="https://www.youtube.com/playlist?list=PLjGmdnqrOKuYXiu7lgG5HW71jPEUd1XCm"): i.text-center.w-100.fa-solid.fa-xl(class="fa-video")
+				br
+				br
+				a(href="https://drive.google.com/drive/u/1/folders/1eHRy6HUN-hmvUn8ZmCNqfFIa_30QVboO"): i.text-center.w-100.fa-solid.fa-xl(class="fa-file")
+				.mb-4
+			.col-8.col-md-10
+				a(href="https://www.youtube.com/playlist?list=PLjGmdnqrOKuYXiu7lgG5HW71jPEUd1XCm")
+					span Web & Git Tutorial <br />
+				span.italic.
+					<br />
+					The <a href="https://drive.google.com/drive/u/1/folders/1Fu2oudCqDdi--18AihuEoEzokJhEYbjg">(finished) full version of the notes</a> and the <a href="https://www.youtube.com/playlist?list=PLjGmdnqrOKuYXiu7lgG5HW71jPEUd1XCm">(unfinished) YouTube series</a> covers one way of building a static website.
+					We use Pug.js (sometimes abbreviated to Pug in this piece of notes) instead of
+					HTML, less instead of CSS. And used gulp to translate the files back to HTML and
+					CSS. The generated HTML files can be directly opened by the browser. We also
+					included Bootstrap to make our static website responsive.
+					At the same time, we will be learning how to use Git and command line tools.
+					<br /><br />
+					At the same time, <a href="https://drive.google.com/drive/u/1/folders/1eHRy6HUN-hmvUn8ZmCNqfFIa_30QVboO">cutdown versions of the notes</a> are available that only uses plain HTML with Bootstrap for the Learn to Code sessions held at Oxford in Hilary 2023 (Jan - Feb 2023).
+				.mb-4
+			.col-2.col-md-1
+				a(href="https://www.youtube.com/playlist?list=PLjGmdnqrOKuYXiu7lgG5HW71jPEUd1XCm"): i.text-center.w-100.fa-solid.fa-xl(class="fa-brands fa-youtube")
+				br
+				br
+				a(href="https://drive.google.com/drive/u/1/folders/1eHRy6HUN-hmvUn8ZmCNqfFIa_30QVboO"): i.text-center.w-100.fa-solid.fa-xl(class="fa-cloud-arrow-down")
+				.mb-4
+			br
+
 
 		.row
 			.col-2.col-md-1
@@ -62,11 +88,14 @@ block content
 
 		h2 Notes
 		.row
-			+resource("fa-file","Setup Cheetsheet for MacOS","fa-cloud-arrow-down","https://github.com/OscarMui/setup-cheetsheet-macos")
-				span.italic Setup guide for MacOS users, useful especially if you have multiple GitHub accounts
+			+resource("fa-brands fa-github","Setup Cheetsheet for MacOS","fa-cloud-arrow-down","https://github.com/OscarMui/setup-cheetsheet-macos")
+				span.italic Setup guide for MacOS users, useful especially if you have multiple GitHub accounts.
+		.row
+			+resource("fa-brands fa-github","Python Introductory Notes - Oxford CompSoc","fa-cloud-arrow-down","https://github.com/oxcompsoc/learntocode")
+				span.italic Each year Oxford University CompSoc runs an introductory programming course in Python. I am responsible for holding the course and update the materials for the 2022 course together with my colleague Viktor.
 		.row
 			+resource("fa-file","Continuous Maths Notes","fa-cloud-arrow-down","https://drive.google.com/drive/folders/1tLVUgpsYzJcq7NCjdn-TYsefmb4UDJV0?usp=sharing")
-				span.italic (discontinued) Summary Notes on the Continuous Maths course at Oxford 
+				span.italic (discontinued) Summary Notes on the Continuous Maths course at Oxford.
 		.row
 			+resource("fa-file","Functional Programming Notes","fa-cloud-arrow-down","https://drive.google.com/drive/folders/1U4JJg8-EMvrdrLRXvvlwlUXuteQkkDVY?usp=sharing")
 				span.italic (discontinued) Summary Notes on the Funtional Programming course at Oxford. This piece of notes records most predefined functions in the lecture notes, with reordering for easier revision. 
