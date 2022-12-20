@@ -7,6 +7,7 @@ var changed = require('gulp-changed');
 var less = require('gulp-less');
 var eslint = require("gulp-eslint");
 var imagemin = require("gulp-imagemin");
+var server = require('gulp-webserver');
 
 //plugins of plugins
 var LessAutoprefix = require('less-plugin-autoprefix');
@@ -26,8 +27,9 @@ gulp.task('pug', function(){
   .pipe(gulp.dest('docs/'));
 });
 
+
 //less to css conversion
-gulp.task('less', function(){
+gulp.task('styling', function(){
   return gulp.src("app/styles/site.less")
   .pipe(changed("docs/styles")) //pipe files only if changed 
   .pipe(less({
@@ -35,6 +37,9 @@ gulp.task('less', function(){
   })) //less to css
   .pipe(gulp.dest('docs/styles'));
 });
+
+
+
 
 //optimise js
 gulp.task('js',function(){
@@ -53,7 +58,13 @@ gulp.task('js',function(){
 gulp.task('imagemin',function(){
   return gulp.src("app/images/**/*")
   .pipe(changed("docs/images"))//pipe files only if changed 
-  .pipe(imagemin())
+  .pipe(imagemin([
+    imagemin.mozjpeg({quality: 75, progressive: true}),
+	  imagemin.optipng({optimizationLevel: 5}),
+  ],{
+    verbose: true
+  }
+  ))
   .pipe(gulp.dest("docs/images"));
 });
 
@@ -70,6 +81,16 @@ gulp.task('fontcopy',function(){
   .pipe(gulp.dest("docs/fonts"));
 });
 
+gulp.task('serve', function() {
+  gulp.src('docs')	// <-- your app folder
+    .pipe(server({
+      livereload: true,
+      open: true,
+      port: 9000	// set a port to avoid conflicts with other local apps
+    }));
+});
 
+//! replace imagemin with imagecopy if imagemin is too slow or got stuck
+gulp.task('build',gulp.parallel('js','pug','styling','imagemin','fontcopy'));
 
-gulp.task('build',gulp.series('js','pug','less','imagecopy','fontcopy'));
+gulp.task('start',gulp.series('build','serve'));

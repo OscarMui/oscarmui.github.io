@@ -3,22 +3,25 @@
   "version": "2.0.0",
   "description": "",
   "dependencies": {
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "gulp-webserver": "^0.9.1"
   },
   "devDependencies": {
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
     "gulp-babel": "^8.0.0",
-    "gulp-changed": "^3.2.0",
-    "gulp-eslint": "^5.0.0",
-    "gulp-imagemin": "^5.0.3",
-    "gulp-less": "^4.0.1",
-    "gulp-pug": "^4.0.1",
+    "gulp-changed": "^4.0.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-imagemin": "^7.0.0",
+    "gulp-less": "^5.0.0",
+    "gulp-pug": "^5.0.0",
     "less-plugin-autoprefix": "^2.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp build"
+    "build": "gulp build",
+    "serve": "gulp serve",
+    "start": "gulp start"
   },
   "license": "ISC"
 }
