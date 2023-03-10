@@ -32,39 +32,28 @@ block content
 	.container
 		h1 Teaching
 
-		p Resources that I created for teaching or for my own study. They are all in English unless otherwise specified.
-
-		h2 Video Series
+		p.
+			I love teaching! I have been tutoring different students since 2021, from primary 3 students to students who are about to take their A-Levels/ HKDSE. I mainly teach Maths and Computer Science because that is what I am good at. 
+			Here are some resources that I created for teaching or for my own study. They are all in English unless otherwise specified.
 		
 		.row
-			.col-2.col-md-1
-				a(href="https://www.youtube.com/playlist?list=PLjGmdnqrOKuYXiu7lgG5HW71jPEUd1XCm"): i.text-center.w-100.fa-solid.fa-xl(class="fa-video")
-				br
-				br
-				a(href="https://drive.google.com/drive/u/1/folders/1eHRy6HUN-hmvUn8ZmCNqfFIa_30QVboO"): i.text-center.w-100.fa-solid.fa-xl(class="fa-file")
-				.mb-4
-			.col-8.col-md-10
-				a(href="https://www.youtube.com/playlist?list=PLjGmdnqrOKuYXiu7lgG5HW71jPEUd1XCm")
-					span Web & Git Tutorial <br />
+			+resource("fa-file","Notes for using Git","fa-cloud-arrow-down","https://drive.google.com/drive/folders/1nwQ-73vL_MDVqhAUQX5FULBqbigCeqUV?usp=share_link")
+
+		.row
+			+resource("fa-file","Notes for web development using HTML, CSS and Bootstrap","fa-cloud-arrow-down","https://drive.google.com/drive/folders/1Gc3fO7cxYQsScH3G8SCNAlrpu6JzOVng?usp=share_link")
+
+		.row
+			+resource("fa-file","Notes for web development using Pug.js, Less and Bootstrap","fa-cloud-arrow-down","https://drive.google.com/drive/folders/1Fu2oudCqDdi--18AihuEoEzokJhEYbjg?usp=share_link")
 				span.italic.
 					<br />
-					The <a href="https://drive.google.com/drive/u/1/folders/1Fu2oudCqDdi--18AihuEoEzokJhEYbjg">(finished) full version of the notes</a> and the <a href="https://www.youtube.com/playlist?list=PLjGmdnqrOKuYXiu7lgG5HW71jPEUd1XCm">(unfinished) YouTube series</a> covers one way of building a static website.
+					The <a href="https://drive.google.com/drive/folders/1Fu2oudCqDdi--18AihuEoEzokJhEYbjg?usp=share_link">(finished) full version of the notes</a> and the <a href="https://www.youtube.com/playlist?list=PLjGmdnqrOKuYXiu7lgG5HW71jPEUd1XCm">(unfinished) YouTube series</a> covers one way of building a static website.
 					We use Pug.js (sometimes abbreviated to Pug in this piece of notes) instead of
 					HTML, less instead of CSS. And used gulp to translate the files back to HTML and
 					CSS. The generated HTML files can be directly opened by the browser. We also
 					included Bootstrap to make our static website responsive.
 					At the same time, we will be learning how to use Git and command line tools.
 					<br /><br />
-					At the same time, <a href="https://drive.google.com/drive/u/1/folders/1eHRy6HUN-hmvUn8ZmCNqfFIa_30QVboO">cutdown versions of the notes</a> are available that only uses plain HTML with Bootstrap for the Learn to Code sessions held at Oxford in Hilary 2023 (Jan - Feb 2023).
-				.mb-4
-			.col-2.col-md-1
-				a(href="https://www.youtube.com/playlist?list=PLjGmdnqrOKuYXiu7lgG5HW71jPEUd1XCm"): i.text-center.w-100.fa-solid.fa-xl(class="fa-brands fa-youtube")
-				br
-				br
-				a(href="https://drive.google.com/drive/u/1/folders/1eHRy6HUN-hmvUn8ZmCNqfFIa_30QVboO"): i.text-center.w-100.fa-solid.fa-xl(class="fa-cloud-arrow-down")
-				.mb-4
-			br
-
+					At the same time, Cutdown versions of the notes are available that only uses plain HTML with Bootstrap for the Learn to Code sessions held at Oxford in Hilary 2023 (Jan - Feb 2023).
 
 		.row
 			.col-2.col-md-1
@@ -85,8 +74,7 @@ block content
 				a(href="https://drive.google.com/drive/u/1/folders/1yXzQWlROb8d1X88eyuRIKzfBvb_bWURX"): i.text-center.w-100.fa-solid.fa-xl(class="fa-cloud-arrow-down")
 				.mb-4
 			br
-
-		h2 Notes
+	
 		.row
 			+resource("fa-brands fa-github","Setup Cheetsheet for MacOS","fa-cloud-arrow-down","https://github.com/OscarMui/setup-cheetsheet-macos")
 				span.italic Setup guide for MacOS users, useful especially if you have multiple GitHub accounts.
