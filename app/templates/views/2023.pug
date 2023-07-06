@@ -1,0 +1,132 @@
+extends ../layouts/default
+
+block js
+
+block append variables 
+    - var currentPage = "2023";
+    - var themeColor = "dark";
+
+block content
+    .container
+        h1 2023
+        p Explores some new hobbies I acquired after I wrote the old hobbies page two years ago. Also acts as a journal for my second year at Oxford. (Written in Jul 2023)
+
+        h2.mt-5 Contents
+        hr
+        ul
+            li: a(href="#academics") Academics
+            li: a(href="#walk") Walking
+            li: a(href="#bike") Biking
+            li: a(href="#music") Music
+            li: a(href="#astri") ASTRI Internship
+            li: a(href="#hobbiesCard") My current favourite...
+
+        h2#academics.mt-5 Academics
+        hr
+
+        #collapseAcademics.collapse
+            p This year, half of the courses are compulsory like first year while another half are optional courses of my choice.
+
+            p The courses this year are more exciting. My favourite course is Lambda Calculus, it is an exploration of the power of functions. From how functions behave to how to build a programming language based on just functions. The lecturer Bartek, who is also my tutor, explained the details very well and made it even more interesting. It is very mathematically elegant and I enjoy every second learning more about it. Unfortunately, it is not the most useful in terms of future career in the industry. 
+
+            p On the other hand, one of the most useful courses I took this year is Concurrent Programming, I learned how to write independent programs that interact with each other. This programming pattern is essential in distributed systems and online systems. In fact, it helped a lot during my internship at ASTRI this summer. 
+
+        a.read-more(data-bs-toggle="collapse" href="#collapseAcademics" aria-expanded="false" aria-controls="collapseAcademics")
+            span.collapsed Technical stuff
+            span.expanded Show less
+
+
+        h2#walk.mt-5 Walking
+        hr
+        
+        .row
+            .col-12.col-md-6.col-xl-12
+                p.
+                    I think walking is one of the most important components that shaped my second year at Oxford. For those of you who have not heard of the term walking, it is basically hiking but without elevation, because there are not a lot of mountains around Oxford. 
+                    I started by joining some of the walks organised by the Oxford University Walking Club during some of the weekends. The scenery is very nice. Although some of the locals think it is ordinary, it is something I never experienced before as a person living in the "concrete jungle" for nearly the whole of my life.
+                    What's even more interesting is the people I have met there, mainly post-graduates. We chat all along the way, like a 6-hour social but it is different from like a networking event where you have to keep talking. Just stop and enjoy the view whenever you feel tired of talking.
+                    You can see some photos I took during my walks this year.
+            .col-12.col-md-6.col-xl-4: +figureWithCaption("images/hobbies/walking-ow-1.jpg","A very symmetrical photo that I adore (@ Devils Backbone)","w-100")
+            .col-12.col-md-6.col-xl-4: +figureWithCaption("images/hobbies/walking-uniparks-1.jpg","I love to take photos where there are cool water reflections (@ University Parks)","w-100")
+            .col-12.col-md-6.col-xl-4: +figureWithCaption("images/hobbies/walking-uniparks-2.jpg","Some grass for people living in the concrete jungle (near St. Catz)","w-100")
+        
+        h2#bike.mt-5 Biking
+        hr
+                
+        .row
+            .col-12.col-md-6.col-xl-8
+                p.
+                    I lived quite far away from the city center (a 40-minute walk) during my second year at Oxford, it is more frustrating than it might sound because there are no restaurants nearby and the buses are honestly not a reliable and affordable way of travelling to and from the city center. It kind of forced me to learn cooking, which I quite enjoy right now. I also bike to the department for lessons, to the grocery store, and to meet my friends at the city center. 
+                    I don't think it is the most enjoyable ride in the whole world especially we are sharing the road with other cars. Riding on the road is indeed out of my comfort zone, learning to use hand signals and rules when encountering junctions certainly helps, but most importantly the patience of the drivers in Oxford helps me to get going. Anyways, it is an experience that you will never find in the hot and busy city of Hong Kong.
+                
+            .col-12.col-md-6.col-xl-4: +figureWithCaption("images/hobbies/univ-annexe-1.jpg","Snowing scene @ second year accomodation","w-100")
+        
+        h2#music.mt-5 Music
+        hr
+        p.
+            I would not say my social life went particularly well in the past year. so I pretty much have a lot of time by myself, I resort to watching YouTube and listening to music. 
+            My favourite artist is Ed Sheeran, I would say he naming his albums using algebraic operators really got me. 
+            
+        h2#astri.mt-5 ASTRI Internship
+        hr
+        p My second-year experience would not be complete without the internship at ASTRI. I am happy to be able to apply what I have learned at university and also from other online sources. I also met a lot of interesting people and made some new lifelong friends. 
+        
+        
+        #collapseAstri.collapse
+            p One of my tasks is to write a Python script that streams videos captured from robots to the management system. It took me a while to notice I needed to send pings regularly to the WebSocket server or else it would disconnect with my script. I need to utilise what I have learned in University to write concurrent code that can send the pings and perform actual work at the same time. 
+
+        a.read-more(data-bs-toggle="collapse" href="#collapseAstri" aria-expanded="false" aria-controls="collapseAstri")
+            span.collapsed Technical stuff
+            span.expanded Show less
+
+    .container#hobbiesCard
+        h2.mt-5 My current favourite ...
+        .row.cards-row
+            .col-12.col-md-6.col-xl-4.my-4.cards-col
+                .favourite-red-card.card
+                    .card-header: h3 Video Games
+                    img.card-image-top(src="images/hobbies/games-minecraft-0.png").w-100
+                    .card-body: .card-text.
+                        The only major game I play is Brawl Stars. I also often download random idle games and delete them when I feel bored. 
+                        <br />I sometimes buy games from Steam, like Mini Motorways, Mini Metro, and Slay the Spire.
+                        <br />I think I don't play games that often partially because the internet connection in the UK is not good.
+            .col-12.col-md-6.col-xl-4.my-4.cards-col
+                .favourite-red-card.card
+                    .card-header: h3 Movies
+                    img.card-image-top(src="images/hobbies/hobbies-movies-0.jpg").w-100
+                    .card-body: .card-text.
+                        My absolute favourite is still Inside Out. Another one I currently thought of is Ready Player One. It is a few years old and that made me think about how to build strong relationships in the future world which is getting more and more digital and less and less... real.
+                        <br /> A good point to make is that I now watch movies as a method of creating topics with friends even though that movie is not my go-to sometimes.
+            .col-12.col-md-6.col-xl-4.my-4.cards-col
+                .favourite-red-card.card
+                    .card-header: h3 Youtubers
+                    img.card-image-top(src="images/hobbies/yt1-goodtimeswithscar-1.jpg").w-100
+                    .card-body: .card-text.
+                        I still watch Hermitcraft but not as often. I love watching Cantonese variety shows (綜藝節目), like 
+                        <a href="https://www.youtube.com/@trialanderror924">Trial and Error (試當真 - 試玩毛)</a>, 
+                        <a href="https://www.youtube.com/@pomatohk">Pomato (小薯茄 - PARTY GAME)</a> and 
+                        <a href="https://www.youtube.com/@MannerProduction">Manner (微辣 - 狼人殺)</a>, cuz the videos make me feel I am back at my home when I am in the UK. However I think it is nothing special cuz I think many young Hongkongers also watch them.
+            .col-12.col-md-6.col-xl-4.my-4.cards-col
+                .favourite-green-card.card
+                    .card-header: h3 Books
+                    img.card-image-top(src="images/hobbies/hobbies-books-clrs-0.png").w-100
+                    .card-body: .card-text.
+                            I am not pretending that I am reading any non-academic books.
+            .col-12.col-md-6.col-xl-4.my-4.cards-col
+                .favourite-green-card.card
+                    .card-header: h3 TV Shows
+                    img.card-image-top(src="images/hobbies/hobbies-tv-alice-in-borderland-0.jpg").w-100
+                    .card-body: .card-text.
+                        It might sound a bit cruel but I love TV shows that involve some killing games, like Squid Game (魷魚遊戲) and Alice in Borderland (今際之國的闖關者). The thing is that they are usually trying to look at how people behave in life-threatening situations.
+            .col-12.col-md-6.col-xl-4.my-4.cards-col
+                .favourite-green-card.card
+                    .card-header: h3 Board Games
+                    img.card-image-top(src="images/hobbies/hobbies-chess-catan-0.png").w-100
+                    .card-body: .card-text.
+                        My new favourite is CATAN, it involves exciting strategy and trading with other players which leads to hilarious moments.
+        p.
+            You can compare to my old answers in 2021 <a href="hobbies.html">here</a>. It is harder and harder to conclude my whole life using 6 boxes, I am just listing the first thing that came to my mind for each of the categories.
+
+            But after writing all of these, if you ask me what I like to do the most, anything related to Computer Science would be my answer.
+
+        p Stay tuned for more updates to the website whenever I feel like it.

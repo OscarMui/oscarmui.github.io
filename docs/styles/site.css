@@ -50,6 +50,10 @@ body {
 .darkThemeColor .modal-content {
   background-color: #333;
 }
+.darkThemeColor hr {
+  background-color: #777;
+  opacity: 1;
+}
 .lightThemeColor {
   color: #555;
   background-color: #f7f7f7;
@@ -74,6 +78,10 @@ a i {
 }
 .italic {
   font-style: italic;
+}
+.read-more[aria-expanded="false"] .expanded,
+.read-more[aria-expanded="true"] .collapsed {
+  display: none;
 }
 #home .round-img {
   display: block;
@@ -398,10 +406,10 @@ a i {
   background-repeat: no-repeat;
   background-size: cover;
 }
-#hobbies .cards-row {
+#hobbiesCard .cards-row {
   margin-top: -15px;
 }
-#hobbies .cards-row .cards-col {
+#hobbiesCard .cards-row .cards-col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,34 +417,34 @@ a i {
       -ms-flex-align: stretch;
           align-items: stretch;
 }
-#hobbies .cards-row .card-body {
+#hobbiesCard .cards-row .card-body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-#hobbies .cards-row .card-iamge-top {
+#hobbiesCard .cards-row .card-iamge-top {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
 }
-#hobbies .cards-row .card {
+#hobbiesCard .cards-row .card {
   border: 2px solid #AAA;
   background-color: #000;
   margin-top: 2rem;
 }
-#hobbies .cards-row .card-header:first-child {
+#hobbiesCard .cards-row .card-header:first-child {
   border-radius: 0;
 }
-#hobbies .cards-row .favourite-green-card .card-header {
+#hobbiesCard .cards-row .favourite-green-card .card-header {
   background-color: #254117;
 }
-#hobbies .cards-row .favourite-red-card .card-header {
+#hobbiesCard .cards-row .favourite-red-card .card-header {
   background-color: #600;
 }
-#hobbies .cards-row .card-header h3 {
+#hobbiesCard .cards-row .card-header h3 {
   line-height: 1.5;
 }
-#hobbies .insideOutMovieCover {
+#hobbiesCard .insideOutMovieCover {
   width: 100%;
   max-width: 250px;
   display: block;
