@@ -54,22 +54,71 @@ block content
 				span A brief description of my student life at Oxford &nbsp; &nbsp;
 				//- span.badge.bg-primary NEW
 		
-		//- supposed to be a profile pic
-		//- img.round-img(src="images/index/creeper.jpg" width=200)
-		//- h2.text-center Oscar Mui
+		.container#hobbiesCard
+			.row.cards-row
+				.col-12.col-md-6.col-xl-4.my-4.cards-col
+					.favourite-green-card.card
+						.card-header: h3.text-center Latest Project
+						.img-with.ribbon
+							img.card-image-top.card-image-cover(src="images/code/code-tenbin-0.png")
+							img.winner-ribbon(src="images/winner-ribbon.png")
+						.card-body: .card-text
+							h4.text-center Tenbin - Alice in Borderland
+							p A 5-player mini-game inspired by a TV show on Netflix. (今際の国のアリス)
+							ul
+								li First multiplayer game
+								li Used a lot of newly self-learnt framework and technologies, including TypeScript, WebSocket, Kivy and the Asyncio library 
+							//- a(href="https://play.google.com/store/apps/details?id=com.kidprof.tenbin") Try it now (Google Play)
+							//- a(href="https://drive.google.com/drive/folders/1ffUgx5A7srNlNrQOtCLM4jnz2yLnnCRF") Try it now (MacOS/ Windows)
+							//- brs to make space for the card-bottom
+							br
+						.card-bottom
+							a(href="code/tenbin.html") Read more 
+				.col-12.col-md-6.col-xl-4.my-4.cards-col
+					.favourite-orange-card.card
+						.card-header: h3.text-center Proudest Project
+						.img-with.ribbon
+							img.card-image-top.card-image-cover(src="images/code/code-hyminions-2.png")
+							img.winner-ribbon(src="images/winner-ribbon.png")
+						.card-body: .card-text
+							h4.text-center HyMinions
+							p Calculating the optimal setup to maximize offline income of a game in Minecraft.
+							ul
+								li Over 500 daily views
+								li Earning a small amount of ad revenue
+							//- brs to make space for the card-bottom
+							br
+						.card-bottom
+							a(href="code.html#code5") Read more 
+				.col-12.offset-md-3.col-md-6.offset-xl-0.col-xl-4.my-4.cards-col
+					.favourite-red-card.card
+						.card-header: h3.text-center Featured Project
+						.img-with.ribbon
+							img.card-image-top.card-image-cover(src="images/code/code-greenme-0.png")
+							img.winner-ribbon(src="images/winner-ribbon.png")
+						.card-body: .card-text
+							h4.text-center GreenMe - OxfordHack 2022
+							p Gamifies actions to reduce an individual's environmental footprint. 
+							ul
+								li I successfully building a responsive and clean front-end web app using ExpressJS within 24 hour.
+								li Found team members on the spot and understood their strengths for effective work division.
+							//- brs to make space for the card-bottom
+							br
+						.card-bottom
+							a(href="code.html#code7") Read more 
 		//- .mb-4
-		figure.figure.memoryInsideOut: .row.justify-content-center: .col-12.col-lg-8
-			img.w-100(src="images/index/20221127.jpg")
-			figcaption.figure-caption 斜陽無限，無奈只一息間燦爛。<br />When your world moves too fast and you lose yourself in the chaos,introduce yourself to each color of the sunset.
+		//- figure.figure.memoryInsideOut: .row.justify-content-center: .col-12.col-lg-8
+		//-	 img.w-100(src="images/index/20221127.jpg")
+		//-	 figcaption.figure-caption 斜陽無限，無奈只一息間燦爛。<br />When your world moves too fast and you lose yourself in the chaos,introduce yourself to each color of the sunset.
 		//- h2.d-inline-block Recent Project: OrdinaryIdle
 		//- span.badge.bg-primary.d-inline-block.ms-2 NEW
 		//- p I spent some time learning app development and practice by building a game named OrdinaryIdle, combining essence of an idle game with puzzle solving elements.
 		//- p: a(href="code.html#code8") Learn More
 		//- .row
-		//- 	.col-6.col-md-3: +figureWithCaption("images/code/code-ordinaryidle-0a.jpg","Soft Drinks theme","w-100")
-		//- 	.col-6.col-md-3: +figureWithCaption("images/code/code-ordinaryidle-0b.jpg","Cookie theme","w-100")
-		//- 	.col-6.col-md-3: +figureWithCaption("images/code/code-ordinaryidle-1.jpg","Tap count theme","w-100")
-		//- 	.col-6.col-md-3: +figureWithCaption("images/code/code-ordinaryidle-2.jpg","Upgrades","w-100")
+		//-	 .col-6.col-md-3: +figureWithCaption("images/code/code-ordinaryidle-0a.jpg","Soft Drinks theme","w-100")
+		//-	 .col-6.col-md-3: +figureWithCaption("images/code/code-ordinaryidle-0b.jpg","Cookie theme","w-100")
+		//-	 .col-6.col-md-3: +figureWithCaption("images/code/code-ordinaryidle-1.jpg","Tap count theme","w-100")
+		//-	 .col-6.col-md-3: +figureWithCaption("images/code/code-ordinaryidle-2.jpg","Upgrades","w-100")
 		
 		
 		

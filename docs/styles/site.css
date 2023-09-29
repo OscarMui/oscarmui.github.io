@@ -422,10 +422,26 @@ a i {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-#hobbiesCard .cards-row .card-iamge-top {
+#hobbiesCard .cards-row .card-image-top {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
+}
+#hobbiesCard .cards-row .card-image-cover {
+  height: 250px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#hobbiesCard .cards-row .img-with.ribbon {
+  position: relative;
+}
+#hobbiesCard .cards-row .winner-ribbon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
 }
 #hobbiesCard .cards-row .card {
   border: 2px solid #AAA;
@@ -441,8 +457,18 @@ a i {
 #hobbiesCard .cards-row .favourite-red-card .card-header {
   background-color: #600;
 }
+#hobbiesCard .cards-row .favourite-orange-card .card-header {
+  background-color: #660;
+}
 #hobbiesCard .cards-row .card-header h3 {
   line-height: 1.5;
+}
+#hobbiesCard .cards-row .card-bottom {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
 }
 #hobbiesCard .insideOutMovieCover {
   width: 100%;

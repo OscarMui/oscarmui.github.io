@@ -21,7 +21,7 @@ gulp.task('default', function(done){
 
 //pug to html conversion
 gulp.task('pug', function(){
-  return gulp.src("app/templates/views/*.pug")
+  return gulp.src("app/templates/views/**/*.pug")
   .pipe(changed("docs/")) //pipe files only if changed 
   .pipe(pug({pretty:true})) //pug to html
   .pipe(gulp.dest('docs/'));
