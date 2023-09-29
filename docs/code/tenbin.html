@@ -39,7 +39,32 @@
             <div class="numberBox backgroundColorDark9"><span>09</span></div>
             <h2>Tenbin - Alice in Borderland</h2>
           </div>
-        <h1>Hello world</h1>
+        <div class="text-center">
+          <p class="italic">A 5-player mini-game inspired by a TV show on Netflix. (今際の国のアリス)</p>
+          <p><a href="https://play.google.com/store/apps/details?id=com.kidprof.tenbin">Try it now (Google Play, preferred)</a></p>
+          <p><a href="https://drive.google.com/drive/folders/1ffUgx5A7srNlNrQOtCLM4jnz2yLnnCRF">Try it now (MacOS/ Windows)</a></p>
+        </div>
+        <h2 class="mt-4">What's so special about Tenbin?</h2>
+        <hr>
+        <ul>
+          <li>First multiplayer game</li>
+          <li>Used a lot of newly self-learnt framework and technologies, including TypeScript, WebSocket, Kivy and the Asyncio library </li>
+        </ul>
+        <h2 class="mt-4">Rules</h2>
+        <hr>
+        <p class="bold">TL;DR Just choose a number between 0 and 100 each round and have fun. :)</p>
+        <p>Every player chooses a number between 0 and 100 in each round. The player closest to the target wins the round. The target would be the average of the numbers multiplied by 0.8. </p>
+        <p>All players start with 0 points. If a player reaches -5 points, it is a GAME OVER for that player. The last person standing wins. </p>
+        <p>A new rule will be introduced for every player eliminated.</p>
+        <h2 class="mt-4">Technology</h2>
+        <hr>
+        <div class="collapse" id="collapseTechnology">
+          <p>My plan was to try out different programming languages and framework while doing this project and work out how to make a multiplayer game. The main gameplay this time is arguably simple, just receiving the guesses and calculating the average. However, the challenge actually comes in communicating via WebSocket. Traditional REST APIs should not be used for real-time communication like this. WebSocket requires ping and pong messages to be exchanged at a fixed interval while handling the main gameplay. This is calling for a lot of asynchronus code. Luckily I can still handle it with what I have learnt from my Concurrent Programming lectures. Another difficulty is to keep the server up when a player disconnects from the game at any possible moment. I typed my JavaScript backend as I heard that the backend of a project has to be more robust.</p>
+          <p><a href="https://github.com/OscarMui/balance-scale-backend">Source code (ExpressJS TypeScript backend)</a></p>
+          <p><a href="https://github.com/OscarMui/balance-scale-frontend-python">Source code (Python CLI frontend for testing)</a></p>
+          <p>My main requirement for the frontend is the ability to compile into an Android app. After writing the Python CLI frontend for testing my backend, I am too lazy to switch to another language. Therefore Kivy became my choice. I kind of regret it to be honest because the community support is quite little in my opinion. I hit a lot of obstacles especially when building the app into executables and apks. But at least it works so I probably should not complain too much about it.</p>
+          <p><a href="https://github.com/OscarMui/balance-scale-frontend-kivy">Source code (Kivy Python frontend)</a></p>
+        </div><a class="read-more" data-bs-toggle="collapse" href="#collapseTechnology" aria-expanded="false" aria-controls="collapseAcademics"><span class="collapsed technicalStuff">Technical stuff</span><span class="expanded">Show less</span></a>
       </div>
     </div>
     <div class="container">

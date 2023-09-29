@@ -67,6 +67,9 @@ a i{
 	color: red;
 }
 
+.bold{
+	font-weight: 900;
+}
 .italic{
 	font-style: italic;
 }
@@ -84,8 +87,10 @@ a i{
 	align-items: center;
 	justify-content: center;
 	height: 70px;
+	padding: 10px;
+	margin-bottom: 20px;
 	.numberBox{
-		margin: 15px 15px 15px 0px;
+		margin: 15px 10px 15px 0px;
 		padding: 10px;
 		font-size: 35px;
 		line-height: 35px;
@@ -107,6 +112,11 @@ a i{
 					@white-theme-bg-color 100%
 		);
 	}
+}
+
+.technicalStuff{
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: 600;
 }
 
 each(@code-colors,{

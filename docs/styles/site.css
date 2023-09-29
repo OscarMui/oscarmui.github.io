@@ -76,6 +76,9 @@ a i {
 .fa-youtube {
   color: red;
 }
+.bold {
+  font-weight: 900;
+}
 .italic {
   font-style: italic;
 }
@@ -97,10 +100,12 @@ a i {
       -ms-flex-pack: center;
           justify-content: center;
   height: 70px;
+  padding: 10px;
+  margin-bottom: 20px;
   /* Media queries - Responsive timeline on screens more than 576px (sm or up) wide */
 }
 .code-ribbon .numberBox {
-  margin: 15px 15px 15px 0px;
+  margin: 15px 10px 15px 0px;
   padding: 10px;
   font-size: 35px;
   line-height: 35px;
@@ -116,6 +121,10 @@ a i {
   .code-ribbon {
     background: -webkit-linear-gradient(left, #f7f7f7 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, #f7f7f7 100%);
   }
+}
+.technicalStuff {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
 }
 .backgroundColor1 {
   background-color: #ecfaf5;
