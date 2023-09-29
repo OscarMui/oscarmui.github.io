@@ -7,7 +7,6 @@ block append variables
 
 block content
     .container 
-        p.code-report - CODE REPORT -
         +codeRibbon(9,"Tenbin - Alice in Borderland")
 
         .text-center
@@ -16,13 +15,22 @@ block content
             p: a(href="https://play.google.com/store/apps/details?id=com.kidprof.tenbin") Try it now (Google Play, preferred)
             p: a(href="https://drive.google.com/drive/folders/1ffUgx5A7srNlNrQOtCLM4jnz2yLnnCRF") Try it now (MacOS/ Windows)
         
-        h2.mt-4 What's so special about Tenbin?
-        hr
+        p What's so special about Tenbin?
         ul
             li First multiplayer game
-            li Used a lot of newly self-learnt framework and technologies, including TypeScript, WebSocket, Kivy and the Asyncio library 
+            li Used a lot of newly self-learnt framework and technologies, including TypeScript, WebSocket, Kivy and the Async IO library 
+        p What can be improved?
+        ul
+            li Now that I have used multiple frameworks, I would prefer Flutter over Kivy for more community support.
         
-        h2.mt-4 Rules
+        .row
+            .col-12.col-md-6: img(src="/images/code/code-tenbin-0.png").w-100.mt-3
+            .col-12.col-md-6: img(src="/images/code/code-tenbin-1.png").w-100.mt-3
+            .col-12.col-md-6: img(src="/images/code/code-tenbin-2.png").w-100.mt-3
+            .col-12.col-md-6: img(src="/images/code/code-tenbin-3.png").w-100.mt-3
+            .col-12.col-md-6: img(src="/images/code/code-tenbin-4.png").w-100.mt-3
+            .col-12.col-md-6: img(src="/images/code/code-tenbin-5.png").w-100.mt-3
+        h2.mt-4 Game Rules
         hr
         p.bold TL;DR Just choose a number between 0 and 100 each round and have fun. :)
         p Every player chooses a number between 0 and 100 in each round. The player closest to the target wins the round. The target would be the average of the numbers multiplied by 0.8. 

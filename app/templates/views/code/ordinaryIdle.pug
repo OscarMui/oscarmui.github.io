@@ -1,0 +1,58 @@
+extends ../../layouts/default
+
+block js
+
+block append variables 
+    - var currentPage = "codeChild";
+
+block content
+    .container 
+        +codeRibbon(8,"OrdinaryIdle")
+
+        .text-center
+            p.italic Testing out the idea of fusing an idle game with some puzzle-solving components.
+
+            p: a(href="https://play.google.com/store/apps/details?id=com.kidprof.ordinaryidle") Link to Google Play
+            p: a(href="https://ordinaryidle.netlify.app") Demo Website (for poor iOS users)
+        
+        p What's so special about Tenbin?
+        ul
+            li First app on Google Play
+            li An original game
+        p What can be improved?
+        ul
+            li I feel like everything is just a bit too serious for a game, using Material design due to laziness is probably the culprit.
+        
+        h2.mt-4 Info
+        hr
+        p Play like any normal idle games, except there are some easter eggs that you could find in order to progress the game faster. Have fun finding! :) There are multiple themes with completely different secrets for you to discover.
+
+        p This game is written in Flutter so it is supposed to be able to run on both iOS and Android (and also web, even though it looks a bit weird). But unfortunately I cannot to put it on App Store because it is quite expensive to do so.
+        
+        p: a(href="https://play.google.com/store/apps/details?id=com.kidprof.ordinaryidle") Link to Google Play
+        
+        p For iOS users you can have a look on the demo website, but note that not all features available, and your progress will not be saved.
+        p: a(href="https://ordinaryidle.netlify.app") Demo Website
+        
+        .row
+            .col-6.col-md-6.col-lg-3: +figureWithCaption("/images/code/code-ordinaryidle-0a.jpg","Soft Drinks theme","w-100")
+            .col-6.col-md-6.col-lg-3: +figureWithCaption("/images/code/code-ordinaryidle-0b.jpg","Cookie theme","w-100")
+            .col-6.col-md-6.col-lg-3: +figureWithCaption("/images/code/code-ordinaryidle-1.jpg","Tap count theme","w-100")
+            .col-6.col-md-6.col-lg-3: +figureWithCaption("/images/code/code-ordinaryidle-2.jpg","Upgrades","w-100")
+            .col-6.col-md-6.offset-lg-3.col-lg-3: +figureWithCaption("/images/code/code-ordinaryidle-3.jpg","Achievements","w-100")
+            .col-6.col-md-6.col-lg-3: +figureWithCaption("/images/code/code-ordinaryidle-4.jpg","Secrets","w-100")
+        h2.mt-4 Technology
+        hr
+        #collapseTechnology.collapse
+            .languagesGroup
+                    a(href="https://flutter.dev/")
+                        +figureWithCaption("/images/code/languages/flutter.png","Flutter","language")
+            p Flutter is used for cross-platform support. One code base for iOS (unfortunately putting apps on App Store is too expensive), Android, and Web.
+            p I enjoy coding with Dart, a much better experience than making Android apps with Java. I feel like it is a combination of JavaScript and Java. 
+            p On a side note, it is also the first time I tried out some functional programming techniques after attending the lectures.
+            p: a(href="https://github.com/KidProf/ordinary-idle") Source code 
+            
+
+        a.read-more(data-bs-toggle="collapse" href="#collapseTechnology" aria-expanded="false" aria-controls="collapseAcademics")
+            span.collapsed.technicalStuff Technical stuff
+            span.expanded Show less
