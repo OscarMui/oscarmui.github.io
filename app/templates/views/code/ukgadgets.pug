@@ -1,0 +1,30 @@
+extends ../../layouts/default
+
+block js
+
+block append variables 
+    - var currentPage = "codeChild";
+
+block content
+    .container
+
+        +codeRibbon(6,"UK Gadgets")
+
+        .text-center
+            p.italic p Some small tools for Hongkongers studying or working in the UK.
+            p: a(href="https://ukgadgets.netlify.app") Try it now
+        p What's so special about UK Gadgets?
+        ul
+            li Small-scale but very user friendly 
+            li Figured out how to determine when DST is in effect (last Sunday of October and March), took me so long...
+            li Translated the web app into Chinese (A more fancy word for it is internationalisation)
+        h4 Technology
+        p This is my first time using React, it certainly feels very different. I do struggle a bit with state management, which is one of the things I aim to learn next summer. (written in Sep 2021)
+        p: a(href="https://github.com/OscarMui/uk-gadgets") Source code
+        .languagesGroup
+            a(href="https://reactjs.org/")
+                +figureWithCaption("/images/code/languages/react.png","React","language")
+        .row
+            .col-12.col-lg-6: img(src="/images/code/code-ukgadgets-1.png").w-100.mt-3
+            .col-12.col-lg-6: img(src="/images/code/code-ukgadgets-2.png").w-100.mt-3
+        

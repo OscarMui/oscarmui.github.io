@@ -40,7 +40,16 @@ block content
         h2.mt-4 Technology
         hr
         #collapseTechnology.collapse
-            p My plan was to try out different programming languages and frameworks while doing this project and work out how to make a multiplayer game. The main gameplay this time is arguably simple, just receiving the guesses and calculating the average. However, the challenge actually comes in communicating via WebSocket. Traditional REST APIs should not be used for real-time communication like this. WebSocket requires ping and pong messages to be exchanged at a fixed interval while handling the main gameplay. This is calling for a lot of asynchronous code. Luckily I can still handle it with what I have learnt from my Concurrent Programming lectures. Another difficulty is to keep the server up when a player disconnects from the game at any possible moment. I typed my JavaScript backend as I heard that the backend of a project has to be more robust.
+            .languagesGroup 	
+                a(href="https://expressjs.com/")
+                    +figureWithCaption("/images/code/languages/expressjs.png","ExpressJS","language")
+                a(href="https://www.typescriptlang.org/")
+                    +figureWithCaption("/images/code/languages/typescript.png","TypeScript","language")
+                a(href="https://kivy.org/")
+                    +figureWithCaption("/images/code/languages/kivy.png","Kivy","language")
+                a(href="https://docs.python.org/3/library/asyncio.html")
+                    +figureWithCaption("/images/code/languages/asyncio.png","Python Async IO","language")
+            p My plan was to try out different programming languages and frameworks while doing this project and work out how to make a multiplayer game. The main gameplay this time is arguably simple, just receiving the guesses and calculating the average. However, the challenge actually comes in communicating via WebSocket. Traditional REST APIs should not be used for real-time communication like this. WebSocket requires ping and pong messages to be exchanged at a fixed interval while handling the main gameplay. This is calling for a lot of asynchronous code. Luckily I can still handle it with what I have learnt from my Concurrent Programming lectures. Another difficulty is to keep the server up when a player disconnects from the game at any possible moment. I typed my JavaScript backend as I heard that the backend of a project has to be more robust. I am also amazed how ExpressJS can be used as a proper server without having a frontend like I usually do in the past.
             p: a(href="https://github.com/OscarMui/balance-scale-backend") Source code (ExpressJS TypeScript backend)
             p: a(href="https://github.com/OscarMui/balance-scale-frontend-python") Source code (Python CLI frontend for testing)
             p My main requirement for the frontend is the ability to compile into an Android app. After writing the Python CLI frontend for testing my backend, I am too lazy to switch to another language. Therefore Kivy became my choice. I kind of regret it to be honest because the community support is quite little in my opinion. I hit a lot of obstacles especially when building the app into executables and apks. But at least it works so I probably should not complain too much about it.

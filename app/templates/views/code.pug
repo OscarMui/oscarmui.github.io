@@ -145,77 +145,31 @@ block content
 
 				
 			+timelineElement(6,"UK Gadgets","https://ukgadgets.netlify.app")
-				.languagesGroup
-					a(href="https://reactjs.org/")
-						+figureWithCaption("images/code/languages/react.png","React","language")
-				p Some small tools (timezone converter and currency exchange) for Hongkongers that might be useful when studying or working in the UK.
-				p One feature it has is that it automatically determines if daylight saving time is active in the UK.
-				p This is my first time using React, it certainly feels very different. I do struggle a bit with state management, which is one of the things I aim to learn next summer.
+				p Some small tools for Hongkongers studying or working in the UK.
+				p: a(href="/code/ukgadgets.html") Read More
 				p: a(href="https://ukgadgets.netlify.app") Link
+				img.w-100(src="images/code/code-ukgadgets-1.png")
 				
 			
 			+timelineElement(7,"Oxford Hack - Green Me","https://devpost.com/software/green-me-957hrk")
-				.languagesGroup
-					a(href="https://expressjs.com/")
-						+figureWithCaption("images/code/languages/expressjsplus.png","ExpressJS + tools","language")
-					+figureWithCaption("images/code/languages/pythonflasksqlite.png","Flask + SQLite","language")
-				p Green Me gamifies actions to reduce an individual's environmental footprint. After registration, the user completes a questionnaire about their current habits. Next, the user is presented with a dashboard of actions that the app recommends that they take based on the questionnaire. Each time, an action is taken, the user is rewarded with points.
-				p We even managed to win one of the mini challenges "best use of Auth0"
+				p Gamifies actions to reduce an individual's environmental footprint.
+				p: a(href="/code/greenme.html") Read More
+				img.w-100(src="images/code/code-greenme-0.png")
 				
-				p: a(href="https://devpost.com/software/green-me-957hrk") Description on Devpost
-				p: button#codeModalTrigger07.btn.btn-link(data-bs-toggle="modal" data-bs-target="#codeModal07") Read More
-				a(href="https://devpost.com/software/green-me-957hrk"): img.w-100(src="images/code/code-greenme-0.png")
-				+modalBox(7,"codeModal07","Oxford Hack - Green Me","")
-					p Oxford Hack 2022 is my first Hackathon. I made Green Me with two other teammates, Johnathan and Viktor. Johnathan guided us as he is the only one in our team who participated in Hackathons before, and mainly work on the backend. Viktor mainly work on the algorithm on task recommendation and research, while I mainly worked on the frontend of the web app. 
-					p It is indeed a very different experience working as a team and coding in a timed setting. I learnt a lot about how to connect the two together using REST API calls, maintain the pace of working to avoid over-exhaustion throughout the whole 24 hours, and communicate with my teammates on the conventions that we will use throughout the code. 
-					h4 Content
-					p Green Me gamifies actions to reduce an individual's environmental footprint. After registration, the user completes a questionnaire about their current habits. This is fed into a complex matrix of probabilities and known impact reductions to build a model of likely actions that this user would take. For example, a user may indicate that it would be highly difficult for them to give up flying, but it would be easy to reduce their milk consumption.
-					p Next, the user is presented with a dashboard of actions that the app recommends that they take. Each time, an action is taken, the user is rewarded with points.
-					p We even managed to win one of the mini challenges "best use of Auth0"
-					p Sadly that this website is not available anymore as we ran out of Google Cloud credits.
-					h4 Technology
-					p ExpressJS for frontend, Python Flask and SQLite for backend.
-					.row
-						.col-12.col-lg-6: +figureWithCaption("images/code/code-greenme-1.png","Login page powered by Auth0","w-100")
-						.col-12.col-lg-6: +figureWithCaption("images/code/code-greenme-2.png","Questionnaire page","w-100")
-					.row
-						.col-12.col-lg-6: +figureWithCaption("images/code/code-greenme-3.png","Tasks page","w-100")
-						.col-12.col-lg-6: +figureWithCaption("images/code/code-greenme-4.png","Report progress page","w-100")
-					.row
-						.col-12.col-lg-6: +figureWithCaption("images/code/code-greenme-5.png","Yay you are helping the planet!","w-100")
-						.col-12.col-md-6.col-lg-3: +figureWithCaption("images/code/code-greenme-6a.png","Looks good on mobile","w-100")
-						.col-12.col-md-6.col-lg-3: +figureWithCaption("images/code/code-greenme-6b.png","Looks good on mobile","w-100")
 			
 			
-			+timelineElement(8,"OrdinaryIdle","https://play.google.com/store/apps/details?id=com.kidprof.ordinaryidle")
-				.languagesGroup
-					a(href="https://flutter.dev/")
-						+figureWithCaption("images/code/languages/flutter.png","Flutter","language")
-				p Play like any normal idle games, except there are some easter eggs that you could find in order to progress the game faster. Have fun finding! :) There are multiple themes with completely different secrets for you to discover.
-
-				p This game is written in Flutter so it is supposed to be able to run on both iOS and Android (and also web, even though it looks a bit weird). But unfortunately I cannot to put it on App Store because it is quite expensive to do so.
-				
-				p: a(href="https://play.google.com/store/apps/details?id=com.kidprof.ordinaryidle") Link to Google Play
-				
-				p For iOS users you can have a look on the demo website, but note that not all features available, and your progress will not be saved.
-				p: a(href="https://ordinaryidle.netlify.app") Demo Website
-				
-				p It is also obviously not finished so expect more features (e.g. prestige, hints) in summer.
-				p: button#codeModalTrigger08.btn.btn-link(data-bs-toggle="modal" data-bs-target="#codeModal08") View Screenshots
-				a(href="https://play.google.com/store/apps/details?id=com.kidprof.ordinaryidle")
-					.row
-						.col-6: +figureWithCaption("images/code/code-ordinaryidle-0a.jpg","Soft Drinks theme","w-100")
-						.col-6: +figureWithCaption("images/code/code-ordinaryidle-0b.jpg","Cookie theme","w-100")
-				+modalBox(7,"codeModal08","OrdinaryIdle","")
-					.row
-						.col-6.col-md-6.col-lg-3: +figureWithCaption("images/code/code-ordinaryidle-1.jpg","Tap count theme","w-100")
-						.col-6.col-md-6.col-lg-3: +figureWithCaption("images/code/code-ordinaryidle-2.jpg","Upgrades","w-100")
-						.col-6.col-md-6.col-lg-3: +figureWithCaption("images/code/code-ordinaryidle-3.jpg","Achievements","w-100")
-						.col-6.col-md-6.col-lg-3: +figureWithCaption("images/code/code-ordinaryidle-4.jpg","Secrets","w-100")
+			+timelineElement(8,"OrdinaryIdle","/code/ordinaryidle.html")
+				p Testing out the idea of fusing an idle game with some puzzle-solving components.
+				p: a(href="/code/ordinaryidle.html") Read More
+				p: a(href="https://play.google.com/store/apps/details?id=com.kidprof.ordinaryidle") Google Play link
+				.row
+					.col-6: +figureWithCaption("images/code/code-ordinaryidle-0a.jpg","Soft Drinks theme","w-100")
+					.col-6: +figureWithCaption("images/code/code-ordinaryidle-0b.jpg","Cookie theme","w-100")
 
 			+timelineElement(9,"Tenbin","/code/tenbin.html")
 				p A 5-player mini-game inspired by a TV show on Netflix. (今際の国のアリス)
 				p: a(href="/code/tenbin.html") Read More
+				p: a(href="https://play.google.com/store/apps/details?id=com.kidprof.tenbin") Google Play link
 				img(src="/images/code/code-tenbin-0.png").w-100
 			
 		br

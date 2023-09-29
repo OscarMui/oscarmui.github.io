@@ -1,0 +1,44 @@
+extends ../../layouts/default
+
+block js
+
+block append variables 
+    - var currentPage = "codeChild";
+
+block content
+    .container
+
+        +codeRibbon(7,"Oxford Hack - GreenMe")
+
+        .text-center
+            p.italic Gamifies actions to reduce an individual's environmental footprint.
+        
+        p What's so special about GreenMe?
+        ul
+            li Winning an award on my first hackathon!
+            li Found team members on the spot and understood their strengths for effective work division.
+        
+        p Oxford Hack 2022 is my first Hackathon. I made Green Me with two other teammates, Johnathan and Viktor. Johnathan guided us as he is the only one in our team who participated in Hackathons before, and mainly work on the backend. Viktor mainly work on the algorithm on task recommendation and research, while I mainly worked on the frontend of the web app. 
+        p It is indeed a very different experience working as a team and coding in a timed setting. I learnt a lot about how to connect the two together using REST API calls, maintain the pace of working to avoid over-exhaustion throughout the whole 24 hours, and communicate with my teammates on the conventions that we will use throughout the code. 
+        h4 Content
+        p Green Me gamifies actions to reduce an individual's environmental footprint. After registration, the user completes a questionnaire about their current habits. This is fed into a complex matrix of probabilities and known impact reductions to build a model of likely actions that this user would take. For example, a user may indicate that it would be highly difficult for them to give up flying, but it would be easy to reduce their milk consumption.
+        p Next, the user is presented with a dashboard of actions that the app recommends that they take. Each time, an action is taken, the user is rewarded with points.
+        p We even managed to win one of the mini challenges "best use of Auth0"
+        p Sadly that this website is not available anymore as we ran out of Google Cloud credits.
+        p: a(href="https://devpost.com/software/green-me-957hrk") Description on Devpost
+        h4 Technology
+        p ExpressJS for frontend, Python Flask and SQLite for backend.
+        .languagesGroup
+            a(href="https://expressjs.com/")
+                +figureWithCaption("/images/code/languages/expressjsplus.png","ExpressJS + tools","language")
+            +figureWithCaption("/images/code/languages/pythonflasksqlite.png","Flask + SQLite","language")
+        .row
+            .col-12.col-lg-6: +figureWithCaption("/images/code/code-greenme-1.png","Login page powered by Auth0","w-100")
+            .col-12.col-lg-6: +figureWithCaption("/images/code/code-greenme-2.png","Questionnaire page","w-100")
+        .row
+            .col-12.col-lg-6: +figureWithCaption("/images/code/code-greenme-3.png","Tasks page","w-100")
+            .col-12.col-lg-6: +figureWithCaption("/images/code/code-greenme-4.png","Report progress page","w-100")
+        .row
+            .col-12.col-lg-6: +figureWithCaption("/images/code/code-greenme-5.png","Yay you are helping the planet!","w-100")
+            .col-12.col-sm-6.col-lg-3: +figureWithCaption("/images/code/code-greenme-6a.png","Looks good on mobile","w-100")
+            .col-12.col-sm-6.col-lg-3: +figureWithCaption("/images/code/code-greenme-6b.png","Looks good on mobile","w-100")
