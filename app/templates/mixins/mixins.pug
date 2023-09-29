@@ -1,3 +1,9 @@
+mixin codeRibbon(number,title)
+	.code-ribbon(class="backgroundColor"+number)
+		.numberBox(class="backgroundColorDark"+number)
+			span=number<10?("0"+number):(number)
+		h2=title
+
 mixin figureWithCaption(source,caption,param)
 	figure.figure
 		img(src=source class=(param=="w-100"||param=="movieCover"?param:undefined) height=(param=="language"?50:"auto"))

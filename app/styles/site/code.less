@@ -2,7 +2,20 @@
     box-sizing: border-box;
 }
 
-#code{
+#codeChild{
+    #body{
+        margin-top: 0;
+    }
+    .code-report{
+        font-family: 'Noto Serif TC', sans-serif;
+        letter-spacing: 5px;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+#code, #codeChild{
     .modal-content{
         border: none;
     }
@@ -131,23 +144,6 @@
             }
         }
         
-        each(@code-colors,{
-            .backgroundColor@{index}{
-                background-color: @value;
-            }
-            .arrowColor@{index}::before { 
-                border: medium solid @value;
-                border-width: 10px if((mod(@index,2)=1), 0, 10px) 10px if((mod(@index,2)=1), 10px, 0); //left (odd): 10,0,10,10; right (even): 10,10,10,0
-                border-color: transparent if((mod(@index,2)=1), transparent, @value) transparent if((mod(@index,2)=1), @value, transparent); //left (odd): t t t value; right (even): t value t t
-            }
-        });
-
-        each(@code-colors-dark,{
-            .backgroundColorDark@{index}{
-                background-color: @value;
-            }
-        });
-
         .float-left-fix{
             float: left;
         }

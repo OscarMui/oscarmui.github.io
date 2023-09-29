@@ -3,10 +3,12 @@ extends ../../layouts/default
 block js
 
 block append variables 
-    - var currentPage = "2023";
+    - var currentPage = "codeChild";
 
 block content
-    .container
-        h1 Tenbin
+    .container 
+        p.code-report - CODE REPORT -
+        +codeRibbon(9,"Tenbin - Alice in Borderland")
+        h1 Hello world
 //- a(href="https://play.google.com/store/apps/details?id=com.kidprof.tenbin") Try it now (Google Play)
 //- a(href="https://drive.google.com/drive/folders/1ffUgx5A7srNlNrQOtCLM4jnz2yLnnCRF") Try it now (MacOS/ Windows)

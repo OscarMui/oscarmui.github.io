@@ -83,6 +83,139 @@ a i {
 .read-more[aria-expanded="true"] .collapsed {
   display: none;
 }
+.serif {
+  font-family: 'Noto Serif TC', sans-serif;
+}
+.code-ribbon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70px;
+  /* Media queries - Responsive timeline on screens more than 576px (sm or up) wide */
+}
+.code-ribbon .numberBox {
+  margin: 15px 15px 15px 0px;
+  padding: 10px;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 1000;
+  font-family: 'Noto Serif TC', sans-serif;
+  color: #FFF;
+}
+.code-ribbon .numberBox span {
+  position: relative;
+  bottom: 3px;
+}
+@media screen and (min-width: 576px) {
+  .code-ribbon {
+    background: -webkit-linear-gradient(left, #f7f7f7 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, #f7f7f7 100%);
+  }
+}
+.backgroundColor1 {
+  background-color: #ecfaf5;
+}
+.arrowColor1::before {
+  border: medium solid #ecfaf5;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #ecfaf5;
+}
+.backgroundColor2 {
+  background-color: #a5dec8;
+}
+.arrowColor2::before {
+  border: medium solid #a5dec8;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #a5dec8 transparent transparent;
+}
+.backgroundColor3 {
+  background-color: #faca82;
+}
+.arrowColor3::before {
+  border: medium solid #faca82;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #faca82;
+}
+.backgroundColor4 {
+  background-color: #FFCAAC;
+}
+.arrowColor4::before {
+  border: medium solid #FFCAAC;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #FFCAAC transparent transparent;
+}
+.backgroundColor5 {
+  background-color: #B2CDE8;
+}
+.arrowColor5::before {
+  border: medium solid #B2CDE8;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #B2CDE8;
+}
+.backgroundColor6 {
+  background-color: #AAA;
+}
+.arrowColor6::before {
+  border: medium solid #AAA;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #AAA transparent transparent;
+}
+.backgroundColor7 {
+  background-color: #5EBE52;
+}
+.arrowColor7::before {
+  border: medium solid #5EBE52;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #5EBE52;
+}
+.backgroundColor8 {
+  background-color: #faca82;
+}
+.arrowColor8::before {
+  border: medium solid #faca82;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #faca82 transparent transparent;
+}
+.backgroundColor9 {
+  background-color: #B1BBBC;
+}
+.arrowColor9::before {
+  border: medium solid #B1BBBC;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #B1BBBC;
+}
+.backgroundColorDark1 {
+  background-color: #ccdad5;
+}
+.backgroundColorDark2 {
+  background-color: #85bea8;
+}
+.backgroundColorDark3 {
+  background-color: #daaa62;
+}
+.backgroundColorDark4 {
+  background-color: #DF9A8C;
+}
+.backgroundColorDark5 {
+  background-color: #829DA8;
+}
+.backgroundColorDark6 {
+  background-color: #888;
+}
+.backgroundColorDark7 {
+  background-color: #2E9E22;
+}
+.backgroundColorDark8 {
+  background-color: #daaa62;
+}
+.backgroundColorDark9 {
+  background-color: #3C5758;
+}
 #home .round-img {
   display: block;
   margin: auto;
@@ -109,10 +242,22 @@ a i {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-#code .modal-content {
+#codeChild #body {
+  margin-top: 0;
+}
+#codeChild .code-report {
+  font-family: 'Noto Serif TC', sans-serif;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#code .modal-content,
+#codeChild .modal-content {
   border: none;
 }
-#code .languagesGroup {
+#code .languagesGroup,
+#codeChild .languagesGroup {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,7 +267,8 @@ a i {
           justify-content: space-evenly;
   gap: 20px;
 }
-#code #timeline {
+#code #timeline,
+#codeChild #timeline {
   /* The actual timeline (the vertical ruler) */
   /* The actual timeline (the vertical ruler) */
   /* Container around content */
@@ -137,12 +283,14 @@ a i {
   /* Media queries - Responsive timeline on screens more than 576px (sm) but less than 992px (lg) wide */
   /* Media queries - Responsive timeline on screens less than 992px (lg or down) wide */
 }
-#code #timeline .timeline {
+#code #timeline .timeline,
+#codeChild #timeline .timeline {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
 }
-#code #timeline .timeline::after {
+#code #timeline .timeline::after,
+#codeChild #timeline .timeline::after {
   content: '';
   position: absolute;
   width: 6px;
@@ -152,13 +300,15 @@ a i {
   left: 50%;
   margin-left: -3px;
 }
-#code #timeline .container {
+#code #timeline .container,
+#codeChild #timeline .container {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
   width: 50%;
 }
-#code #timeline .container::after {
+#code #timeline .container::after,
+#codeChild #timeline .container::after {
   content: '';
   position: absolute;
   width: 25px;
@@ -170,13 +320,16 @@ a i {
   border-radius: 50%;
   z-index: 1;
 }
-#code #timeline .left {
+#code #timeline .left,
+#codeChild #timeline .left {
   left: -25%;
 }
-#code #timeline .right {
+#code #timeline .right,
+#codeChild #timeline .right {
   left: 25%;
 }
-#code #timeline .left::before {
+#code #timeline .left::before,
+#codeChild #timeline .left::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -185,7 +338,8 @@ a i {
   z-index: 1;
   right: 30px;
 }
-#code #timeline .right::before {
+#code #timeline .right::before,
+#codeChild #timeline .right::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -194,27 +348,33 @@ a i {
   z-index: 1;
   left: 30px;
 }
-#code #timeline .right::after {
+#code #timeline .right::after,
+#codeChild #timeline .right::after {
   left: -12px;
 }
-#code #timeline .content {
+#code #timeline .content,
+#codeChild #timeline .content {
   background-color: #FFF;
   position: relative;
   border-radius: 6px;
 }
-#code #timeline .headContent {
+#code #timeline .headContent,
+#codeChild #timeline .headContent {
   padding: 20px 15px 20px 15px;
   height: 85px;
 }
-#code #timeline .bodyContent {
+#code #timeline .bodyContent,
+#codeChild #timeline .bodyContent {
   padding: 20px 25px 20px 25px;
 }
-#code #timeline .bodyContent img {
+#code #timeline .bodyContent img,
+#codeChild #timeline .bodyContent img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-#code #timeline .numberBox {
+#code #timeline .numberBox,
+#codeChild #timeline .numberBox {
   bottom: 20px;
   position: relative;
   display: inline;
@@ -227,167 +387,103 @@ a i {
   font-family: 'Noto Serif TC', sans-serif;
   color: #FFF;
 }
-#code #timeline .numberBox span {
+#code #timeline .numberBox span,
+#codeChild #timeline .numberBox span {
   position: relative;
   bottom: 3px;
 }
-#code #timeline .backgroundColor1 {
-  background-color: #ecfaf5;
-}
-#code #timeline .arrowColor1::before {
-  border: medium solid #ecfaf5;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #ecfaf5;
-}
-#code #timeline .backgroundColor2 {
-  background-color: #a5dec8;
-}
-#code #timeline .arrowColor2::before {
-  border: medium solid #a5dec8;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #a5dec8 transparent transparent;
-}
-#code #timeline .backgroundColor3 {
-  background-color: #faca82;
-}
-#code #timeline .arrowColor3::before {
-  border: medium solid #faca82;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #faca82;
-}
-#code #timeline .backgroundColor4 {
-  background-color: #FFCAAC;
-}
-#code #timeline .arrowColor4::before {
-  border: medium solid #FFCAAC;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #FFCAAC transparent transparent;
-}
-#code #timeline .backgroundColor5 {
-  background-color: #B2CDE8;
-}
-#code #timeline .arrowColor5::before {
-  border: medium solid #B2CDE8;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #B2CDE8;
-}
-#code #timeline .backgroundColor6 {
-  background-color: #AAA;
-}
-#code #timeline .arrowColor6::before {
-  border: medium solid #AAA;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #AAA transparent transparent;
-}
-#code #timeline .backgroundColor7 {
-  background-color: #5EBE52;
-}
-#code #timeline .arrowColor7::before {
-  border: medium solid #5EBE52;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #5EBE52;
-}
-#code #timeline .backgroundColor8 {
-  background-color: #faca82;
-}
-#code #timeline .arrowColor8::before {
-  border: medium solid #faca82;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #faca82 transparent transparent;
-}
-#code #timeline .backgroundColorDark1 {
-  background-color: #ccdad5;
-}
-#code #timeline .backgroundColorDark2 {
-  background-color: #85bea8;
-}
-#code #timeline .backgroundColorDark3 {
-  background-color: #daaa62;
-}
-#code #timeline .backgroundColorDark4 {
-  background-color: #DF9A8C;
-}
-#code #timeline .backgroundColorDark5 {
-  background-color: #829DA8;
-}
-#code #timeline .backgroundColorDark6 {
-  background-color: #888;
-}
-#code #timeline .backgroundColorDark7 {
-  background-color: #2E9E22;
-}
-#code #timeline .backgroundColorDark8 {
-  background-color: #daaa62;
-}
-#code #timeline .float-left-fix {
+#code #timeline .float-left-fix,
+#codeChild #timeline .float-left-fix {
   float: left;
 }
 @media screen and (max-width: 576px) {
-  #code #timeline .headContent h2 {
+  #code #timeline .headContent h2,
+  #codeChild #timeline .headContent h2 {
     position: relative;
     top: 5px;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  #code #timeline .headContent h2 {
+  #code #timeline .headContent h2,
+  #codeChild #timeline .headContent h2 {
     position: relative;
     top: 2px;
   }
 }
 @media screen and (max-width: 992px) {
-  #code #timeline {
+  #code #timeline,
+  #codeChild #timeline {
     /* Place the timelime to the left */
     /* Full-width containers */
     /* Make sure that all arrows are pointing leftwards */
     /* Make sure all circles are at the same spot */
     /* Make all right containers behave like the left ones */
   }
-  #code #timeline .timeline::after {
+  #code #timeline .timeline::after,
+  #codeChild #timeline .timeline::after {
     left: 12px;
   }
-  #code #timeline .container {
+  #code #timeline .container,
+  #codeChild #timeline .container {
     width: 100%;
     padding-left: 35px;
     padding-right: 15px;
   }
-  #code #timeline .container::before {
+  #code #timeline .container::before,
+  #codeChild #timeline .container::before {
     left: 25px;
   }
   #code #timeline .left::after,
-  #code #timeline .right::after {
+  #codeChild #timeline .left::after,
+  #code #timeline .right::after,
+  #codeChild #timeline .right::after {
     left: 0px;
   }
   #code #timeline .right,
-  #code #timeline .left {
+  #codeChild #timeline .right,
+  #code #timeline .left,
+  #codeChild #timeline .left {
     left: 0%;
   }
-  #code #timeline .arrowColor1::before {
+  #code #timeline .arrowColor1::before,
+  #codeChild #timeline .arrowColor1::before {
     border: medium solid #ecfaf5;
     border-width: 10px 10px 10px 0;
     border-color: transparent #ecfaf5 transparent transparent;
   }
-  #code #timeline .arrowColor3::before {
+  #code #timeline .arrowColor3::before,
+  #codeChild #timeline .arrowColor3::before {
     border: medium solid #faca82;
     border-width: 10px 10px 10px 0;
     border-color: transparent #faca82 transparent transparent;
   }
-  #code #timeline .arrowColor5::before {
+  #code #timeline .arrowColor5::before,
+  #codeChild #timeline .arrowColor5::before {
     border: medium solid #B2CDE8;
     border-width: 10px 10px 10px 0;
     border-color: transparent #B2CDE8 transparent transparent;
   }
-  #code #timeline .arrowColor7::before {
+  #code #timeline .arrowColor7::before,
+  #codeChild #timeline .arrowColor7::before {
     border: medium solid #5EBE52;
     border-width: 10px 10px 10px 0;
     border-color: transparent #5EBE52 transparent transparent;
   }
+  #code #timeline .arrowColor9::before,
+  #codeChild #timeline .arrowColor9::before {
+    border: medium solid #B1BBBC;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #B1BBBC transparent transparent;
+  }
 }
-#code .grey-color-text {
+#code .grey-color-text,
+#codeChild .grey-color-text {
   color: #666;
   text-align: center;
 }
 @media screen and (max-width: 992px) {
-  #code .grey-color-text {
+  #code .grey-color-text,
+  #codeChild .grey-color-text {
     text-align: left;
   }
 }

@@ -74,3 +74,54 @@ a i{
 .read-more[aria-expanded="false"] .expanded, .read-more[aria-expanded="true"] .collapsed{
     display: none;
 }
+
+.serif{
+	font-family: 'Noto Serif TC', sans-serif;
+}
+
+.code-ribbon{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 70px;
+	.numberBox{
+		margin: 15px 15px 15px 0px;
+		padding: 10px;
+		font-size: 35px;
+		line-height: 35px;
+		font-weight: 1000;
+		font-family: 'Noto Serif TC', sans-serif;
+		color: #FFF;
+		span{
+			position: relative;
+			bottom: 3px;
+		}
+	}
+	/* Media queries - Responsive timeline on screens more than 576px (sm or up) wide */
+	@media screen and (min-width: 576px) {
+		// create a fade
+		background: -webkit-linear-gradient(left, 
+					@white-theme-bg-color 0%, 
+					rgba(0,0,0,0) 20%, // opacity: 0
+					rgba(0,0,0,0) 80%, // opacity: 0
+					@white-theme-bg-color 100%
+		);
+	}
+}
+
+each(@code-colors,{
+	.backgroundColor@{index}{
+		background-color: @value;
+	}
+	.arrowColor@{index}::before { 
+		border: medium solid @value;
+		border-width: 10px if((mod(@index,2)=1), 0, 10px) 10px if((mod(@index,2)=1), 10px, 0); //left (odd): 10,0,10,10; right (even): 10,10,10,0
+		border-color: transparent if((mod(@index,2)=1), transparent, @value) transparent if((mod(@index,2)=1), @value, transparent); //left (odd): t t t value; right (even): t value t t
+	}
+});
+
+each(@code-colors-dark,{
+	.backgroundColorDark@{index}{
+		background-color: @value;
+	}
+});
