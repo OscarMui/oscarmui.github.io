@@ -1,0 +1,32 @@
+extends ../../layouts/default
+
+block js
+
+block append variables 
+    - var currentPage = "codeChild";
+
+block content
+    .container 
+        +codeRibbon(3,"Chemquiz")
+
+        .text-center
+            p.italic A website I made to help my friends in Chemistry revision. 
+            p 2018 (Back when I thought Chemistry is easy and can be summarised by a few if statements...)
+            p: a(href="https://chemquiz.netlify.com") Try it now
+        p What's so special about Chemquiz?
+        ul
+            li First website I made
+            li Loved by my friends studying Chemistry
+            li The tediousness of modifying the header/ footer of every page made me eager to find better solutions...
+
+        p: small Note that some of the answers might be wrong because I did not take solubility of chemicals in to account back then.
+        h2.mt-4 Technologies
+        hr
+        p Made with good old html, css, and javascript. :) (I am never doing this again...)
+        .languagesGroup
+            +figureWithCaption("/images/code/languages/html.png","HTML","language")
+            +figureWithCaption("/images/code/languages/css.png","CSS","language")
+            +figureWithCaption("/images/code/languages/js.png","Javascript","language")
+        
+        .row: .col-12.offset-lg-3.col-lg-6
+            +figureWithCaption("/images/code/code-chemquiz-0.png","Chemical formula to name quiz","w-100")

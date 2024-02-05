@@ -1,0 +1,46 @@
+extends ../../layouts/default
+
+block js
+
+block append variables 
+    - var currentPage = "codeChild";
+
+block content
+    .container 
+        +codeRibbon(5,"HyMinions")
+
+        .text-center
+            p.italic Hypixel Skyblock - Minions Calculator and Events Timer. Know your most profitable minions! Tailor-made for each profile, highly accurate.
+            p Jun 2020 
+            p: a(href="https://hyminions.herokuapp.com") Try it now
+        
+        p What's so special about HyMinions?
+        ul
+            li Over 500 daily views
+            li Earning a small amount of ad revenue
+
+        p What can be improved?
+        ul
+            li I learnt a lot of new programming techniques since then. If I were to rewrite the website the code should be more readable and scalable. :)
+        
+        p I was playing a game called Hypixel Skyblock from 2019 to 2021. I created a website calculating the optimal setup to maximize offline income based on the real-time market price of the game.
+        p I originally made this website just to fulfill my interest in Maths, coding, and the game. However, thanks to the promotion by Youtubers, the website is known to many Hypixel Skyblock players. Currently, it has over 500 daily viewers and it is generating a considerable amount of ad revenue! Being able to earn money through a passion project is a mircale to me.
+        p: a(href="https://hyminions.herokuapp.com") Link
+        
+        //- img.w-100(src="/images/code/code-hyminions-0.png")
+        .row
+            .col-12.col-lg-6: +figureWithCaption("/images/code/code-hyminions-1.png","A portion of the homepage","w-100")
+            .col-12.col-lg-6: +figureWithCaption("/images/code/code-hyminions-2.png","Events timer","w-100")
+        .row
+            .col-12.col-lg-6: +figureWithCaption("/images/code/code-hyminions-3.png","Profit calculator","w-100")
+            .col-12.col-lg-6: +figureWithCaption("/images/code/code-hyminions-4.png","Looks good on mobile","w-100")
+
+        h2.mt-4 Technologies
+        hr
+        p Made in ExpressJS, with a mini backend for storing market data on Firebase
+        .languagesGroup
+            a(href="https://expressjs.com/")
+                +figureWithCaption("/images/code/languages/expressjsplus.png","ExpressJS + tools","language")
+            a(href="https://firebase.google.com/")
+                +figureWithCaption("/images/code/languages/firebase.png","Firebase","language")
+        p: a(href="https://github.com/KidProf/HyMinions") Source code

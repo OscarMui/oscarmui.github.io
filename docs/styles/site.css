@@ -95,6 +95,7 @@ a i {
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  color: #000;
 }
 .code-ribbon {
   display: -webkit-box;
@@ -106,7 +107,7 @@ a i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 70px;
+  height: 80px;
   padding: 10px;
   margin-bottom: 20px;
   /* Media queries - Responsive timeline on screens more than 576px (sm or up) wide */
@@ -254,12 +255,31 @@ a i {
   margin-left: auto;
   margin-right: auto;
 }
+#home::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/index/bike-20240203.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+  z-index: -100;
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 #codeChild #body {
   margin-top: 0;
+}
+#codeChild .languagesGroup {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 #code .modal-content,
 #codeChild .modal-content {
