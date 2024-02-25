@@ -1,0 +1,108 @@
+extends ../layouts/default
+
+block js
+
+block append variables 
+    - var currentPage = "leapYear";
+    - var themeColor = "dark";
+
+block content
+    .container
+        h1 29/2/2024
+        br
+        .row
+            .col-12.col-md-6
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3rKrGwSuJVUscpFVZPJBtB?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                br
+            .col-12.col-md-6.d-flex.justify-content-center.align-items-center.flex-column
+                br
+                p.italic 記念 二月底多出那天...
+                p.italic It is so specicial isn't it...
+                br
+
+        p I just happened to do a mini research project on leap years back in 2017. I found it quite interesting as a math person. So here's a copy of it.
+        p First, a question for the audience.
+
+        h3 True/False: There is a leap year every four years.
+
+        #collapseAcademics.collapse
+            hr
+            p Of course not LOL
+
+            p.
+                Solar year is the most significant measure of time, it is the time for the Earth to make one complete rotation of the Sun, the exact time is approximately 365.2421895134 days. <br />
+                Number of days in a calendar year is set according to the solar year so that it can be used for regulating everyday life and benefit farming because they can know the exact time to plant.
+            h3 Common Year
+            hr
+            .row
+                .col-xl-9.col-lg-9.col-md-8.col-sm-6.col-12
+                    p.
+                        A common calendar year is 365 days.
+                    br
+                    p.
+                        MATH: <br />
+                        Difference compared with the solar year: <br />
+                        365.2422 (correct to 4 d.p.) - 365 <br />
+                        = 0.2422 (days)
+                .col-xl-3.col-lg-3.col-md-4.col-sm-6.col-12
+                    img(src="images/leapYear/common_year.png" alt="calender").w-100
+            br.visible-xs
+            h3 Leap Year
+            hr
+            p.
+                In order to make it more accurate, people introduced the concept of leap year. Years with a multiple of 4 will be a leap year with 366 days.
+            br
+            .row
+                .col-xl-8.col-lg-8.col-md-6.col-sm-12.col-12
+                    p.
+                        MATH:<br />
+                        Average days in a year:<br />
+                        (365+365+365+366)÷4<br />
+                        =365.25 (days)<br />
+                        Difference compared with the solar year:<br />
+                        365.25 - 365.2422 (correct to 4 d.p.)<br />
+                        = 0.0078 (days)
+                .col-xl-4.col-lg-4.col-md-6.col-sm-12.col-12
+                    img(src="images/leapYear/card365-25.png" alt="earth").w-100
+            h3 Even More Accurate
+            hr
+            p.
+                But it is not accurate enough.<br />
+                Therefore, years with a multiple of 100 is not a leap year, although it is a multiple of 4. (EG 1800, 1900, 2100, 2200 are not leap years)<br />
+                And years with a multiple of 400 is a leap year, although it is a multiple of 100. (EG 1200, 1600, 2000, 2400 are leap years)
+            br
+            p.
+                MATH:<br />
+                Number of leap years in 400 years:<br />
+                400÷4 (years with a multiple of 4)<br />
+                - 400÷100 (years with a multiple of 100)<br />
+                + 400÷400 (years with a multiple of 400)<br />
+                = 100 - 4 + 1<br />
+                = 97 (leap years)<br />
+                Average days in a year:<br />
+                (Number of leap year x 366 + Number of common year x 365) ÷400<br />
+                =(Number of years x 365 + Number of leap years) ÷400<br />
+                =(400 x 365 + 97) ÷400<br />
+                =146097÷400<br />
+                =365.2425 (days)<br />
+                Difference compared with the solar year:<br />
+                365.2425 - 365.24219 (correct to 5 d.p.)<br />
+                = 0.00031 (days)<br />
+                =26.8 (seconds) (correct to 3 sig. fig.)
+            br
+            p.
+                This is the error of today's calendar system, which is very accurate.
+            h3 How many days are there from year 2001 to year 2100?
+            hr
+            p.
+                MATH:<br />
+                Number of leap years in 100 years:<br />
+                100÷4 - 100÷100 (2100 is not a leap year)<br />
+                = 25 - 1<br />
+                = 24 (leap years)<br />
+                Days from year 2001 to year 2100:<br />
+                365 x 100 + 24<br />
+                =36524 (days)
+
+        a.read-more(data-bs-toggle="collapse" href="#collapseAcademics" aria-expanded="false" aria-controls="collapseAcademics") 
+            span.collapsed Answer
