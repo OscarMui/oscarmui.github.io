@@ -1,0 +1,41 @@
+extends ../../layouts/default
+
+block js
+
+block append variables 
+    - var currentPage = "codeChild";
+
+block content
+    .container
+
+        +codeRibbon(10,"RoyalHackaway - Domus.ai")
+
+        .text-center
+            p.italic My fourth hackathon - RoyalHackerway
+            p Jan 2024 @ Royal Holloway, Egham, London, UK
+        p What's so special about Domus.ai?
+        ul
+            li Winning an award in a hackthon four times in a row!
+            li Rare opportunity to travel around the UK for coding 
+            li Learnt a brand new Python frontend framework during the hackathon
+
+        p: a(href="https://devpost.com/software/domus-ai") Description on Devpost
+
+        p It is very exciting to create a completely working web application in just under 24 hours!
+
+        p Even though this is my fourth hackathon, there are still a lot of new exciting challenges this time. 
+
+        p First, we are using a brand new framework called Taipy. (That is the name of our award) The idea is that by writing the frontend in Python, we can basically put the frontend code and the backend code in the same place without needing REST API calls which are slow and nasty to get right. It sounded nice but the framework is fairly new with less community support compared to more popular frameworks, and ChatGPT 3.5 has no idea what Taipy is. 
+
+        p Moreover, we had some trouble getting our PostgreSQL server running. We were very gutted by it seeing how much time we (especially Abay Utebaiuly) have spent creating the model. I proposed using Firestore instead as it is easier to use 18 hours in the hackathon. Luckily we managed to complete the database system just in time!
+
+        p We also learnt how to do web scraping (credit to Conrad O'Driscoll) and use the Google Maps API (credit to Issac Kwan) all within the time limit given. 
+
+        p It is a very nice experience working with Issac Kwan, Conrad O'Driscoll, and Abay Utebaiuly. Looking forward to keeping in contact and creating more exciting projects together!
+
+        p Finally, just like Abay, I would like to extend my heartfelt gratitude to the organizers of this incredible hackathon, Major League Hacking, Hackathons UK, Royal Holloway, University of London, and Royal Holloway Students' Union for orchestrating such a remarkable event. Without their dedication and hard work, none of this would have been possible.
+
+        .row
+            .col-12.col-lg-6: +figureWithCaption("/images/code/code-domusai-0.png","The main page of Domus.ai, our website generates a recommendation for the user, and the user can indicate whether they like the recommendation or not. Their choices will be fed into our recommendation algorithm, so the recommendations can be tailored to fit the user's needs, without the need of filling in a very long form.","w-100")
+            .col-12.col-lg-6: +figureWithCaption("/images/code/code-domusai-1.png","The short form the user needs to fill in before we generate recommendations.","w-100")
+        

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <title>Oscar Mui</title>
+    <link rel="shortcut icon" href="/images/pi-green.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&amp;display=swap" rel="stylesheet">
+    <link href="/styles/site.css" rel="stylesheet">
+  </head>
+  <body class="lightThemeColor" id="codeChild">
+    <div id="header">
+      <nav class="navbar navbar-default navbar-expand-lg navbar-dark" id="myNav">
+        <div class="container my-1"><a class="navbar-brand" href="/index.html"><img src="/images/pi-transparent.png" width="30" height="30" alt=""></a><a class="navbar-brand" href="/index.html">Oscar Mui</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#orderNav"><span class="navbar-toggler-icon navbar-light"></span></button>
+          <div class="collapse navbar-collapse" id="orderNav">
+            <ul class="nav navbar-nav me-auto">
+              <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="/oxford.html">Oxford</a></li>
+              <li class="nav-item"><a class="nav-link" href="/code.html">Coding</a></li>
+              <li class="nav-item"><a class="nav-link" href="/teaching.html">Teaching</a></li>
+              <li class="nav-item"><a class="nav-link" href="/2023.html">2023</a></li>
+              <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="body">
+      <div class="container">
+          <p class="code-report">- CODE REPORT -</p>
+          <div class="code-ribbon backgroundColor10">
+            <div class="numberBox backgroundColorDark10"><span>10</span></div>
+            <h2>RoyalHackaway - Domus.ai</h2>
+          </div>
+        <div class="text-center">
+          <p class="italic">My fourth hackathon - RoyalHackerway</p>
+          <p>Jan 2024 @ Royal Holloway, Egham, London, UK</p>
+        </div>
+        <p>What's so special about Domus.ai?</p>
+        <ul>
+          <li>Winning an award in a hackthon four times in a row!</li>
+          <li>Rare opportunity to travel around the UK for coding </li>
+          <li>Learnt a brand new Python frontend framework during the hackathon</li>
+        </ul>
+        <p><a href="https://devpost.com/software/domus-ai">Description on Devpost</a></p>
+        <p>It is very exciting to create a completely working web application in just under 24 hours!</p>
+        <p>Even though this is my fourth hackathon, there are still a lot of new exciting challenges this time. </p>
+        <p>First, we are using a brand new framework called Taipy. (That is the name of our award) The idea is that by writing the frontend in Python, we can basically put the frontend code and the backend code in the same place without needing REST API calls which are slow and nasty to get right. It sounded nice but the framework is fairly new with less community support compared to more popular frameworks, and ChatGPT 3.5 has no idea what Taipy is. </p>
+        <p>Moreover, we had some trouble getting our PostgreSQL server running. We were very gutted by it seeing how much time we (especially Abay Utebaiuly) have spent creating the model. I proposed using Firestore instead as it is easier to use 18 hours in the hackathon. Luckily we managed to complete the database system just in time!</p>
+        <p>We also learnt how to do web scraping (credit to Conrad O'Driscoll) and use the Google Maps API (credit to Issac Kwan) all within the time limit given. </p>
+        <p>It is a very nice experience working with Issac Kwan, Conrad O'Driscoll, and Abay Utebaiuly. Looking forward to keeping in contact and creating more exciting projects together!</p>
+        <p>Finally, just like Abay, I would like to extend my heartfelt gratitude to the organizers of this incredible hackathon, Major League Hacking, Hackathons UK, Royal Holloway, University of London, and Royal Holloway Students' Union for orchestrating such a remarkable event. Without their dedication and hard work, none of this would have been possible.</p>
+        <div class="row">
+          <div class="col-12 col-lg-6">
+              <figure class="figure"><img class="w-100" src="/images/code/code-domusai-0.png" height="auto">
+                <figcaption class="figure-caption">The main page of Domus.ai, our website generates a recommendation for the user, and the user can indicate whether they like the recommendation or not. Their choices will be fed into our recommendation algorithm, so the recommendations can be tailored to fit the user's needs, without the need of filling in a very long form.</figcaption>
+              </figure>
+          </div>
+          <div class="col-12 col-lg-6">
+              <figure class="figure"><img class="w-100" src="/images/code/code-domusai-1.png" height="auto">
+                <figcaption class="figure-caption">The short form the user needs to fill in before we generate recommendations.</figcaption>
+              </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="footer">
+        <p><small>Created by Oscar Mui</small></p>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c4e8b064bf.js"></script>
+  </body>
+</html>

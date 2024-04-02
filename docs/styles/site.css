@@ -206,6 +206,14 @@ a i {
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent #B1BBBC;
 }
+.backgroundColor10 {
+  background-color: #6CCBAD;
+}
+.arrowColor10::before {
+  border: medium solid #6CCBAD;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #6CCBAD transparent transparent;
+}
 .backgroundColorDark1 {
   background-color: #ccdad5;
 }
@@ -232,6 +240,9 @@ a i {
 }
 .backgroundColorDark9 {
   background-color: #3C5758;
+}
+.backgroundColorDark10 {
+  background-color: #4CAB8D;
 }
 #home .round-img {
   display: block;
