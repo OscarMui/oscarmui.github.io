@@ -9,14 +9,14 @@ block append variables
 mixin meInfo(icon,image,link)
 	.col-2.col-md-1.col-lg-1
 		if link
-			a(href=link): i.text-center.w-100.fa-solid.fa-lg(class=icon)
+			a(href=link): img.center-img(src=icon width=30)
 		else 
-			i.text-center.w-100.fa-solid.fa-lg(class=icon)
+			img.center-img(src=icon width=30)
 		.mb-4
 	.col-8.col-md-10.col-lg-4
 		if block
 			if link
-				a(href=link)
+				a(href=link).no-color
 					block
 			else 
 				block
@@ -40,19 +40,23 @@ block content
 		.mb-5
 		
 		.row
-			+meInfo("fa-graduation-cap","images/index/oxford.png")
+			+meInfo("images/favicons/graduation-cap.png","images/index/oxford.png","https://www.ox.ac.uk/")
 				span Master of Computer Science (MCompSci), University of Oxford, United Kingdom (2021-2025)
-			+meInfo("fa-graduation-cap","images/index/sjc.png")
+			+meInfo("images/favicons/graduation-cap.png","images/index/sjc.png","https://www.sjc.edu.hk/")
 				span St. Joseph's College, Hong Kong (2015-2021)
-			+meInfo("fa-house","images/index/hk.png")
+			+meInfo("images/favicons/work.png","images/index/hkma.jpg","https://www.hkma.gov.hk/eng/")
+				span Summer Intern, IT Division, Hong Kong Monetary Authority (2024)
+			+meInfo("images/favicons/work.png","images/index/astri.jpg","https://www.astri.org/")
+				span Summer Intern, Communications Technologies Division, ASTRI (2023)
+			+meInfo("images/favicons/home.png","images/index/hk.png","https://www.discoverhongkong.com/uk/index.html")
 				span Hong Kong
-			+meInfo("fa-cake-candles",null)
+			+meInfo("images/favicons/birthday.png",null)
 				span 27 November
-			+meInfo("fa-code",null,"code.html")
+			+meInfo("images/favicons/click.png","images/favicons/coding.png","code.html")
 				span Checkout my coding projects! 
-			+meInfo("fa-calendar-days",null,"leapYear.html")
-				span Is there a leap year every four years? &nbsp; &nbsp;
-				span.badge.bg-primary.italic NEW
+			//- +meInfo("fa-calendar-days",null,"leapYear.html")
+			//- 	span Is there a leap year every four years? &nbsp; &nbsp;
+			//- 	span.badge.bg-primary.italic NEW
 			//- +meInfo("fa-building-columns","images/index/oxford.png","oxford.html")
 			//- 	span A brief description of my student life at Oxford &nbsp; &nbsp;
 				//- span.badge.bg-primary NEW
@@ -69,6 +73,7 @@ block content
 							h4.text-center Tenbin - Alice in Borderland
 							p A 5-player mini-game inspired by a TV show on Netflix. (今際の国のアリス)
 							ul
+								li 700+ downloads on Google Play
 								li First multiplayer game
 								li Used a lot of newly self-learnt framework and technologies, including TypeScript, WebSocket, Kivy and the Asyncio library 
 							//- brs to make space for the card-bottom
