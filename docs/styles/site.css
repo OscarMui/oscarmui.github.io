@@ -8,21 +8,28 @@
 body {
   font-family: 'Noto Sans TC', sans-serif;
 }
-#body {
+#body,
+#footer {
   margin-top: 30px;
 }
 #body a,
-#body a:hover {
+#footer a,
+#body a:hover,
+#footer a:hover {
   text-decoration: none;
 }
 #body .btn-link,
-#body .btn-link:hover {
+#footer .btn-link,
+#body .btn-link:hover,
+#footer .btn-link:hover {
   text-decoration: none;
 }
-#body .btn-link {
+#body .btn-link,
+#footer .btn-link {
   padding-left: 0;
 }
-#body .btn-link {
+#body .btn-link,
+#footer .btn-link {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
