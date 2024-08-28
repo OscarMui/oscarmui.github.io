@@ -102,7 +102,27 @@ a i {
 .serif {
   font-family: 'Noto Serif TC', sans-serif;
 }
-.code-report {
+#code-report {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Media queries - Responsive on screens more than 576px (sm or up) wide */
+}
+@media screen and (min-width: 576px) {
+  #code-report {
+    gap: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+#code-report p {
   font-family: 'Noto Serif TC', sans-serif;
   letter-spacing: 5px;
   text-align: center;
@@ -123,7 +143,7 @@ a i {
   height: 80px;
   padding: 10px;
   margin-bottom: 20px;
-  /* Media queries - Responsive timeline on screens more than 576px (sm or up) wide */
+  /* Media queries - Responsive on screens more than 576px (sm or up) wide */
 }
 .code-ribbon .numberBox {
   margin: 15px 10px 15px 0px;

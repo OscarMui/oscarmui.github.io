@@ -88,13 +88,23 @@ a i{
 	font-family: 'Noto Serif TC', sans-serif;
 }
 
-.code-report{
-	font-family: 'Noto Serif TC', sans-serif;
-	letter-spacing: 5px;
-	text-align: center;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	color: #000;
+#code-report{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* Media queries - Responsive on screens more than 576px (sm or up) wide */
+	@media screen and (min-width: 576px) {
+		gap: 15px;
+		justify-content: center;
+	}
+	p{
+		font-family: 'Noto Serif TC', sans-serif;
+		letter-spacing: 5px;
+		text-align: center;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		color: #000;
+	}
 }
 
 .code-ribbon{
@@ -117,7 +127,7 @@ a i{
 			bottom: 3px;
 		}
 	}
-	/* Media queries - Responsive timeline on screens more than 576px (sm or up) wide */
+	/* Media queries - Responsive on screens more than 576px (sm or up) wide */
 	@media screen and (min-width: 576px) {
 		// create a fade
 		background: -webkit-linear-gradient(left, 

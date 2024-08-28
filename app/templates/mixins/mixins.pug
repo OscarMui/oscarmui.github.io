@@ -1,5 +1,14 @@
-mixin codeRibbon(number,title)
-	p.code-report - CODE REPORT -
+mixin codeRibbon(number,title,prev,next)
+	#code-report
+		if prev
+			a(href=prev): img.center-img(src="/images/favicons/prev.png" width=25)
+		else
+			span &nbsp;
+		p - CODE REPORT -
+		if next
+			a(href=next): img.center-img(src="/images/favicons/next.png" width=25)
+		else
+			span &nbsp;
 	.code-ribbon(class="backgroundColor"+number)
 		.numberBox(class="backgroundColorDark"+number)
 			span=number<10?("0"+number):(number)
