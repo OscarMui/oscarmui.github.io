@@ -8,9 +8,9 @@ block append variables
 mixin resource(icon,title,download,link)
 	.col-2.col-md-1
 		if link
-			a(href=link): i.text-center.w-100.fa-solid.fa-xl(class=icon)
+			a(href=link): img.center-img(src=icon width=25)
 		else 
-			i.text-center.w-100.fa-solid.fa-xl(class=icon)
+			img.center-img(src=icon width=25)
 		.mb-4
 	.col-8.col-md-10
 		if link
@@ -22,9 +22,9 @@ mixin resource(icon,title,download,link)
 	.col-2.col-md-1
 		if download
 			if link
-			a(href=link): i.text-center.w-100.fa-solid.fa-xl(class=download)
+				a(href=link): img.center-img(src=download width=25)
 		else 
-			i.text-center.w-100.fa-solid.fa-xl(class=download)
+			img.center-img(src=download width=25)
 		.mb-4
 	br
 
@@ -37,13 +37,13 @@ block content
 			Here are some resources that I created for teaching or for my own study. They are all in English unless otherwise specified.
 		
 		.row
-			+resource("fa-file","Notes for using Git","fa-cloud-arrow-down","https://drive.google.com/drive/folders/1nwQ-73vL_MDVqhAUQX5FULBqbigCeqUV?usp=share_link")
+			+resource("/images/favicons/file.png","Notes for using Git","/images/favicons/cloud-download.png","https://drive.google.com/drive/folders/1nwQ-73vL_MDVqhAUQX5FULBqbigCeqUV?usp=share_link")
 
 		.row
-			+resource("fa-file","Notes for web development using HTML, CSS and Bootstrap","fa-cloud-arrow-down","https://drive.google.com/drive/folders/1Gc3fO7cxYQsScH3G8SCNAlrpu6JzOVng?usp=share_link")
+			+resource("/images/favicons/file.png","Notes for web development using HTML, CSS and Bootstrap","/images/favicons/cloud-download.png","https://drive.google.com/drive/folders/1Gc3fO7cxYQsScH3G8SCNAlrpu6JzOVng?usp=share_link")
 
 		.row
-			+resource("fa-file","Notes for web development using Pug.js, Less and Bootstrap","fa-cloud-arrow-down","https://drive.google.com/drive/folders/1Fu2oudCqDdi--18AihuEoEzokJhEYbjg?usp=share_link")
+			+resource("/images/favicons/file.png","Notes for web development using Pug.js, Less and Bootstrap","/images/favicons/cloud-download.png","https://drive.google.com/drive/folders/1Fu2oudCqDdi--18AihuEoEzokJhEYbjg?usp=share_link")
 				span.italic.
 					<br />
 					The <a href="https://drive.google.com/drive/folders/1Fu2oudCqDdi--18AihuEoEzokJhEYbjg?usp=share_link">(finished) full version of the notes</a> and the <a href="https://www.youtube.com/playlist?list=PLjGmdnqrOKuYXiu7lgG5HW71jPEUd1XCm">(unfinished) YouTube series</a> covers one way of building a static website.
@@ -57,10 +57,9 @@ block content
 
 		.row
 			.col-2.col-md-1
-				a(href="https://www.youtube.com/playlist?list=PLjGmdnqrOKuZ95Um2Ir2p6ylPVKWvUDK6"): i.text-center.w-100.fa-solid.fa-xl(class="fa-video")
-				br
-				br
-				a(href="https://drive.google.com/drive/u/1/folders/1yXzQWlROb8d1X88eyuRIKzfBvb_bWURX"): i.text-center.w-100.fa-solid.fa-xl(class="fa-file")
+				a(href="https://www.youtube.com/playlist?list=PLjGmdnqrOKuZ95Um2Ir2p6ylPVKWvUDK6"): img.center-img(src="/images/favicons/video.png" width=25)
+				.mb-3
+				a(href="https://drive.google.com/drive/u/1/folders/1yXzQWlROb8d1X88eyuRIKzfBvb_bWURX"): img.center-img(src="/images/favicons/file.png" width=25)
 				.mb-4
 			.col-8.col-md-10
 				a(href="https://www.youtube.com/playlist?list=PLjGmdnqrOKuZ95Um2Ir2p6ylPVKWvUDK6")
@@ -68,24 +67,23 @@ block content
 				span.italic A piece of notes to introduce senior secondary school students with more advanced programming theories, so as to prepare them for programming competitions like HKOI, with live session explaining it (in Cantonese).
 				.mb-4
 			.col-2.col-md-1
-				a(href="https://www.youtube.com/playlist?list=PLjGmdnqrOKuZ95Um2Ir2p6ylPVKWvUDK6"): i.text-center.w-100.fa-solid.fa-xl(class="fa-brands fa-youtube")
-				br
-				br
-				a(href="https://drive.google.com/drive/u/1/folders/1yXzQWlROb8d1X88eyuRIKzfBvb_bWURX"): i.text-center.w-100.fa-solid.fa-xl(class="fa-cloud-arrow-down")
+				a(href="https://www.youtube.com/playlist?list=PLjGmdnqrOKuZ95Um2Ir2p6ylPVKWvUDK6"): img.center-img(src="/images/favicons/youtube.png" width=25)
+				.mb-3
+				a(href="https://drive.google.com/drive/u/1/folders/1yXzQWlROb8d1X88eyuRIKzfBvb_bWURX"): img.center-img(src="/images/favicons/cloud-download.png" width=25)
 				.mb-4
 			br
 	
 		.row
-			+resource("fa-brands fa-github","Setup Cheetsheet for MacOS","fa-cloud-arrow-down","https://github.com/OscarMui/setup-cheetsheet-macos")
+			+resource("/images/favicons/github.png","Setup Cheetsheet for MacOS","/images/favicons/cloud-download.png","https://github.com/OscarMui/setup-cheetsheet-macos")
 				span.italic Setup guide for MacOS users, useful especially if you have multiple GitHub accounts.
 		.row
-			+resource("fa-brands fa-github","Python Introductory Notes - Oxford CompSoc","fa-cloud-arrow-down","https://github.com/oxcompsoc/learntocode")
+			+resource("/images/favicons/github.png","Python Introductory Notes - Oxford CompSoc","/images/favicons/cloud-download.png","https://github.com/oxcompsoc/learntocode")
 				span.italic Each year Oxford University CompSoc runs an introductory programming course in Python. I am responsible for holding the course and update the materials for the 2022 course together with my colleague Viktor.
 		.row
-			+resource("fa-file","Continuous Maths Notes","fa-cloud-arrow-down","https://drive.google.com/drive/folders/1tLVUgpsYzJcq7NCjdn-TYsefmb4UDJV0?usp=sharing")
+			+resource("/images/favicons/file.png","Continuous Maths Notes","/images/favicons/cloud-download.png","https://drive.google.com/drive/folders/1tLVUgpsYzJcq7NCjdn-TYsefmb4UDJV0?usp=sharing")
 				span.italic (discontinued) Summary Notes on the Continuous Maths course at Oxford.
 		.row
-			+resource("fa-file","Functional Programming Notes","fa-cloud-arrow-down","https://drive.google.com/drive/folders/1U4JJg8-EMvrdrLRXvvlwlUXuteQkkDVY?usp=sharing")
+			+resource("/images/favicons/file.png","Functional Programming Notes","/images/favicons/cloud-download.png","https://drive.google.com/drive/folders/1U4JJg8-EMvrdrLRXvvlwlUXuteQkkDVY?usp=sharing")
 				span.italic (discontinued) Summary Notes on the Funtional Programming course at Oxford. This piece of notes records most predefined functions in the lecture notes, with reordering for easier revision. 
 
 
