@@ -130,6 +130,10 @@ a i {
   margin-bottom: 1rem;
   color: #000;
 }
+.center-img {
+  display: block;
+  margin: auto;
+}
 .code-ribbon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -284,10 +288,6 @@ a i {
   border: 2px solid #DDD;
   -webkit-filter: brightness(0.95);
           filter: brightness(0.95);
-}
-#home .center-img {
-  display: block;
-  margin: auto;
 }
 #home .icon-width {
   width: 40px;

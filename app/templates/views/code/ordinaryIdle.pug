@@ -23,6 +23,22 @@ block content
         ul
             li I feel like everything is just a bit too serious for a game, using Material design due to laziness is probably the culprit.
         
+        h2.mt-4 Technologies
+        hr
+        .languagesGroup
+            a(href="https://flutter.dev/")
+                +figureWithCaption("/images/code/languages/flutter.png","Flutter","language")
+        #collapseTechnology.collapse
+            p Flutter is used for cross-platform support. One code base for iOS (unfortunately putting apps on App Store is too expensive), Android, and Web.
+            p I enjoy coding with Dart, a much better experience than making Android apps with Java. I feel like it is a combination of JavaScript and Java. 
+            p On a side note, it is also the first time I tried out some functional programming techniques after attending the lectures.
+            p: a(href="https://github.com/KidProf/ordinary-idle") Source code 
+            
+
+        a.read-more(data-bs-toggle="collapse" href="#collapseTechnology" aria-expanded="false" aria-controls="collapseAcademics")
+            span.collapsed.technicalStuff Technical stuff
+            span.expanded Show less
+            
         h2.mt-4 Info
         hr
         p Play like any normal idle games, except there are some easter eggs that you could find in order to progress the game faster. Have fun finding! :) There are multiple themes with completely different secrets for you to discover.
@@ -41,18 +57,3 @@ block content
             .col-6.col-md-6.col-lg-3: +figureWithCaption("/images/code/code-ordinaryidle-2.jpg","Upgrades","w-100")
             .col-6.col-md-6.offset-lg-3.col-lg-3: +figureWithCaption("/images/code/code-ordinaryidle-3.jpg","Achievements","w-100")
             .col-6.col-md-6.col-lg-3: +figureWithCaption("/images/code/code-ordinaryidle-4.jpg","Secrets","w-100")
-        h2.mt-4 Technologies
-        hr
-        #collapseTechnology.collapse
-            .languagesGroup
-                    a(href="https://flutter.dev/")
-                        +figureWithCaption("/images/code/languages/flutter.png","Flutter","language")
-            p Flutter is used for cross-platform support. One code base for iOS (unfortunately putting apps on App Store is too expensive), Android, and Web.
-            p I enjoy coding with Dart, a much better experience than making Android apps with Java. I feel like it is a combination of JavaScript and Java. 
-            p On a side note, it is also the first time I tried out some functional programming techniques after attending the lectures.
-            p: a(href="https://github.com/KidProf/ordinary-idle") Source code 
-            
-
-        a.read-more(data-bs-toggle="collapse" href="#collapseTechnology" aria-expanded="false" aria-controls="collapseAcademics")
-            span.collapsed.technicalStuff Technical stuff
-            span.expanded Show less
