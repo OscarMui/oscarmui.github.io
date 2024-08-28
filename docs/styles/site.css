@@ -418,8 +418,18 @@ a i {
 }
 #code #timeline .headContent,
 #codeChild #timeline .headContent {
-  padding: 20px 15px 20px 15px;
-  height: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 80px;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 #code #timeline .bodyContent,
 #codeChild #timeline .bodyContent {
@@ -433,11 +443,7 @@ a i {
 }
 #code #timeline .numberBox,
 #codeChild #timeline .numberBox {
-  bottom: 20px;
-  position: relative;
-  display: inline;
-  float: left;
-  margin: 15px 15px 15px 0px;
+  margin: 15px 10px 15px 0px;
   padding: 10px;
   font-size: 35px;
   line-height: 35px;
