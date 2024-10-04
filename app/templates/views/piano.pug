@@ -1,0 +1,28 @@
+extends ../layouts/default
+
+block js
+
+block append variables 
+    - var currentPage = "piano";
+    - var themeColor = "dark";
+
+block content
+    .container
+        h1 🎹
+        p I have a piano in my room in my 3rd year, so I tried singing and playing along. (Written in Oct 2024)
+
+        p: a(href="https://youtu.be/Q1iUlYvAr4E?si=satGkqRD6y3JrupS") ♫♩ Until I Found You (English) ♪♫
+        p: a(href="https://www.youtube.com/watch?v=A82aWmMZm4w") ♫♩ 有了你 (Cantonese) ♪♫
+        p: a(href="https://youtu.be/TBYhYegCQ-A?si=DbsZpoyxUPt5_lNb") ♫♩ 失戀太少 (Cantonese) ♪♫
+
+        .row
+            .col-12.col-md-6.col-xl-3: +figureWithCaption("/images/piano/3rd-accom-1.jpg","It is a tradition that 3rd years get the best rooms.","w-100")
+            .col-12.col-md-6.col-xl-3: +figureWithCaption("/images/piano/3rd-accom-2.jpg","Here is the piano.","w-100")
+            .col-12.col-md-6.col-xl-3: +figureWithCaption("/images/piano/3rd-accom-view.jpg","Nice view, innit?","w-100")
+            .col-12.col-md-6.col-xl-3: +figureWithCaption("/images/piano/3rd-accom-toilet-combined.jpg","It is an ensuite!","w-100")
+            
+
+        
+        
+
+        
