@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <rect width="512" height="512" rx="112" fill="#FFFFFF"/>
+  <!-- Scaled up (~1.18x) and centered on canvas (256, 256) -->
+  <g transform="translate(256, 256) scale(1.18) translate(-296, -245)">
+    <!-- Tilted Stem and Waves -->
+    <path d="M 183 130 L 243 130 L 199 380 L 139 380 Z" fill="#007A53"/>
+    <!-- Tilted Blue Flight Feathers -->
+    <path d="M 243 130 C 333 125 413 140 453 110 C 423 160 363 180 243 180 Z" fill="#0066B2"/>
+    <path d="M 228 220 C 316 220 376 230 416 200 C 386 250 326 270 228 270 Z" fill="#0080DE"/>
+  </g>
+</svg>

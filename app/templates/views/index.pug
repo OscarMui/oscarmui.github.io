@@ -7,13 +7,13 @@ block append variables
 	- var themeColor = "dark";
 
 mixin meInfo(icon,image,link)
-	.col-2.col-md-1.col-lg-1
+	.col-2.col-md-1.col-lg-1.align-content-center
 		if link
 			a(href=link): img.center-img(src=icon width=25)
 		else 
 			img.center-img(src=icon width=25)
 		.mb-4
-	.col-8.col-md-10.col-lg-4
+	.col-8.col-md-10.col-lg-4.align-content-center
 		if block
 			if link
 				a(href=link).no-color
@@ -23,7 +23,7 @@ mixin meInfo(icon,image,link)
 		else
 			p Empty
 		.mb-4
-	.col-2.col-md-1.col-lg-1
+	.col-2.col-md-1.col-lg-1.align-content-center
 		if image
 			if link
 				a(href=link): img.center-img(src=image width=30)
@@ -40,6 +40,18 @@ block content
 		.mb-5
 		
 		.row
+			.col-2.col-md-1.col-lg-1.align-content-center
+				a(href="https://docs.google.com/forms/d/e/1FAIpQLSdNxPFxrFoQta_yae4rjGNNe9GkyrB896GsU5gBCtFm2iCGtA/viewform")
+					img.center-img(src="images/code/code-findmypostal.svg" width=25)
+				.mb-4
+			.col-8.col-md-10.col-lg-4.align-content-center
+				a(href="https://docs.google.com/forms/d/e/1FAIpQLSdNxPFxrFoQta_yae4rjGNNe9GkyrB896GsU5gBCtFm2iCGtA/viewform")
+					span Help provide information for the community
+				.mb-4
+			.col-2.col-md-1.col-lg-1.text-center.align-content-center
+				span.badge.bg-primary.italic NEW
+				.mb-4
+			br
 			+meInfo("images/favicons/graduation-cap.png","images/index/oxford.png","https://www.ox.ac.uk/")
 				span Master of Computer Science (MCompSci), University of Oxford, UK (2021-2025)
 			+meInfo("images/favicons/graduation-cap.png","images/index/sjc.png","https://www.sjc.edu.hk/")
